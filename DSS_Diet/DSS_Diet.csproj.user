@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CompatibleCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DayNorms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MessageFormSmall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MessageFormLarge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FeatureDescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Features.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FeatureValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DataEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PossibleValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ProductsCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TaskSolver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="WaterMarkTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
