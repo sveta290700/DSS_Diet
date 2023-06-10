@@ -33,7 +33,7 @@ namespace DietProject
             this.KEChoiceLabel = new System.Windows.Forms.Label();
             this.KLSectionsListBox = new System.Windows.Forms.ListBox();
             this.SectionLabel = new System.Windows.Forms.Label();
-            this.KEChoiceButton = new System.Windows.Forms.Button();
+            this.DEChoiceButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // KEChoiceLabel
@@ -60,22 +60,22 @@ namespace DietProject
             this.SectionLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.SectionLabel.Name = "SectionLabel";
             // 
-            // KEChoiceButton
+            // DEChoiceButton
             // 
-            resources.ApplyResources(this.KEChoiceButton, "KEChoiceButton");
-            this.KEChoiceButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.KEChoiceButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.KEChoiceButton.Name = "KEChoiceButton";
-            this.KEChoiceButton.TabStop = false;
-            this.KEChoiceButton.UseVisualStyleBackColor = false;
-            this.KEChoiceButton.Click += new System.EventHandler(this.KEChoiceButton_Click);
+            resources.ApplyResources(this.DEChoiceButton, "DEChoiceButton");
+            this.DEChoiceButton.BackColor = System.Drawing.Color.PaleGreen;
+            this.DEChoiceButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.DEChoiceButton.Name = "DEChoiceButton";
+            this.DEChoiceButton.TabStop = false;
+            this.DEChoiceButton.UseVisualStyleBackColor = false;
+            this.DEChoiceButton.Click += new System.EventHandler(this.DEChoiceButton_Click);
             // 
             // DataEditor
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.Controls.Add(this.KEChoiceButton);
+            this.Controls.Add(this.DEChoiceButton);
             this.Controls.Add(this.SectionLabel);
             this.Controls.Add(this.KLSectionsListBox);
             this.Controls.Add(this.KEChoiceLabel);
@@ -93,6 +93,6 @@ namespace DietProject
         private System.Windows.Forms.Label KEChoiceLabel;
         private System.Windows.Forms.ListBox KLSectionsListBox;
         private System.Windows.Forms.Label SectionLabel;
-        private System.Windows.Forms.Button KEChoiceButton;
+        private System.Windows.Forms.Button DEChoiceButton;
     }
 }

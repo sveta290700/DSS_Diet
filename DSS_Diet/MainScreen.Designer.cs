@@ -30,22 +30,22 @@ namespace DietProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreen));
-            this.ButtonToKE = new System.Windows.Forms.Button();
+            this.ButtonToDE = new System.Windows.Forms.Button();
             this.ButtonToTS = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ButtonToDDB = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // ButtonToKE
+            // ButtonToDE
             // 
-            resources.ApplyResources(this.ButtonToKE, "ButtonToKE");
-            this.ButtonToKE.BackColor = System.Drawing.Color.PaleGreen;
-            this.ButtonToKE.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.ButtonToKE.Name = "ButtonToKE";
-            this.ButtonToKE.TabStop = false;
-            this.ButtonToKE.UseVisualStyleBackColor = false;
-            this.ButtonToKE.Click += new System.EventHandler(this.ButtonToKE_Click);
+            resources.ApplyResources(this.ButtonToDE, "ButtonToDE");
+            this.ButtonToDE.BackColor = System.Drawing.Color.PaleGreen;
+            this.ButtonToDE.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.ButtonToDE.Name = "ButtonToDE";
+            this.ButtonToDE.TabStop = false;
+            this.ButtonToDE.UseVisualStyleBackColor = false;
+            this.ButtonToDE.Click += new System.EventHandler(this.ButtonToDE_Click);
             // 
             // ButtonToTS
             // 
@@ -57,14 +57,14 @@ namespace DietProject
             this.ButtonToTS.UseVisualStyleBackColor = false;
             this.ButtonToTS.Click += new System.EventHandler(this.ButtonToTS_Click);
             // 
-            // button1
+            // ButtonToDDB
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.BackColor = System.Drawing.Color.PaleGreen;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.Name = "button1";
-            this.button1.TabStop = false;
-            this.button1.UseVisualStyleBackColor = false;
+            resources.ApplyResources(this.ButtonToDDB, "ButtonToDDB");
+            this.ButtonToDDB.BackColor = System.Drawing.Color.PaleGreen;
+            this.ButtonToDDB.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.ButtonToDDB.Name = "ButtonToDDB";
+            this.ButtonToDDB.TabStop = false;
+            this.ButtonToDDB.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -79,9 +79,9 @@ namespace DietProject
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ButtonToDDB);
             this.Controls.Add(this.ButtonToTS);
-            this.Controls.Add(this.ButtonToKE);
+            this.Controls.Add(this.ButtonToDE);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -93,9 +93,9 @@ namespace DietProject
 
         #endregion
 
-        private System.Windows.Forms.Button ButtonToKE;
+        private System.Windows.Forms.Button ButtonToDE;
         private System.Windows.Forms.Button ButtonToTS;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ButtonToDDB;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

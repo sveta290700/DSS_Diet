@@ -62,19 +62,16 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="CategoryTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 619</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="CategoryTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>80, 371</value>
   </data>
   <data name="CategoryTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>360, 39</value>
+    <value>253, 29</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="CategoryTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="CDeleteButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -85,13 +82,10 @@
     <value>NoControl</value>
   </data>
   <data name="CDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>834, 607</value>
-  </data>
-  <data name="CDeleteButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>642, 362</value>
   </data>
   <data name="CDeleteButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 63</value>
+    <value>97, 38</value>
   </data>
   <data name="CDeleteButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -109,13 +103,10 @@
     <value>NoControl</value>
   </data>
   <data name="CAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>609, 607</value>
-  </data>
-  <data name="CAddButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>413, 362</value>
   </data>
   <data name="CAddButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 63</value>
+    <value>97, 38</value>
   </data>
   <data name="CAddButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -129,14 +120,8 @@
   <data name="CategoriesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="CategoriesLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 82</value>
-  </data>
-  <data name="CategoriesLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
   <data name="CategoriesLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>578, 39</value>
+    <value>405, 24</value>
   </data>
   <data name="CategoriesLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -148,25 +133,34 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="CCategoriesListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="CCategoriesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 123</value>
-  </data>
-  <data name="CCategoriesListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>21</value>
   </data>
   <data name="CCategoriesListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>577, 388</value>
+    <value>405, 214</value>
   </data>
   <data name="CCategoriesListBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>10, 25</value>
+  <data name="CEditButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1143, 750</value>
+  <data name="CEditButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="CEditButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CEditButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>528, 362</value>
+  </data>
+  <data name="CEditButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 38</value>
+  </data>
+  <data name="CEditButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="CEditButton.Text" xml:space="preserve">
+    <value>Изменить</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2929,9 +2923,6 @@
         AAAAoQAAALMAAAC2AAAAMwAAAAAAAAAAAAAAAAAAAADwjwAA8I8AAPAvAADwLwAA8C8AAPCPAADwjwAA
         8I8AAPCHAADgJwAA5jcAAOA3AADgJwAA4CcAAOAHAADgDwAA
 </value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Категории продуктов</value>

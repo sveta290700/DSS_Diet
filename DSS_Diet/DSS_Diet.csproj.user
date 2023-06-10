@@ -10,31 +10,16 @@
     <Compile Update="DayNorms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="MessageFormSmall.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="MessageFormLarge.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FeatureDescription.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Features.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FeatureValue.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="DataEditor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MainScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PossibleValues.cs">
+    <Compile Update="MessageFormLarge.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProductsCategories.cs">
+    <Compile Update="MessageFormSmall.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Products.cs">

@@ -66,7 +66,7 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="KEChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>337, 78</value>
+    <value>333, 74</value>
   </data>
   <data name="KEChoiceLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 21</value>
@@ -114,25 +114,25 @@
     <value>Разделы</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="KEChoiceButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="DEChoiceButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="KEChoiceButton.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="DEChoiceButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="KEChoiceButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="DEChoiceButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="KEChoiceButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>363, 373</value>
+  <data name="DEChoiceButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 376</value>
   </data>
-  <data name="KEChoiceButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="DEChoiceButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
   </data>
-  <data name="KEChoiceButton.TabIndex" type="System.Int32, mscorlib">
+  <data name="DEChoiceButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="KEChoiceButton.Text" xml:space="preserve">
+  <data name="DEChoiceButton.Text" xml:space="preserve">
     <value>Выбрать</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
