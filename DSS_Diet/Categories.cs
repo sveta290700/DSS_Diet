@@ -70,6 +70,7 @@ namespace DietProject
                 string nameToEdit = item.Row[1].ToString();
                 SqlCommand editCategory = new SqlCommand("UPDATE [КАТЕГОРИЯ_ПРОДУКТОВ] SET [Название_категории_продуктов] = N'" + CategoryTextBox.Text.ToString() + "' WHERE [Название_категории_продуктов] = N'" + nameToEdit + "'; ", Program.sqlConnection);
                 editCategory.ExecuteNonQuery();
+                CategoryTextBox.Clear();
                 CategoriesTable = new DataTable();
                 CCategoriesListBox.DataSource = CategoriesTable;
                 adapter = new SqlDataAdapter("SELECT * FROM [КАТЕГОРИЯ_ПРОДУКТОВ]", Program.sqlConnection);
@@ -77,6 +78,7 @@ namespace DietProject
                 CCategoriesListBox.DataSource = CategoriesTable;
                 CCategoriesListBox.DisplayMember = "Название_категории_продуктов";
                 CCategoriesListBox.ValueMember = "ID_категории_продуктов";
+                CCategoriesListBox.SelectedIndex = choice;
                 Program.sqlConnection.Close();
             }
         }
@@ -98,6 +100,7 @@ namespace DietProject
                 string nameToDelete = item.Row[1].ToString();
                 SqlCommand deleteCategory = new SqlCommand("DELETE FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [Название_категории_продуктов] = N'" + nameToDelete + "';", Program.sqlConnection);
                 deleteCategory.ExecuteNonQuery();
+                CategoryTextBox.Clear();
                 CategoriesTable = new DataTable();
                 CCategoriesListBox.DataSource = CategoriesTable;
                 adapter = new SqlDataAdapter("SELECT * FROM [КАТЕГОРИЯ_ПРОДУКТОВ]", Program.sqlConnection);
@@ -105,6 +108,7 @@ namespace DietProject
                 CCategoriesListBox.DataSource = CategoriesTable;
                 CCategoriesListBox.DisplayMember = "Название_категории_продуктов";
                 CCategoriesListBox.ValueMember = "ID_категории_продуктов";
+                CCategoriesListBox.SelectedIndex = choice - 1;
                 Program.sqlConnection.Close();
             }
         }

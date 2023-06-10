@@ -68,14 +68,8 @@
   <data name="CCUnselectButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="CCUnselectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>547, 397</value>
-  </data>
-  <data name="CCUnselectButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
   <data name="CCUnselectButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 50</value>
+    <value>39, 30</value>
   </data>
   <data name="CCUnselectButton.Text" xml:space="preserve">
     <value>&lt;&lt;</value>
@@ -89,26 +83,14 @@
   <data name="CCSelectButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="CCSelectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>547, 317</value>
-  </data>
-  <data name="CCSelectButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
   <data name="CCSelectButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 50</value>
+    <value>40, 30</value>
   </data>
   <data name="CCSelectButton.Text" xml:space="preserve">
     <value>&gt;&gt;</value>
   </data>
-  <data name="CCCategoriesComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 122</value>
-  </data>
-  <data name="CCCategoriesComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
   <data name="CCCategoriesComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1107, 33</value>
+    <value>776, 23</value>
   </data>
   <data name="CCSaveButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -120,13 +102,10 @@
     <value>NoControl</value>
   </data>
   <data name="CCSaveButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>491, 632</value>
-  </data>
-  <data name="CCSaveButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>344, 379</value>
   </data>
   <data name="CCSaveButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 63</value>
+    <value>117, 38</value>
   </data>
   <data name="CCSaveButton.Text" xml:space="preserve">
     <value>Сохранить</value>
@@ -141,14 +120,8 @@
   <data name="CCChoiceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="CCChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 57</value>
-  </data>
-  <data name="CCChoiceLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
   <data name="CCChoiceLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>376, 32</value>
+    <value>244, 21</value>
   </data>
   <data name="CCChoiceLabel.Text" xml:space="preserve">
     <value>Выберите категорию продуктов:</value>
@@ -159,14 +132,8 @@
   <data name="CompatibleCategoriesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="CompatibleCategoriesLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 205</value>
-  </data>
-  <data name="CompatibleCategoriesLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
   <data name="CompatibleCategoriesLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>515, 39</value>
+    <value>361, 24</value>
   </data>
   <data name="CompatibleCategoriesLabel.Text" xml:space="preserve">
     <value>Категории, совместимые с выбранной</value>
@@ -175,16 +142,10 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="CCCompatibleCategoriesListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="CCCompatibleCategoriesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 250</value>
-  </data>
-  <data name="CCCompatibleCategoriesListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>21</value>
   </data>
   <data name="CCCompatibleCategoriesListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>514, 292</value>
+    <value>361, 172</value>
   </data>
   <data name="CCCategoriesLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
@@ -192,14 +153,8 @@
   <data name="CCCategoriesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="CCCategoriesLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 205</value>
-  </data>
-  <data name="CCCategoriesLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
-  </data>
   <data name="CCCategoriesLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>515, 39</value>
+    <value>361, 24</value>
   </data>
   <data name="CCCategoriesLabel.Text" xml:space="preserve">
     <value>Множество категорий</value>
@@ -208,22 +163,10 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="CCCategoriesListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="CCCategoriesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 250</value>
-  </data>
-  <data name="CCCategoriesListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+    <value>21</value>
   </data>
   <data name="CCCategoriesListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>514, 292</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>10, 25</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1143, 750</value>
+    <value>361, 172</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2986,8 +2929,5 @@
         AAAAoQAAALMAAAC2AAAAMwAAAAAAAAAAAAAAAAAAAADwjwAA8I8AAPAvAADwLwAA8C8AAPCPAADwjwAA
         8I8AAPCHAADgJwAA5jcAAOA3AADgJwAA4CcAAOAHAADgDwAA
 </value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
   </data>
 </root>

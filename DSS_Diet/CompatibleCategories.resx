@@ -57,28 +57,92 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;CCSaveButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;FDProductsComboBox.Name" xml:space="preserve">
+    <value>FDProductsComboBox</value>
   </data>
-  <data name="&gt;&gt;CompatibleCategoriesLabel.Name" xml:space="preserve">
-    <value>CompatibleCategoriesLabel</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Совместимые категории</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="CCCategoriesComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 73</value>
+  </data>
+  <data name="&gt;&gt;CCUnselectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FDProductsComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CCUnselectButton.Name" xml:space="preserve">
+    <value>CCUnselectButton</value>
+  </data>
+  <data name="CCUnselectButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 238</value>
   </data>
   <data name="&gt;&gt;CCCompatibleCategoriesListBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;CompatibleCategoriesLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;CCCategoriesComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CCChoiceLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;CCSaveButton.Name" xml:space="preserve">
-    <value>CCSaveButton</value>
-  </data>
-  <data name="&gt;&gt;CCCategoriesComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CCChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 34</value>
   </data>
   <data name="&gt;&gt;CCSelectButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="&gt;&gt;CCCategoriesComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CompatibleCategoriesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="FDProductsComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CCSelectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CCSaveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CCSelectButton.Name" xml:space="preserve">
+    <value>CCSelectButton</value>
+  </data>
+  <data name="&gt;&gt;CCUnselectButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CCChoiceLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;CCSaveButton.Name" xml:space="preserve">
+    <value>CCSaveButton</value>
+  </data>
+  <data name="&gt;&gt;CCCategoriesLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;CompatibleCategoriesLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CCUnselectButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CCCategoriesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CCCategoriesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CCChoiceLabel.Name" xml:space="preserve">
+    <value>CCChoiceLabel</value>
+  </data>
+  <data name="&gt;&gt;CCCategoriesComboBox.Name" xml:space="preserve">
+    <value>CCCategoriesComboBox</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAkAAAAAAAEAIAD6DQAAlgAAAICAAAABACAAKAgBAJAOAABgYAAAAQAgAKiUAAC4FgEASEgAAAEA
@@ -2841,43 +2905,108 @@
         8I8AAPCHAADgJwAA5jcAAOA3AADgJwAA4CcAAOAHAADgDwAA
 </value>
   </data>
-  <data name="CCSaveButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 379</value>
+  <data name="&gt;&gt;CompatibleCategoriesLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;CCSelectButton.Name" xml:space="preserve">
-    <value>CCSelectButton</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="&gt;&gt;CCCategoriesLabel.Name" xml:space="preserve">
+    <value>CCCategoriesLabel</value>
+  </data>
+  <data name="&gt;&gt;CCCompatibleCategoriesListBox.Name" xml:space="preserve">
+    <value>CCCompatibleCategoriesListBox</value>
+  </data>
+  <data name="&gt;&gt;CCSelectButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CCSaveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;CCCompatibleCategoriesListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CompatibleCategoriesLabel.Name" xml:space="preserve">
+    <value>CompatibleCategoriesLabel</value>
+  </data>
+  <data name="CCSelectButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 190</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CompatibleCategories</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CCSaveButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CCCategoriesListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CCCategoriesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CCChoiceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FDProductsComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 73</value>
+  </data>
+  <data name="&gt;&gt;CompatibleCategoriesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
-  <data name="&gt;&gt;CCSelectButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
   </data>
-  <data name="&gt;&gt;CCChoiceLabel.ZOrder" xml:space="preserve">
+  <data name="CCSelectButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CCCompatibleCategoriesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 150</value>
+  </data>
+  <data name="&gt;&gt;FDProductsComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CCCompatibleCategoriesListBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;CCCategoriesListBox.Name" xml:space="preserve">
+    <value>CCCategoriesListBox</value>
+  </data>
+  <data name="&gt;&gt;FDProductsComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CompatibleCategoriesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 123</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="CCCompatibleCategoriesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="CCSaveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 379</value>
+  </data>
+  <data name="&gt;&gt;CCCategoriesLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="CCCategoriesComboBox.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;CCUnselectButton.Parent" xml:space="preserve">
+  <data name="CCCategoriesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 150</value>
+  </data>
+  <data name="&gt;&gt;CCCategoriesListBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;CCUnselectButton.Name" xml:space="preserve">
-    <value>CCUnselectButton</value>
-  </data>
-  <data name="CCCategoriesComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 73</value>
-  </data>
-  <data name="CCSelectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 190</value>
-  </data>
-  <data name="CCSaveButton.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;CCChoiceLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CCChoiceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="CCCategoriesLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 123</value>
@@ -2885,148 +3014,19 @@
   <data name="&gt;&gt;CCSaveButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;FDProductsComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CCUnselectButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="CCSelectButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="CCChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 34</value>
-  </data>
-  <data name="&gt;&gt;CCCategoriesLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;CCCategoriesComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="CompatibleCategoriesLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;CompatibleCategoriesLabel.ZOrder" xml:space="preserve">
+  <data name="CCUnselectButton.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="&gt;&gt;CCCompatibleCategoriesListBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="FDProductsComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="FDProductsComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 73</value>
-  </data>
-  <data name="&gt;&gt;CCSaveButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Совместимые категории</value>
-  </data>
-  <data name="&gt;&gt;CCChoiceLabel.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;CCCategoriesListBox.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="CCCompatibleCategoriesListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;CCCategoriesComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="CCUnselectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 238</value>
-  </data>
-  <data name="&gt;&gt;CCChoiceLabel.Name" xml:space="preserve">
-    <value>CCChoiceLabel</value>
-  </data>
-  <data name="&gt;&gt;CCCategoriesListBox.Name" xml:space="preserve">
-    <value>CCCategoriesListBox</value>
-  </data>
-  <data name="&gt;&gt;CompatibleCategoriesLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CCCompatibleCategoriesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>427, 150</value>
-  </data>
-  <data name="&gt;&gt;FDProductsComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CCCompatibleCategoriesListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CCCategoriesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 150</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="&gt;&gt;CCCategoriesListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CCCategoriesComboBox.Name" xml:space="preserve">
-    <value>CCCategoriesComboBox</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CCCategoriesLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CCCategoriesLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="CCUnselectButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;CCCategoriesLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="CCChoiceLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CCCompatibleCategoriesListBox.Name" xml:space="preserve">
-    <value>CCCompatibleCategoriesListBox</value>
-  </data>
-  <data name="&gt;&gt;CCCategoriesListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CCCategoriesComboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;CCSelectButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FDProductsComboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="CompatibleCategoriesLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>427, 123</value>
-  </data>
-  <data name="&gt;&gt;CCCategoriesLabel.Name" xml:space="preserve">
-    <value>CCCategoriesLabel</value>
-  </data>
-  <data name="CCCategoriesListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;CCUnselectButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>CompatibleCategories</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="&gt;&gt;FDProductsComboBox.Name" xml:space="preserve">
-    <value>FDProductsComboBox</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>ru</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>

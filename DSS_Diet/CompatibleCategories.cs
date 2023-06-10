@@ -23,27 +23,27 @@ namespace DietProject
         public CompatibleCategories()
         {
             InitializeComponent();
-            adapter = new SqlDataAdapter("SELECT * FROM Categories", Program.sqlConnection);
+            adapter = new SqlDataAdapter("SELECT * FROM [КАТЕГОРИЯ_ПРОДУКТОВ]", Program.sqlConnection);
             adapter.Fill(CategoriesTable);
             CategoriesList = CategoriesTable.AsEnumerable().Select(n => n.Field<string>(1)).ToList();
-            adapter = new SqlDataAdapter("SELECT CategoryId2 FROM CompatibleCategories", Program.sqlConnection);
+            adapter = new SqlDataAdapter("SELECT [ID_совместимой_категории_продуктов] FROM [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ]", Program.sqlConnection);
             adapter.Fill(CategoriesIdTableCC);
             CategoriesIdCCList = CategoriesIdTableCC.AsEnumerable().Select(n => n.Field<int>(0)).ToList();
             Program.sqlConnection.Open();
             foreach (var categoryIdCC in CategoriesIdCCList)
             {
-                SqlCommand checkIfExists2 = new SqlCommand("SELECT COUNT(*) FROM Categories WHERE Id = " + categoryIdCC + ";", Program.sqlConnection);
+                SqlCommand checkIfExists2 = new SqlCommand("SELECT COUNT(*) FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [ID_категории_продуктов] = " + categoryIdCC + ";", Program.sqlConnection);
                 int resIfExists = (int)checkIfExists2.ExecuteScalar();
                 if (resIfExists == 0)
                 {
-                    SqlCommand deleteOld = new SqlCommand("DELETE FROM CompatibleCategories WHERE CategoryId2 = " + categoryIdCC + ";", Program.sqlConnection);
+                    SqlCommand deleteOld = new SqlCommand("DELETE FROM [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ] WHERE [ID_совместимой_категории_продуктов] = " + categoryIdCC + ";", Program.sqlConnection);
                     deleteOld.ExecuteNonQuery();
                 }
             }
             Program.sqlConnection.Close();
             CCCategoriesComboBox.DataSource = CategoriesTable;
-            CCCategoriesComboBox.DisplayMember = "Name";
-            CCCategoriesComboBox.ValueMember = "Id";
+            CCCategoriesComboBox.DisplayMember = "Название_категории_продуктов";
+            CCCategoriesComboBox.ValueMember = "ID_категории_продуктов";
         }
 
         private void CCCategoriesComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -56,11 +56,11 @@ namespace DietProject
                 int selectedCategoryId = (int)item.Row[0];
                 leftList = new List<string>(CategoriesList);
                 SelectedCategoriesTable = new DataTable();
-                adapter = new SqlDataAdapter("SELECT Name FROM Categories JOIN CompatibleCategories ON Categories.Id = CompatibleCategories.CategoryId2 WHERE CategoryId1 = " + selectedCategoryId + ";", Program.sqlConnection);
+                adapter = new SqlDataAdapter("SELECT [Название_категории_продуктов] FROM [КАТЕГОРИЯ_ПРОДУКТОВ] JOIN [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ] ON [КАТЕГОРИЯ_ПРОДУКТОВ].[ID_категории_продуктов] = [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ].[ID_совместимой_категории_продуктов] WHERE [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ].[ID_категории_продуктов] = " + selectedCategoryId + ";", Program.sqlConnection);
                 adapter.Fill(SelectedCategoriesTable);
                 rightList = SelectedCategoriesTable.AsEnumerable().Select(n => n.Field<string>(0)).ToList();
                 Category1Table = new DataTable();
-                adapter = new SqlDataAdapter("SELECT Name FROM Categories WHERE Id = " + selectedCategoryId + ";", Program.sqlConnection);
+                adapter = new SqlDataAdapter("SELECT [Название_категории_продуктов] FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [ID_категории_продуктов] = " + selectedCategoryId + ";", Program.sqlConnection);
                 adapter.Fill(Category1Table);
                 Category1List = Category1Table.AsEnumerable().Select(n => n.Field<string>(0)).ToList();
                 leftList = leftList.Except(rightList).ToList();
@@ -103,17 +103,17 @@ namespace DietProject
                 Program.sqlConnection.Open();
                 DataRowView item = (DataRowView)CCCategoriesComboBox.SelectedItem;
                 int selectedCategoryId = (int)item.Row[0];
-                SqlCommand deleteOldRecords1 = new SqlCommand("DELETE FROM CompatibleCategories WHERE CategoryId1 = " + selectedCategoryId + ";", Program.sqlConnection);
+                SqlCommand deleteOldRecords1 = new SqlCommand("DELETE FROM [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ] WHERE [ID_категории_продуктов] = " + selectedCategoryId + ";", Program.sqlConnection);
                 deleteOldRecords1.ExecuteNonQuery();
-                SqlCommand deleteOldRecords2 = new SqlCommand("DELETE FROM CompatibleCategories WHERE CategoryId2 = " + selectedCategoryId + ";", Program.sqlConnection);
+                SqlCommand deleteOldRecords2 = new SqlCommand("DELETE FROM [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ] WHERE [ID_совместимой_категории_продуктов] = " + selectedCategoryId + ";", Program.sqlConnection);
                 deleteOldRecords2.ExecuteNonQuery();
                 foreach (var itemToAdd in CCCompatibleCategoriesListBox.Items)
                 {
-                    SqlCommand getCatId = new SqlCommand("SELECT Id FROM Categories WHERE Name = N'" + itemToAdd + "';", Program.sqlConnection);
+                    SqlCommand getCatId = new SqlCommand("SELECT [ID_категории_продуктов] FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [Название_категории_продуктов] = N'" + itemToAdd + "';", Program.sqlConnection);
                     int catId = (int)getCatId.ExecuteScalar();
-                    SqlCommand insertNewRecord1 = new SqlCommand("INSERT INTO CompatibleCategories VALUES (" + selectedCategoryId + ", " + catId + ");", Program.sqlConnection);
+                    SqlCommand insertNewRecord1 = new SqlCommand("INSERT INTO [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ] VALUES (" + selectedCategoryId + ", " + catId + ");", Program.sqlConnection);
                     insertNewRecord1.ExecuteNonQuery();
-                    SqlCommand insertNewRecord2 = new SqlCommand("INSERT INTO CompatibleCategories VALUES (" + catId + ", " + selectedCategoryId + ");", Program.sqlConnection);
+                    SqlCommand insertNewRecord2 = new SqlCommand("INSERT INTO [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ] VALUES (" + catId + ", " + selectedCategoryId + ");", Program.sqlConnection);
                     insertNewRecord2.ExecuteNonQuery();
                 }
                 int selectedIndex = CCCategoriesComboBox.SelectedIndex;
