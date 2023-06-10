@@ -57,44 +57,71 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PAddButton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Названия продуктов</value>
-  </data>
-  <data name="PNProductsNamesListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
+  <data name="&gt;&gt;PProductsListBox.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;ProductsNamesLabel.Name" xml:space="preserve">
     <value>ProductsNamesLabel</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="waterMarkTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 366</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Products</value>
   </data>
-  <data name="PDeleteButton.TabIndex" type="System.Int32, mscorlib">
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PNAddButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;PNProductsNamesListBox.Name" xml:space="preserve">
-    <value>PNProductsNamesListBox</value>
+  <data name="&gt;&gt;PNProductsNamesListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PNDeleteButton.ZOrder" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 48</value>
+  </data>
+  <data name="&gt;&gt;PDeleteButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PNProductsNamesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 73</value>
+  </data>
+  <data name="&gt;&gt;ProductNameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ProductNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PNAddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PDeleteButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;PNAddButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;PProductsListBox.Name" xml:space="preserve">
+    <value>PProductsListBox</value>
+  </data>
+  <data name="KLSectionsListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ProductsNamesLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;PProductsListBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="ProductsNamesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;PProductsListBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ProductsLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PNProductsNamesListBox.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;PNDeleteButton.Name" xml:space="preserve">
+    <value>PNDeleteButton</value>
+  </data>
+  <data name="waterMarkTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2858,131 +2885,104 @@
         8I8AAPCHAADgJwAA5jcAAOA3AADgJwAA4CcAAOAHAADgDwAA
 </value>
   </data>
-  <data name="&gt;&gt;PDeleteButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ProductTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;PAddButton.Name" xml:space="preserve">
-    <value>PAddButton</value>
-  </data>
-  <data name="ProductNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 366</value>
-  </data>
-  <data name="&gt;&gt;waterMarkTextBox1.Name" xml:space="preserve">
-    <value>waterMarkTextBox1</value>
-  </data>
-  <data name="PNProductsNamesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 73</value>
-  </data>
-  <data name="&gt;&gt;PDeleteButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ProductNameTextBox.Type" xml:space="preserve">
-    <value>DietProject.WaterMarkTextBox, DietProject, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ProductTextBox.Name" xml:space="preserve">
-    <value>ProductTextBox</value>
-  </data>
-  <data name="&gt;&gt;KLSectionsListBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="&gt;&gt;PDeleteButton.Name" xml:space="preserve">
-    <value>PDeleteButton</value>
-  </data>
-  <data name="&gt;&gt;KLSectionsListBox.Name" xml:space="preserve">
-    <value>KLSectionsListBox</value>
-  </data>
-  <data name="&gt;&gt;ProductsLabel.Name" xml:space="preserve">
-    <value>ProductsLabel</value>
-  </data>
-  <data name="&gt;&gt;PNProductsNamesListBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;waterMarkTextBox1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="PDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>591, 363</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;KLSectionsListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Products</value>
-  </data>
-  <data name="&gt;&gt;PDeleteButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PProductsListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;ProductNameTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ProductNameTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;PAddButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ProductsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ProductsNamesLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ProductsLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ProductsNamesLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 48</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="waterMarkTextBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;PNAddButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="PNDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 363</value>
-  </data>
-  <data name="PNAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 363</value>
-  </data>
-  <data name="&gt;&gt;ProductsNamesLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PNProductsNamesListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;ProductTextBox.Type" xml:space="preserve">
     <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="KLSectionsListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="ProductTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;PProductsListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Названия продуктов</value>
+  </data>
+  <data name="&gt;&gt;PNDeleteButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;ProductsLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ProductsNamesLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="PAddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 363</value>
+  </data>
+  <data name="&gt;&gt;PNAddButton.Name" xml:space="preserve">
+    <value>PNAddButton</value>
+  </data>
+  <data name="&gt;&gt;waterMarkTextBox1.Name" xml:space="preserve">
+    <value>waterMarkTextBox1</value>
+  </data>
+  <data name="ProductsLabel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="ProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 48</value>
+  <data name="PNDeleteButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="PProductsListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PNDeleteButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PDeleteButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;ProductNameTextBox.Type" xml:space="preserve">
+    <value>DietProject.WaterMarkTextBox, DietProject, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;waterMarkTextBox1.Type" xml:space="preserve">
+    <value>DietProject.WaterMarkTextBox, DietProject, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;PNAddButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PAddButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PAddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;waterMarkTextBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="KLSectionsListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 73</value>
+  </data>
+  <data name="&gt;&gt;PNAddButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PProductsListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 73</value>
+  </data>
+  <data name="PNProductsNamesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;KLSectionsListBox.Name" xml:space="preserve">
+    <value>KLSectionsListBox</value>
+  </data>
+  <data name="&gt;&gt;ProductsNamesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KLSectionsListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProductTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ProductsLabel.Name" xml:space="preserve">
+    <value>ProductsLabel</value>
+  </data>
+  <data name="&gt;&gt;PNProductsNamesListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="&gt;&gt;ProductTextBox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2990,74 +2990,74 @@
   <data name="&gt;&gt;ProductNameTextBox.Name" xml:space="preserve">
     <value>ProductNameTextBox</value>
   </data>
-  <data name="&gt;&gt;PNAddButton.Name" xml:space="preserve">
-    <value>PNAddButton</value>
-  </data>
-  <data name="&gt;&gt;PAddButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="PNAddButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="PProductsListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 73</value>
-  </data>
-  <data name="&gt;&gt;ProductsNamesLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;waterMarkTextBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="PAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 363</value>
-  </data>
-  <data name="&gt;&gt;PNDeleteButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;PNDeleteButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PAddButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="KLSectionsListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 73</value>
-  </data>
-  <data name="ProductTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 372</value>
-  </data>
-  <data name="PDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 363</value>
-  </data>
-  <data name="&gt;&gt;PNAddButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;waterMarkTextBox1.Type" xml:space="preserve">
-    <value>DietProject.WaterMarkTextBox, DietProject, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;PNProductsNamesListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ProductsLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="ProductTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ProductNameTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="PNDeleteButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;KLSectionsListBox.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;KLSectionsListBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;PProductsListBox.Name" xml:space="preserve">
-    <value>PProductsListBox</value>
+  <data name="&gt;&gt;ProductNameTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;PNDeleteButton.Name" xml:space="preserve">
-    <value>PNDeleteButton</value>
+  <data name="&gt;&gt;PNProductsNamesListBox.Name" xml:space="preserve">
+    <value>PNProductsNamesListBox</value>
+  </data>
+  <data name="waterMarkTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 366</value>
+  </data>
+  <data name="&gt;&gt;PDeleteButton.Name" xml:space="preserve">
+    <value>PDeleteButton</value>
+  </data>
+  <data name="ProductsNamesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 48</value>
+  </data>
+  <data name="&gt;&gt;waterMarkTextBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PDeleteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PAddButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="ProductNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 366</value>
+  </data>
+  <data name="&gt;&gt;PProductsListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ProductsNamesLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PAddButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ProductTextBox.Name" xml:space="preserve">
+    <value>ProductTextBox</value>
+  </data>
+  <data name="&gt;&gt;PAddButton.Name" xml:space="preserve">
+    <value>PAddButton</value>
+  </data>
+  <data name="ProductTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 372</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="&gt;&gt;ProductsLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PNAddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 363</value>
+  </data>
+  <data name="PNDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>591, 363</value>
   </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>ru</value>

@@ -93,7 +93,7 @@ namespace DietProject
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Products";
-            this.Load += new System.EventHandler(this.ProductsNames_Load);
+            this.Load += new System.EventHandler(this.Products_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

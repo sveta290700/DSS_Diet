@@ -81,7 +81,7 @@ namespace DietProject
             }
         }
 
-        private void ProductsNames_Load(object sender, EventArgs e)
+        private void Products_Load(object sender, EventArgs e)
         {
             adapter = new SqlDataAdapter("SELECT * FROM ProductsNames", Program.sqlConnection);
             adapter.Fill(ProductsTable);
