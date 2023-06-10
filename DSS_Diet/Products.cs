@@ -8,14 +8,14 @@ namespace DietProject
     public partial class Products : Form
     {
         private SqlDataAdapter adapter;
-        private DataTable ProductsNamesTable = new DataTable();
+        private DataTable ProductsTable = new DataTable();
 
         public Products()
         {
             InitializeComponent();
         }
 
-        private void PNAddButton_Click(object sender, EventArgs e)
+        private void PAddButton_Click(object sender, EventArgs e)
         {
             if (ProductTextBox.Text == "")
             {
@@ -34,11 +34,11 @@ namespace DietProject
                     SqlCommand addProductName = new SqlCommand("INSERT INTO ProductsNames VALUES (N'" + ProductTextBox.Text.ToString() + "');", Program.sqlConnection);
                     addProductName.ExecuteNonQuery();
                     ProductTextBox.Clear();
-                    ProductsNamesTable = new DataTable();
-                    PProductsListBox.DataSource = ProductsNamesTable;
+                    ProductsTable = new DataTable();
+                    PProductsListBox.DataSource = ProductsTable;
                     adapter = new SqlDataAdapter("SELECT * FROM ProductsNames", Program.sqlConnection);
-                    adapter.Fill(ProductsNamesTable);
-                    PProductsListBox.DataSource = ProductsNamesTable;
+                    adapter.Fill(ProductsTable);
+                    PProductsListBox.DataSource = ProductsTable;
                     PProductsListBox.DisplayMember = "Name";
                     PProductsListBox.ValueMember = "Id";
                 }
@@ -53,7 +53,7 @@ namespace DietProject
             }
         }
 
-        private void PNDeleteButton_Click(object sender, EventArgs e)
+        private void PDeleteButton_Click(object sender, EventArgs e)
         {
             int choice = PProductsListBox.SelectedIndex;
             if (choice == -1)
@@ -70,11 +70,11 @@ namespace DietProject
                 string nameToDelete = item.Row[1].ToString();
                 SqlCommand deleteProductName = new SqlCommand("DELETE FROM ProductsNames WHERE Name = N'" + nameToDelete + "';", Program.sqlConnection);
                 deleteProductName.ExecuteNonQuery();
-                ProductsNamesTable = new DataTable();
-                PProductsListBox.DataSource = ProductsNamesTable;
+                ProductsTable = new DataTable();
+                PProductsListBox.DataSource = ProductsTable;
                 adapter = new SqlDataAdapter("SELECT * FROM ProductsNames", Program.sqlConnection);
-                adapter.Fill(ProductsNamesTable);
-                PProductsListBox.DataSource = ProductsNamesTable;
+                adapter.Fill(ProductsTable);
+                PProductsListBox.DataSource = ProductsTable;
                 PProductsListBox.DisplayMember = "Name";
                 PProductsListBox.ValueMember = "Id";
                 Program.sqlConnection.Close();
@@ -84,8 +84,8 @@ namespace DietProject
         private void ProductsNames_Load(object sender, EventArgs e)
         {
             adapter = new SqlDataAdapter("SELECT * FROM ProductsNames", Program.sqlConnection);
-            adapter.Fill(ProductsNamesTable);
-            PProductsListBox.DataSource = ProductsNamesTable;
+            adapter.Fill(ProductsTable);
+            PProductsListBox.DataSource = ProductsTable;
             PProductsListBox.DisplayMember = "Name";
             PProductsListBox.ValueMember = "Id";
         }

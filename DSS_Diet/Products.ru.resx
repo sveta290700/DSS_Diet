@@ -65,15 +65,8 @@
   <data name="ProductsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="ProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 48</value>
-  </data>
   <data name="ProductsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>405, 24</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ProductsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="ProductsLabel.Text" xml:space="preserve">
     <value>Продукты</value>
@@ -81,17 +74,12 @@
   <data name="PProductsListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PProductsListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="PProductsListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 73</value>
-  </data>
   <data name="PProductsListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>405, 214</value>
-  </data>
-  <data name="PProductsListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="PAddButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -102,14 +90,8 @@
   <data name="PAddButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="PAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 363</value>
-  </data>
   <data name="PAddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
-  </data>
-  <data name="PAddButton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="PAddButton.Text" xml:space="preserve">
     <value>Добавить</value>
@@ -123,14 +105,8 @@
   <data name="PDeleteButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="PDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>591, 363</value>
-  </data>
   <data name="PDeleteButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
-  </data>
-  <data name="PDeleteButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
   </data>
   <data name="PDeleteButton.Text" xml:space="preserve">
     <value>Удалить</value>
@@ -138,14 +114,8 @@
   <data name="ProductTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="ProductTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 372</value>
-  </data>
   <data name="ProductTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>245, 29</value>
-  </data>
-  <data name="ProductTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -59,7 +59,7 @@ namespace DietProject
             this.PAddButton.Name = "PAddButton";
             this.PAddButton.TabStop = false;
             this.PAddButton.UseVisualStyleBackColor = false;
-            this.PAddButton.Click += new System.EventHandler(this.PNAddButton_Click);
+            this.PAddButton.Click += new System.EventHandler(this.PAddButton_Click);
             // 
             // PDeleteButton
             // 
@@ -69,7 +69,7 @@ namespace DietProject
             this.PDeleteButton.Name = "PDeleteButton";
             this.PDeleteButton.TabStop = false;
             this.PDeleteButton.UseVisualStyleBackColor = false;
-            this.PDeleteButton.Click += new System.EventHandler(this.PNDeleteButton_Click);
+            this.PDeleteButton.Click += new System.EventHandler(this.PDeleteButton_Click);
             // 
             // ProductTextBox
             // 
