@@ -35,6 +35,7 @@ namespace DietProject
             this.CAddButton = new System.Windows.Forms.Button();
             this.CategoriesLabel = new System.Windows.Forms.Label();
             this.CCategoriesListBox = new System.Windows.Forms.ListBox();
+            this.CEditButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CategoryTextBox
@@ -79,11 +80,22 @@ namespace DietProject
             this.CCategoriesListBox.Name = "CCategoriesListBox";
             this.CCategoriesListBox.TabStop = false;
             // 
+            // CEditButton
+            // 
+            resources.ApplyResources(this.CEditButton, "CEditButton");
+            this.CEditButton.BackColor = System.Drawing.Color.PaleGreen;
+            this.CEditButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.CEditButton.Name = "CEditButton";
+            this.CEditButton.TabStop = false;
+            this.CEditButton.UseVisualStyleBackColor = false;
+            this.CEditButton.Click += new System.EventHandler(this.CEditButton_Click);
+            // 
             // Categories
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.CEditButton);
             this.Controls.Add(this.CategoryTextBox);
             this.Controls.Add(this.CDeleteButton);
             this.Controls.Add(this.CAddButton);
@@ -106,5 +118,6 @@ namespace DietProject
         private System.Windows.Forms.Button CAddButton;
         private System.Windows.Forms.Label CategoriesLabel;
         private System.Windows.Forms.ListBox CCategoriesListBox;
+        private System.Windows.Forms.Button CEditButton;
     }
 }
