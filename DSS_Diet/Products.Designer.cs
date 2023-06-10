@@ -35,6 +35,7 @@ namespace DietProject
             this.PAddButton = new System.Windows.Forms.Button();
             this.PDeleteButton = new System.Windows.Forms.Button();
             this.ProductTextBox = new DietProject.WaterMarkTextBox();
+            this.CEditButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ProductsLabel
@@ -79,11 +80,22 @@ namespace DietProject
             this.ProductTextBox.WaterMarkColor = System.Drawing.Color.Gray;
             this.ProductTextBox.WaterMarkText = "Введите название продукта";
             // 
+            // CEditButton
+            // 
+            resources.ApplyResources(this.CEditButton, "CEditButton");
+            this.CEditButton.BackColor = System.Drawing.Color.PaleGreen;
+            this.CEditButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.CEditButton.Name = "CEditButton";
+            this.CEditButton.TabStop = false;
+            this.CEditButton.UseVisualStyleBackColor = false;
+            this.CEditButton.Click += new System.EventHandler(this.CEditButton_Click);
+            // 
             // Products
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.CEditButton);
             this.Controls.Add(this.ProductTextBox);
             this.Controls.Add(this.PDeleteButton);
             this.Controls.Add(this.PAddButton);
@@ -106,5 +118,6 @@ namespace DietProject
         private System.Windows.Forms.Button PAddButton;
         private System.Windows.Forms.Button PDeleteButton;
         private WaterMarkTextBox ProductTextBox;
+        private System.Windows.Forms.Button CEditButton;
     }
 }

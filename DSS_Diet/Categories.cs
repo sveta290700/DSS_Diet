@@ -41,6 +41,7 @@ namespace DietProject
                     CCategoriesListBox.DataSource = CategoriesTable;
                     CCategoriesListBox.DisplayMember = "Название_категории_продуктов";
                     CCategoriesListBox.ValueMember = "ID_категории_продуктов";
+                    CCategoriesListBox.SelectedIndex = CCategoriesListBox.Items.Count - 1;
                 }
                 else
                 {

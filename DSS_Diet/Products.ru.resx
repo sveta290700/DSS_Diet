@@ -90,6 +90,9 @@
   <data name="PAddButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PAddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 362</value>
+  </data>
   <data name="PAddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
   </data>
@@ -105,6 +108,9 @@
   <data name="PDeleteButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 362</value>
+  </data>
   <data name="PDeleteButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
   </data>
@@ -114,8 +120,32 @@
   <data name="ProductTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
+  <data name="ProductTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 371</value>
+  </data>
   <data name="ProductTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>245, 29</value>
+  </data>
+  <data name="CEditButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="CEditButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="CEditButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CEditButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>528, 362</value>
+  </data>
+  <data name="CEditButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 38</value>
+  </data>
+  <data name="CEditButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="CEditButton.Text" xml:space="preserve">
+    <value>Изменить</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
