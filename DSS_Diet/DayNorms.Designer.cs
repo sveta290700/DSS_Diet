@@ -31,7 +31,7 @@ namespace DietProject
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DayNorms));
             this.DNPatientParametersSetComboBox = new System.Windows.Forms.ComboBox();
-            this.DNAddButton = new System.Windows.Forms.Button();
+            this.DNSaveButton = new System.Windows.Forms.Button();
             this.DNPatientParametersSetChoiceLabel = new System.Windows.Forms.Label();
             this.DNEnergyLabel = new System.Windows.Forms.Label();
             this.DNEnergyNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -66,17 +66,17 @@ namespace DietProject
             this.DNPatientParametersSetComboBox.FormattingEnabled = true;
             this.DNPatientParametersSetComboBox.Name = "DNPatientParametersSetComboBox";
             this.DNPatientParametersSetComboBox.TabStop = false;
-            this.DNPatientParametersSetComboBox.SelectedIndexChanged += new System.EventHandler(this.DNSubstanceComboBox_SelectedIndexChanged);
+            this.DNPatientParametersSetComboBox.SelectedIndexChanged += new System.EventHandler(this.DNPatientParametersSetComboBox_SelectedIndexChanged);
             // 
-            // DNAddButton
+            // DNSaveButton
             // 
-            resources.ApplyResources(this.DNAddButton, "DNAddButton");
-            this.DNAddButton.BackColor = System.Drawing.Color.PaleGreen;
-            this.DNAddButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.DNAddButton.Name = "DNAddButton";
-            this.DNAddButton.TabStop = false;
-            this.DNAddButton.UseVisualStyleBackColor = false;
-            this.DNAddButton.Click += new System.EventHandler(this.DNAddButton_Click);
+            resources.ApplyResources(this.DNSaveButton, "DNSaveButton");
+            this.DNSaveButton.BackColor = System.Drawing.Color.PaleGreen;
+            this.DNSaveButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.DNSaveButton.Name = "DNSaveButton";
+            this.DNSaveButton.TabStop = false;
+            this.DNSaveButton.UseVisualStyleBackColor = false;
+            this.DNSaveButton.Click += new System.EventHandler(this.DNSaveButton_Click);
             // 
             // DNPatientParametersSetChoiceLabel
             // 
@@ -92,7 +92,7 @@ namespace DietProject
             // 
             resources.ApplyResources(this.DNEnergyNumericUpDown, "DNEnergyNumericUpDown");
             this.DNEnergyNumericUpDown.Maximum = new decimal(new int[] {
-            999,
+            9999,
             0,
             0,
             0});
@@ -114,7 +114,7 @@ namespace DietProject
             0,
             196608});
             this.DNCellNumericUpDown.Maximum = new decimal(new int[] {
-            50,
+            999,
             0,
             0,
             0});
@@ -136,7 +136,7 @@ namespace DietProject
             0,
             196608});
             this.DNVitCNumericUpDown.Maximum = new decimal(new int[] {
-            700,
+            999,
             0,
             0,
             0});
@@ -158,7 +158,7 @@ namespace DietProject
             0,
             196608});
             this.DNVitB1NumericUpDown.Maximum = new decimal(new int[] {
-            2,
+            999,
             0,
             0,
             0});
@@ -180,7 +180,7 @@ namespace DietProject
             0,
             196608});
             this.DNVitANumericUpDown.Maximum = new decimal(new int[] {
-            9999,
+            999,
             0,
             0,
             0});
@@ -201,6 +201,11 @@ namespace DietProject
             0,
             0,
             196608});
+            this.DNCarhydNumericUpDown.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.DNCarhydNumericUpDown.Name = "DNCarhydNumericUpDown";
             this.DNCarhydNumericUpDown.TabStop = false;
             // 
@@ -218,6 +223,11 @@ namespace DietProject
             0,
             0,
             196608});
+            this.DNFatsNumericUpDown.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.DNFatsNumericUpDown.Name = "DNFatsNumericUpDown";
             this.DNFatsNumericUpDown.TabStop = false;
             // 
@@ -236,7 +246,7 @@ namespace DietProject
             0,
             196608});
             this.DNProteinsNumericUpDown.Maximum = new decimal(new int[] {
-            50,
+            999,
             0,
             0,
             0});
@@ -265,7 +275,7 @@ namespace DietProject
             this.Controls.Add(this.DNProteinsLabel);
             this.Controls.Add(this.DNProteinsNumericUpDown);
             this.Controls.Add(this.DNPatientParametersSetComboBox);
-            this.Controls.Add(this.DNAddButton);
+            this.Controls.Add(this.DNSaveButton);
             this.Controls.Add(this.DNPatientParametersSetChoiceLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -286,7 +296,7 @@ namespace DietProject
 
         #endregion
         private System.Windows.Forms.ComboBox DNPatientParametersSetComboBox;
-        private System.Windows.Forms.Button DNAddButton;
+        private System.Windows.Forms.Button DNSaveButton;
         private System.Windows.Forms.Label DNPatientParametersSetChoiceLabel;
         private System.Windows.Forms.Label DNEnergyLabel;
         private System.Windows.Forms.NumericUpDown DNEnergyNumericUpDown;

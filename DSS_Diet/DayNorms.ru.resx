@@ -59,28 +59,25 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="DNPatientParametersSetComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 72</value>
+    <value>95, 77</value>
   </data>
   <data name="DNPatientParametersSetComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>595, 23</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DNAddButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="DNSaveButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="DNAddButton.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="DNSaveButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="DNAddButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="DNSaveButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="DNAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>344, 368</value>
-  </data>
-  <data name="DNAddButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="DNSaveButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
   </data>
-  <data name="DNAddButton.Text" xml:space="preserve">
+  <data name="DNSaveButton.Text" xml:space="preserve">
     <value>Сохранить</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
@@ -94,7 +91,7 @@
     <value>NoControl</value>
   </data>
   <data name="DNPatientParametersSetChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 31</value>
+    <value>107, 36</value>
   </data>
   <data name="DNPatientParametersSetChoiceLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>571, 21</value>
@@ -111,11 +108,17 @@
   <data name="DNEnergyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DNEnergyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 294</value>
+  </data>
   <data name="DNEnergyLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 21</value>
   </data>
   <data name="DNEnergyLabel.Text" xml:space="preserve">
     <value>энергии (в ккал)</value>
+  </data>
+  <data name="DNEnergyNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 320</value>
   </data>
   <data name="DNEnergyNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
@@ -129,11 +132,17 @@
   <data name="DNCellLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DNCellLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 237</value>
+  </data>
   <data name="DNCellLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 21</value>
   </data>
   <data name="DNCellLabel.Text" xml:space="preserve">
     <value>клетчатки (в г)</value>
+  </data>
+  <data name="DNCellNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 261</value>
   </data>
   <data name="DNCellNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
@@ -147,11 +156,17 @@
   <data name="DNVitCLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DNVitCLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 237</value>
+  </data>
   <data name="DNVitCLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 21</value>
   </data>
   <data name="DNVitCLabel.Text" xml:space="preserve">
     <value>витамина C (в мг)</value>
+  </data>
+  <data name="DNVitCNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 261</value>
   </data>
   <data name="DNVitCNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
@@ -165,11 +180,17 @@
   <data name="DNVitB1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DNVitB1Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>410, 178</value>
+  </data>
   <data name="DNVitB1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 21</value>
   </data>
   <data name="DNVitB1Label.Text" xml:space="preserve">
     <value>витамина B1 (в мг)</value>
+  </data>
+  <data name="DNVitB1NumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 202</value>
   </data>
   <data name="DNVitB1NumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
@@ -183,11 +204,17 @@
   <data name="DNVitALabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DNVitALabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 178</value>
+  </data>
   <data name="DNVitALabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 21</value>
   </data>
   <data name="DNVitALabel.Text" xml:space="preserve">
     <value>витамина А (в мкг)</value>
+  </data>
+  <data name="DNVitANumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 202</value>
   </data>
   <data name="DNVitANumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
@@ -201,11 +228,17 @@
   <data name="DNCarhydLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DNCarhydLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>454, 118</value>
+  </data>
   <data name="DNCarhydLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 21</value>
   </data>
   <data name="DNCarhydLabel.Text" xml:space="preserve">
     <value>углеводов (в г)</value>
+  </data>
+  <data name="DNCarhydNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>466, 142</value>
   </data>
   <data name="DNCarhydNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
@@ -219,11 +252,17 @@
   <data name="DNFatsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DNFatsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 118</value>
+  </data>
   <data name="DNFatsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 21</value>
   </data>
   <data name="DNFatsLabel.Text" xml:space="preserve">
     <value>жиров (в г)</value>
+  </data>
+  <data name="DNFatsNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 142</value>
   </data>
   <data name="DNFatsNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
@@ -237,11 +276,17 @@
   <data name="DNProteinsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DNProteinsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 118</value>
+  </data>
   <data name="DNProteinsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 21</value>
   </data>
   <data name="DNProteinsLabel.Text" xml:space="preserve">
     <value>белков (в г)</value>
+  </data>
+  <data name="DNProteinsNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 142</value>
   </data>
   <data name="DNProteinsNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>

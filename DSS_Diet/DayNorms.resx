@@ -57,178 +57,91 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;DNFatsNumericUpDown.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DNProteinsLabel.Name" xml:space="preserve">
-    <value>DNProteinsLabel</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DNCellLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="DNSubstanceComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="DNVitCLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;DNSubstanceChoiceLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DNCellNumericUpDown.Name" xml:space="preserve">
-    <value>DNCellNumericUpDown</value>
-  </data>
-  <data name="&gt;&gt;DNCellLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;DNCarhydLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DNSizeLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;DNFatsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="DNCarhydNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>466, 137</value>
-  </data>
-  <data name="&gt;&gt;DNVitANumericUpDown.Name" xml:space="preserve">
-    <value>DNVitANumericUpDown</value>
-  </data>
-  <data name="&gt;&gt;DNPatientParametersSetChoiceLabel.Name" xml:space="preserve">
-    <value>DNPatientParametersSetChoiceLabel</value>
-  </data>
-  <data name="DNSizeLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>633, 353</value>
-  </data>
-  <data name="DNPatientParametersSetComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;DNCellLabel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;DNEnergyNumericUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DNPatientParametersSetChoiceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;DNSubstanceComboBox.Name" xml:space="preserve">
-    <value>DNSubstanceComboBox</value>
+  <data name="DNEnergyNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
   </data>
-  <data name="&gt;&gt;DNVitANumericUpDown.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="DNVitCLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
-  <data name="&gt;&gt;DNFatsNumericUpDown.Name" xml:space="preserve">
-    <value>DNFatsNumericUpDown</value>
+  <data name="&gt;&gt;DNSubstanceComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DNEnergyLabel.Name" xml:space="preserve">
-    <value>DNEnergyLabel</value>
+  <data name="&gt;&gt;DNSizeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="DNCellNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
-  <data name="DNVitCNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 256</value>
-  </data>
-  <data name="DNVitANumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 197</value>
-  </data>
-  <data name="&gt;&gt;DNVitB1Label.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="DNNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 214</value>
-  </data>
-  <data name="&gt;&gt;DNVitCNumericUpDown.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="DNVitB1NumericUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;DNEnergyLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DNCarhydNumericUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="&gt;&gt;DNVitALabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DNPatientParametersSetComboBox.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;DNNumericUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DNCarhydLabel.Name" xml:space="preserve">
-    <value>DNCarhydLabel</value>
-  </data>
-  <data name="&gt;&gt;DNVitCLabel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DNSubstanceChoiceLabel.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="DNVitALabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 173</value>
+  </data>
+  <data name="&gt;&gt;DNSaveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DNCellLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DNPatientParametersSetChoiceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DNVitCNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
   </data>
   <data name="&gt;&gt;DNFatsLabel.Name" xml:space="preserve">
     <value>DNFatsLabel</value>
   </data>
-  <data name="&gt;&gt;DNNumericUpDown.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DNPatientParametersSetComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DNFatsLabel.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DNFatsNumericUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="&gt;&gt;DNPatientParametersSetComboBox.Name" xml:space="preserve">
+    <value>DNPatientParametersSetComboBox</value>
+  </data>
+  <data name="&gt;&gt;DNVitB1Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DNCellLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;DNVitANumericUpDown.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;DNAddButton.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="DNSizeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>633, 353</value>
   </data>
   <data name="&gt;&gt;DNProteinsLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DNEnergyLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="DNVitANumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
   </data>
-  <data name="&gt;&gt;DNCellNumericUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DNCarhydLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;DNVitB1NumericUpDown.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="DNPatientParametersSetChoiceLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="DNProteinsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 113</value>
-  </data>
-  <data name="&gt;&gt;DNSizeLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DNPatientParametersSetComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 72</value>
-  </data>
-  <data name="DNNumericUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;DNVitCNumericUpDown.Name" xml:space="preserve">
-    <value>DNVitCNumericUpDown</value>
-  </data>
-  <data name="DNAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>359, 267</value>
-  </data>
-  <data name="DNVitALabel.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="DNSubstanceChoiceLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="DNEnergyLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>327, 289</value>
-  </data>
-  <data name="&gt;&gt;DNVitALabel.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="DNFatsNumericUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="DNEnergyLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;DNEnergyNumericUpDown.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="DNSaveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2992,275 +2905,380 @@
         8I8AAPCHAADgJwAA5jcAAOA3AADgJwAA4CcAAOAHAADgDwAA
 </value>
   </data>
-  <data name="DNVitCNumericUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;DNSizeLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DNVitCLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;DNSubstanceChoiceLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DNVitB1Label.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;DNVitALabel.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="&gt;&gt;DNFatsLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DNNumericUpDown.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="DNEnergyNumericUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;DNEnergyNumericUpDown.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;DNFatsNumericUpDown.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;DNVitANumericUpDown.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DNVitB1NumericUpDown.Type" xml:space="preserve">
+  <data name="&gt;&gt;DNCellNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DNVitANumericUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;DNAddButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DNProteinsNumericUpDown.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;DNSubstanceChoiceLabel.Name" xml:space="preserve">
-    <value>DNSubstanceChoiceLabel</value>
-  </data>
-  <data name="DNVitALabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 173</value>
-  </data>
-  <data name="DNCarhydLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>454, 113</value>
-  </data>
-  <data name="DNVitB1Label.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;DNFatsLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="DNFatsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 113</value>
-  </data>
-  <data name="DNAddButton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;DNPatientParametersSetComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DNNumericUpDown.Name" xml:space="preserve">
-    <value>DNNumericUpDown</value>
-  </data>
-  <data name="DNFatsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="DNCellLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>422, 232</value>
-  </data>
-  <data name="&gt;&gt;DNVitCNumericUpDown.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DNCellNumericUpDown.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;DNNumericUpDown.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="&gt;&gt;DNAddButton.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;DNEnergyLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DNEnergyNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 315</value>
-  </data>
-  <data name="&gt;&gt;DNSizeLabel.Name" xml:space="preserve">
-    <value>DNSizeLabel</value>
-  </data>
-  <data name="&gt;&gt;DNCarhydLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DNPatientParametersSetChoiceLabel.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="DNProteinsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="DNFatsNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>348, 137</value>
-  </data>
-  <data name="&gt;&gt;DNPatientParametersSetComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DNSubstanceComboBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DNCellLabel.Name" xml:space="preserve">
-    <value>DNCellLabel</value>
-  </data>
-  <data name="DNSubstanceComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>104, 161</value>
-  </data>
-  <data name="&gt;&gt;DNVitCLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DNProteinsNumericUpDown.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DNCellLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DNVitB1NumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 197</value>
-  </data>
-  <data name="&gt;&gt;DNCellNumericUpDown.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DNVitANumericUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DNVitB1NumericUpDown.Name" xml:space="preserve">
-    <value>DNVitB1NumericUpDown</value>
-  </data>
-  <data name="&gt;&gt;DNPatientParametersSetChoiceLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DNSubstanceChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>199, 119</value>
-  </data>
-  <data name="&gt;&gt;DNSubstanceComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Суточные нормы веществ</value>
-  </data>
-  <data name="&gt;&gt;DNCarhydNumericUpDown.Name" xml:space="preserve">
-    <value>DNCarhydNumericUpDown</value>
-  </data>
-  <data name="&gt;&gt;DNVitALabel.Name" xml:space="preserve">
-    <value>DNVitALabel</value>
-  </data>
-  <data name="&gt;&gt;DNSubstanceComboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;DNSizeLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="DNVitB1Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>410, 173</value>
   </data>
-  <data name="&gt;&gt;DNFatsNumericUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;DNVitCLabel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;DNVitB1Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;DNSizeLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;DNPatientParametersSetComboBox.Name" xml:space="preserve">
-    <value>DNPatientParametersSetComboBox</value>
+  <data name="&gt;&gt;DNEnergyLabel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;DNSubstanceChoiceLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DNVitB1NumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
   </data>
-  <data name="&gt;&gt;DNVitCLabel.Name" xml:space="preserve">
-    <value>DNVitCLabel</value>
+  <data name="DNEnergyNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 315</value>
   </data>
-  <data name="&gt;&gt;DNProteinsNumericUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;DNProteinsNumericUpDown.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
-  <data name="&gt;&gt;DNAddButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DNProteinsLabel.ZOrder" xml:space="preserve">
-    <value>14</value>
+  <data name="&gt;&gt;DNVitANumericUpDown.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;DNCarhydLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="DNProteinsNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 137</value>
+  <data name="&gt;&gt;DNPatientParametersSetChoiceLabel.Name" xml:space="preserve">
+    <value>DNPatientParametersSetChoiceLabel</value>
+  </data>
+  <data name="&gt;&gt;DNVitB1NumericUpDown.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="DNCarhydNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>466, 137</value>
+  </data>
+  <data name="&gt;&gt;DNVitALabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DNCellLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DNVitCNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DNSubstanceChoiceLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="DNPatientParametersSetChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 30</value>
   </data>
-  <data name="&gt;&gt;DNCarhydLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;DNEnergyNumericUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DNAddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>359, 267</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
   </data>
   <data name="&gt;&gt;DNEnergyNumericUpDown.Name" xml:space="preserve">
     <value>DNEnergyNumericUpDown</value>
   </data>
-  <data name="DNVitCLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 232</value>
+  <data name="&gt;&gt;DNAddButton.Name" xml:space="preserve">
+    <value>DNAddButton</value>
   </data>
-  <data name="&gt;&gt;DNVitB1Label.Name" xml:space="preserve">
-    <value>DNVitB1Label</value>
+  <data name="DNSubstanceComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;DNVitALabel.Parent" xml:space="preserve">
+  <data name="DNProteinsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 113</value>
+  </data>
+  <data name="&gt;&gt;DNProteinsNumericUpDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DNSaveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 373</value>
+  </data>
+  <data name="&gt;&gt;DNVitB1NumericUpDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DNFatsNumericUpDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DNVitCNumericUpDown.Name" xml:space="preserve">
+    <value>DNVitCNumericUpDown</value>
+  </data>
+  <data name="DNFatsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>347, 113</value>
+  </data>
+  <data name="&gt;&gt;DNProteinsNumericUpDown.Name" xml:space="preserve">
+    <value>DNProteinsNumericUpDown</value>
+  </data>
+  <data name="&gt;&gt;DNVitB1NumericUpDown.Name" xml:space="preserve">
+    <value>DNVitB1NumericUpDown</value>
+  </data>
+  <data name="&gt;&gt;DNNumericUpDown.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DNCellNumericUpDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DNPatientParametersSetComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 72</value>
+  </data>
+  <data name="&gt;&gt;DNProteinsNumericUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DNSubstanceChoiceLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DNPatientParametersSetChoiceLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DNSaveButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DNSubstanceChoiceLabel.Name" xml:space="preserve">
+    <value>DNSubstanceChoiceLabel</value>
+  </data>
+  <data name="&gt;&gt;DNCarhydLabel.Name" xml:space="preserve">
+    <value>DNCarhydLabel</value>
+  </data>
+  <data name="&gt;&gt;DNCarhydNumericUpDown.Name" xml:space="preserve">
+    <value>DNCarhydNumericUpDown</value>
+  </data>
+  <data name="&gt;&gt;DNCellNumericUpDown.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="DNSubstanceChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 119</value>
+  </data>
+  <data name="&gt;&gt;DNSubstanceComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DNVitALabel.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="DNFatsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;DNVitANumericUpDown.Name" xml:space="preserve">
+    <value>DNVitANumericUpDown</value>
+  </data>
+  <data name="&gt;&gt;DNVitB1Label.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DNCarhydNumericUpDown.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="DNProteinsNumericUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+  <data name="&gt;&gt;DNCellLabel.Name" xml:space="preserve">
+    <value>DNCellLabel</value>
   </data>
-  <data name="&gt;&gt;DNPatientParametersSetChoiceLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;DNNumericUpDown.Name" xml:space="preserve">
+    <value>DNNumericUpDown</value>
+  </data>
+  <data name="DNNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 214</value>
+  </data>
+  <data name="&gt;&gt;DNSaveButton.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="DNSubstanceComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>104, 161</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Суточные нормы веществ</value>
+  </data>
+  <data name="&gt;&gt;DNFatsNumericUpDown.Name" xml:space="preserve">
+    <value>DNFatsNumericUpDown</value>
+  </data>
+  <data name="&gt;&gt;DNSizeLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DNCarhydNumericUpDown.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DNNumericUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DNCarhydNumericUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DNAddButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;DNProteinsNumericUpDown.Name" xml:space="preserve">
-    <value>DNProteinsNumericUpDown</value>
+  <data name="&gt;&gt;DNProteinsLabel.Name" xml:space="preserve">
+    <value>DNProteinsLabel</value>
   </data>
-  <data name="DNPatientParametersSetChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>148, 30</value>
+  <data name="&gt;&gt;DNVitB1NumericUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DNProteinsLabel.Parent" xml:space="preserve">
+  <data name="DNSubstanceChoiceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DNPatientParametersSetChoiceLabel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;DNSizeLabel.Name" xml:space="preserve">
+    <value>DNSizeLabel</value>
+  </data>
+  <data name="&gt;&gt;DNVitB1Label.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="DNPatientParametersSetComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DNPatientParametersSetComboBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="DNCellNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>433, 256</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="&gt;&gt;DNProteinsLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DNSubstanceComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DNVitCNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 256</value>
+  </data>
+  <data name="&gt;&gt;DNSaveButton.Name" xml:space="preserve">
+    <value>DNSaveButton</value>
+  </data>
+  <data name="&gt;&gt;DNEnergyLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DNVitCLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;DNCellNumericUpDown.Name" xml:space="preserve">
+    <value>DNCellNumericUpDown</value>
+  </data>
+  <data name="&gt;&gt;DNFatsLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;DNVitALabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DNSubstanceComboBox.Name" xml:space="preserve">
+    <value>DNSubstanceComboBox</value>
+  </data>
+  <data name="DNVitB1NumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 197</value>
+  </data>
+  <data name="&gt;&gt;DNProteinsLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;DNPatientParametersSetComboBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;DNVitCLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DNCarhydLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>454, 113</value>
+  </data>
+  <data name="DNSizeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;DNCarhydLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="DNCarhydLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;DNVitCLabel.Name" xml:space="preserve">
+    <value>DNVitCLabel</value>
+  </data>
+  <data name="DNNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="DNVitCLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 232</value>
+  </data>
+  <data name="DNEnergyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>327, 289</value>
+  </data>
+  <data name="&gt;&gt;DNVitCNumericUpDown.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="DNCellLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>422, 232</value>
+  </data>
+  <data name="&gt;&gt;DNEnergyLabel.Name" xml:space="preserve">
+    <value>DNEnergyLabel</value>
+  </data>
+  <data name="DNVitB1Label.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="DNProteinsNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 137</value>
+  </data>
+  <data name="&gt;&gt;DNCarhydNumericUpDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DNFatsNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;DNEnergyNumericUpDown.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DNCarhydNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;DNVitANumericUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DNFatsNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>348, 137</value>
+  </data>
+  <data name="&gt;&gt;DNEnergyLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DNFatsNumericUpDown.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="DNEnergyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="DNProteinsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;DNAddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DNVitCNumericUpDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="DNVitANumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>254, 197</value>
+  </data>
+  <data name="DNAddButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>DayNorms</value>
   </data>
-  <data name="&gt;&gt;DNAddButton.Name" xml:space="preserve">
-    <value>DNAddButton</value>
+  <data name="&gt;&gt;DNFatsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DNVitB1NumericUpDown.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DNVitB1Label.Name" xml:space="preserve">
+    <value>DNVitB1Label</value>
+  </data>
+  <data name="&gt;&gt;DNEnergyNumericUpDown.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;DNCarhydNumericUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DNProteinsNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="&gt;&gt;DNVitALabel.Name" xml:space="preserve">
+    <value>DNVitALabel</value>
+  </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>ru</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>
