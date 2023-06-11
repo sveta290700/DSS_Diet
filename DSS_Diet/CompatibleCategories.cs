@@ -66,13 +66,9 @@ namespace DietProject
                 leftList = leftList.Except(rightList).ToList();
                 leftList = leftList.Except(Category1List).ToList();
                 foreach (var itemLeft in leftList)
-                {
                     CCCategoriesListBox.Items.Add(itemLeft);
-                }
                 foreach (var itemRight in rightList)
-                {
                     CCCompatibleCategoriesListBox.Items.Add(itemRight);
-                }
             }
         }
 
