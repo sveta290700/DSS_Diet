@@ -319,17 +319,17 @@ namespace DietProject
             0,
             0});
             this.PPriceNumericUpDown.Minimum = new decimal(new int[] {
-            10,
+            1,
             0,
             0,
-            0});
+            131072});
             this.PPriceNumericUpDown.Name = "PPriceNumericUpDown";
             this.PPriceNumericUpDown.TabStop = false;
             this.PPriceNumericUpDown.Value = new decimal(new int[] {
-            10,
+            1,
             0,
             0,
-            0});
+            131072});
             // 
             // Products
             // 
