@@ -16,8 +16,8 @@ namespace DietProject
 
         private void ButtonToDE_Click(object sender, EventArgs e)
         {
-            DataEditor KnowledgeEditor = new DataEditor();
-            KnowledgeEditor.ShowDialog();
+            DataEditor DataEditor = new DataEditor();
+            DataEditor.ShowDialog();
         }
 
         private class DECheck

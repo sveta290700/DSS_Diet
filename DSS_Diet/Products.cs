@@ -9,10 +9,17 @@ namespace DietProject
     {
         private SqlDataAdapter adapter;
         private DataTable ProductsTable = new DataTable();
+        private DataTable CategoriesTable = new DataTable();
 
         public Products()
         {
             InitializeComponent();
+            adapter = new SqlDataAdapter("SELECT * FROM [КАТЕГОРИЯ_ПРОДУКТОВ]", Program.sqlConnection);
+            adapter.Fill(CategoriesTable);
+            PCategoriesComboBox.DataSource = CategoriesTable;
+            PCategoriesComboBox.DisplayMember = "Название_категории_продуктов";
+            PCategoriesComboBox.ValueMember = "ID_категории_продуктов";
+            PCategoriesComboBox.SelectedIndex = -1;
         }
 
         private void PAddButton_Click(object sender, EventArgs e)
@@ -31,7 +38,25 @@ namespace DietProject
                 int res = (int)checkIsUnique.ExecuteScalar();
                 if (res == 0)
                 {
-                    SqlCommand addProductName = new SqlCommand("INSERT INTO [ПРОДУКТ] VALUES (N'" + ProductTextBox.Text.ToString() + "');", Program.sqlConnection);
+                    string proteins = PProteinsNumericUpDown.Value.ToString();
+                    proteins = proteins.Replace(',', '.');
+                    string fats = PFatsNumericUpDown.Value.ToString();
+                    fats = fats.Replace(',', '.');
+                    string carhyd = PCarhydNumericUpDown.Value.ToString();
+                    carhyd = carhyd.Replace(',', '.');
+                    string vitA = PVitANumericUpDown.Value.ToString();
+                    vitA = vitA.Replace(',', '.');
+                    string vitB1 = PVitB1NumericUpDown.Value.ToString();
+                    vitB1 = vitB1.Replace(',', '.');
+                    string vitC = PVitCNumericUpDown.Value.ToString();
+                    vitC = vitC.Replace(',', '.');
+                    string cellss = PCellNumericUpDown.Value.ToString();
+                    cellss = cellss.Replace(',', '.');
+                    string energy = PEnergyNumericUpDown.Value.ToString();
+                    string idCat = PCategoriesComboBox.SelectedValue.ToString();
+                    string price = PPriceNumericUpDown.Value.ToString();
+                    price = price.Replace(',', '.');
+                    SqlCommand addProductName = new SqlCommand("INSERT INTO [ПРОДУКТ] VALUES (N'" + ProductTextBox.Text.ToString() + "', CONVERT(DECIMAL(6, 3), " + proteins + "), CONVERT(DECIMAL(6, 3), " + fats + "), CONVERT(DECIMAL(6, 3), " + carhyd + "), CONVERT(DECIMAL(7, 3), " + vitA + "), CONVERT(DECIMAL(6, 3), " + vitB1 + "), CONVERT(DECIMAL(6, 3), " + vitC + "), CONVERT(DECIMAL(6, 3), " + cellss + "), " + energy + ", " + idCat + ", CONVERT(DECIMAL(6, 2), " + price + "));", Program.sqlConnection);
                     addProductName.ExecuteNonQuery();
                     ProductTextBox.Clear();
                     ProductsTable = new DataTable();
@@ -66,6 +91,7 @@ namespace DietProject
             }
             else
             {
+                //не менять название если там пусто
                 Program.sqlConnection.Open();
                 DataRowView item = (DataRowView)PProductsListBox.SelectedItem;
                 string nameToEdit = item.Row[1].ToString();
@@ -121,6 +147,45 @@ namespace DietProject
             PProductsListBox.DataSource = ProductsTable;
             PProductsListBox.DisplayMember = "Название_продукта";
             PProductsListBox.ValueMember = "ID_продукта";
+        }
+
+        private void PProductsListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataRowView itemProd = (DataRowView)PProductsListBox.SelectedItem;
+            int selectedProductId = (int)itemProd.Row[0];
+            Program.sqlConnection.Close();
+            Program.sqlConnection.Open();
+            SqlCommand getValue = new SqlCommand("SELECT [Содержание_белков_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
+            object value = getValue.ExecuteScalar();
+            PProteinsNumericUpDown.Value = (decimal)value;
+            getValue = new SqlCommand("SELECT [Содержание_жиров_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
+            value = getValue.ExecuteScalar();
+            PFatsNumericUpDown.Value = (decimal)value;
+            getValue = new SqlCommand("SELECT [Содержание_углеводов_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
+            value = getValue.ExecuteScalar();
+            PCarhydNumericUpDown.Value = (decimal)value;
+            getValue = new SqlCommand("SELECT [Содержание_витамина_A_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
+            value = getValue.ExecuteScalar();
+            PVitANumericUpDown.Value = (decimal)value;
+            getValue = new SqlCommand("SELECT [Содержание_витамина_B1_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
+            value = getValue.ExecuteScalar();
+            PVitB1NumericUpDown.Value = (decimal)value;
+            getValue = new SqlCommand("SELECT [Содержание_витамина_C_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
+            value = getValue.ExecuteScalar();
+            PVitCNumericUpDown.Value = (decimal)value;
+            getValue = new SqlCommand("SELECT [Содержание_клетчатки_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
+            value = getValue.ExecuteScalar();
+            PCellNumericUpDown.Value = (decimal)value;
+            getValue = new SqlCommand("SELECT [Калорийность_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
+            value = getValue.ExecuteScalar();
+            PEnergyNumericUpDown.Value = (int)value;
+            getValue = new SqlCommand("SELECT [ПРОДУКТ].[ID_категории_продуктов] FROM [ПРОДУКТ] JOIN [КАТЕГОРИЯ_ПРОДУКТОВ] ON [ПРОДУКТ].[ID_категории_продуктов] = [КАТЕГОРИЯ_ПРОДУКТОВ].[ID_категории_продуктов] WHERE [ПРОДУКТ].[ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
+            value = getValue.ExecuteScalar();
+            PCategoriesComboBox.SelectedValue = value;
+            getValue = new SqlCommand("SELECT [Стоимость_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
+            value = getValue.ExecuteScalar();
+            PPriceNumericUpDown.Value = (decimal)value;
+            Program.sqlConnection.Close();
         }
     }
 }

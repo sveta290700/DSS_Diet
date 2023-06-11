@@ -65,11 +65,14 @@
   <data name="ProductsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="ProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 81</value>
+  </data>
   <data name="ProductsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>405, 24</value>
   </data>
   <data name="ProductsLabel.Text" xml:space="preserve">
-    <value>Продукты</value>
+    <value>Названия продуктов</value>
   </data>
   <data name="PProductsListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
@@ -77,6 +80,9 @@
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PProductsListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>21</value>
+  </data>
+  <data name="PProductsListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 106</value>
   </data>
   <data name="PProductsListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>405, 214</value>
@@ -121,7 +127,7 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="ProductTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>80, 371</value>
+    <value>80, 365</value>
   </data>
   <data name="ProductTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>245, 29</value>
@@ -135,17 +141,209 @@
   <data name="CEditButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="CEditButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>528, 362</value>
-  </data>
   <data name="CEditButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
   </data>
-  <data name="CEditButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
   <data name="CEditButton.Text" xml:space="preserve">
     <value>Изменить</value>
+  </data>
+  <data name="PSubstanceFeaturesLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PSubstanceFeaturesLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PSubstanceFeaturesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PSubstanceFeaturesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 21</value>
+  </data>
+  <data name="PSubstanceFeaturesLabel.Text" xml:space="preserve">
+    <value>Содержание на 100 г продукта:</value>
+  </data>
+  <data name="PProteinsNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 23</value>
+  </data>
+  <data name="PProteinsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PProteinsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PProteinsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PProteinsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 21</value>
+  </data>
+  <data name="PProteinsLabel.Text" xml:space="preserve">
+    <value>белков (в г)</value>
+  </data>
+  <data name="PFatsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PFatsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PFatsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PFatsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 21</value>
+  </data>
+  <data name="PFatsLabel.Text" xml:space="preserve">
+    <value>жиров (в г)</value>
+  </data>
+  <data name="PFatsNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 23</value>
+  </data>
+  <data name="PCarhydLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PCarhydLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PCarhydLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PCarhydLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 21</value>
+  </data>
+  <data name="PCarhydLabel.Text" xml:space="preserve">
+    <value>углеводов (в г)</value>
+  </data>
+  <data name="PCarhydNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 23</value>
+  </data>
+  <data name="PVitB1Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PVitB1Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PVitB1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PVitB1Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 21</value>
+  </data>
+  <data name="PVitB1Label.Text" xml:space="preserve">
+    <value>витамина B1 (в мг)</value>
+  </data>
+  <data name="PVitB1NumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 23</value>
+  </data>
+  <data name="PVitALabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PVitALabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PVitALabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PVitALabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 21</value>
+  </data>
+  <data name="PVitALabel.Text" xml:space="preserve">
+    <value>витамина А (в мкг)</value>
+  </data>
+  <data name="PVitANumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 23</value>
+  </data>
+  <data name="PCellLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PCellLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PCellLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PCellLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 21</value>
+  </data>
+  <data name="PCellLabel.Text" xml:space="preserve">
+    <value>клетчатки (в г)</value>
+  </data>
+  <data name="PCellNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 23</value>
+  </data>
+  <data name="PVitCLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PVitCLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PVitCLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PVitCLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 21</value>
+  </data>
+  <data name="PVitCLabel.Text" xml:space="preserve">
+    <value>витамина C (в мг)</value>
+  </data>
+  <data name="PVitCNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 23</value>
+  </data>
+  <data name="PCategoriesComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 23</value>
+  </data>
+  <data name="PChoiceLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PChoiceLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PChoiceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PChoiceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 21</value>
+  </data>
+  <data name="PChoiceLabel.Text" xml:space="preserve">
+    <value>Категория:</value>
+  </data>
+  <data name="PEnergyLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PEnergyLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PEnergyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PEnergyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 21</value>
+  </data>
+  <data name="PEnergyLabel.Text" xml:space="preserve">
+    <value>энергии (в ккал)</value>
+  </data>
+  <data name="PEnergyNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 23</value>
+  </data>
+  <data name="PPriceLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PPriceLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PPriceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PPriceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 21</value>
+  </data>
+  <data name="PPriceLabel.Text" xml:space="preserve">
+    <value>Стоимость 100 г продукта:</value>
+  </data>
+  <data name="PPriceNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>660, 302</value>
+  </data>
+  <data name="PPriceNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 23</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
