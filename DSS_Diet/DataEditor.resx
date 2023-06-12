@@ -57,55 +57,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="KLSectionsListBox.Items8" xml:space="preserve">
-    <value>Суточные нормы веществ</value>
+  <data name="&gt;&gt;Sections.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;KEChoiceLabel.Name" xml:space="preserve">
-    <value>KEChoiceLabel</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="SectionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 150</value>
+  <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 131</value>
   </data>
-  <data name="Sections.HeaderText" xml:space="preserve">
-    <value>Разделы</value>
+  <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
+    <value>listBox1</value>
   </data>
-  <data name="&gt;&gt;KLSectionsListBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>DataEditor</value>
   </data>
-  <data name="&gt;&gt;DEChoiceButton.Parent" xml:space="preserve">
+  <data name="listBox1.Items1" xml:space="preserve">
+    <value>Категории продуктов</value>
+  </data>
+  <data name="KEChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 24</value>
+  </data>
+  <data name="KLSectionsListBox.Items5" xml:space="preserve">
+    <value>Признаковое описание продуктов</value>
+  </data>
+  <data name="listBox1.Items2" xml:space="preserve">
+    <value>Продукты категории</value>
+  </data>
+  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 150</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;SectionLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="KLSectionsListBox.Items3" xml:space="preserve">
     <value>Признаки продуктов</value>
   </data>
-  <data name="listBox1.Items7" xml:space="preserve">
-    <value>Суточные нормы веществ</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="&gt;&gt;KEChoiceLabel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;DEChoiceButton.Name" xml:space="preserve">
+    <value>DEChoiceButton</value>
+  </data>
+  <data name="listBox1.Items3" xml:space="preserve">
+    <value>Признаки продуктов</value>
+  </data>
+  <data name="&gt;&gt;KLSectionsListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;Sections.Name" xml:space="preserve">
     <value>Sections</value>
   </data>
+  <data name="listBox1.Items6" xml:space="preserve">
+    <value>Значения признаков продуктов</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="KEChoiceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="DEChoiceButton.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="&gt;&gt;KLSectionsListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="KLSectionsListBox.Items7" xml:space="preserve">
-    <value>Суточные нормы веществ</value>
-  </data>
-  <data name="KEChoiceButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>354, 357</value>
   </data>
   <data name="KLSectionsListBox.Items2" xml:space="preserve">
     <value>Продукты категории</value>
@@ -113,157 +131,142 @@
   <data name="&gt;&gt;KEChoiceLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="KLSectionsListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;KEChoiceLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KLSectionsListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>KnowledgeEditor</value>
-  </data>
-  <data name="&gt;&gt;SectionLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="listBox1.Items1" xml:space="preserve">
-    <value>Категории продуктов</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;KEChoiceLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="KLSectionsListBox.Items1" xml:space="preserve">
-    <value>Категории продуктов</value>
-  </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>536, 288</value>
-  </data>
-  <data name="&gt;&gt;KEChoiceButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="KLSectionsListBox.Items4" xml:space="preserve">
-    <value>Возможные значения признаков продуктов</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 150</value>
-  </data>
-  <data name="KLSectionsListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>197, 126</value>
-  </data>
-  <data name="&gt;&gt;DEChoiceButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>DataEditor</value>
-  </data>
-  <data name="listBox1.Items4" xml:space="preserve">
-    <value>Возможные значения признаков продуктов</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="listBox1.Items6" xml:space="preserve">
-    <value>Значения признаков продуктов</value>
-  </data>
-  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="KLSectionsListBox.Items6" xml:space="preserve">
-    <value>Значения признаков продуктов</value>
-  </data>
-  <data name="&gt;&gt;DEChoiceButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;listBox1.Name" xml:space="preserve">
-    <value>listBox1</value>
-  </data>
-  <data name="KLSectionsListBox.Items5" xml:space="preserve">
-    <value>Признаковое описание продуктов</value>
-  </data>
-  <data name="&gt;&gt;Sections.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="listBox1.Items" xml:space="preserve">
-    <value>Названия продуктов</value>
-  </data>
-  <data name="&gt;&gt;KLSectionsListBox.Name" xml:space="preserve">
-    <value>KLSectionsListBox</value>
+  <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="KEChoiceButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
-    <value>dataGridView1</value>
+  <data name="KLSectionsListBox.Items7" xml:space="preserve">
+    <value>Суточные нормы веществ</value>
   </data>
-  <data name="listBox1.Items2" xml:space="preserve">
-    <value>Продукты категории</value>
+  <data name="listBox1.Items4" xml:space="preserve">
+    <value>Возможные значения признаков продуктов</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="&gt;&gt;SectionLabel.Name" xml:space="preserve">
-    <value>SectionLabel</value>
-  </data>
-  <data name="DEChoiceButton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="listBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>227, 131</value>
-  </data>
-  <data name="&gt;&gt;listBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="KLSectionsListBox.Items6" xml:space="preserve">
+    <value>Значения признаков продуктов</value>
   </data>
   <data name="&gt;&gt;KEChoiceButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="KEChoiceLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;KEChoiceButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="KLSectionsListBox.Items1" xml:space="preserve">
+    <value>Категории продуктов</value>
+  </data>
+  <data name="&gt;&gt;DEChoiceButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SectionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;SectionLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="SectionLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;KEChoiceButton.Name" xml:space="preserve">
-    <value>KEChoiceButton</value>
-  </data>
-  <data name="DEChoiceButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 376</value>
-  </data>
-  <data name="KEChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>256, 24</value>
-  </data>
-  <data name="&gt;&gt;KEChoiceButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="listBox1.Items5" xml:space="preserve">
-    <value>Признаковое описание продуктов</value>
-  </data>
-  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="listBox1.Items3" xml:space="preserve">
-    <value>Признаки продуктов</value>
-  </data>
-  <data name="&gt;&gt;DEChoiceButton.Name" xml:space="preserve">
-    <value>DEChoiceButton</value>
+  <data name="KLSectionsListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="KLSectionsListBox.Items" xml:space="preserve">
     <value>Названия продуктов</value>
   </data>
+  <data name="&gt;&gt;KEChoiceButton.Name" xml:space="preserve">
+    <value>KEChoiceButton</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="KLSectionsListBox.Items4" xml:space="preserve">
+    <value>Возможные значения признаков продуктов</value>
+  </data>
+  <data name="listBox1.Items" xml:space="preserve">
+    <value>Названия продуктов</value>
+  </data>
+  <data name="KEChoiceButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>354, 357</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="KLSectionsListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 126</value>
+  </data>
+  <data name="listBox1.Items7" xml:space="preserve">
+    <value>Суточные нормы веществ</value>
+  </data>
+  <data name="&gt;&gt;KLSectionsListBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SectionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 150</value>
+  </data>
+  <data name="&gt;&gt;KLSectionsListBox.Name" xml:space="preserve">
+    <value>KLSectionsListBox</value>
+  </data>
+  <data name="SectionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
+    <value>dataGridView1</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="listBox1.Items5" xml:space="preserve">
+    <value>Признаковое описание продуктов</value>
+  </data>
+  <data name="&gt;&gt;SectionLabel.Name" xml:space="preserve">
+    <value>SectionLabel</value>
+  </data>
+  <data name="&gt;&gt;KEChoiceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;DEChoiceButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="KLSectionsListBox.Items8" xml:space="preserve">
+    <value>Суточные нормы веществ</value>
+  </data>
+  <data name="&gt;&gt;KEChoiceButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;KLSectionsListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DEChoiceButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>355, 376</value>
+  </data>
+  <data name="&gt;&gt;DEChoiceButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="listBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;SectionLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>KnowledgeEditor</value>
+  </data>
+  <data name="Sections.HeaderText" xml:space="preserve">
+    <value>Разделы</value>
+  </data>
+  <data name="&gt;&gt;KEChoiceLabel.Name" xml:space="preserve">
+    <value>KEChoiceLabel</value>
+  </data>
+  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>536, 288</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Sections.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -271,8 +274,5 @@
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
     <value>ru</value>
-  </metadata>
-  <metadata name="Sections.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
   </metadata>
 </root>

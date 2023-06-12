@@ -90,7 +90,7 @@
     <value>Данные о продуктах</value>
   </data>
   <data name="KLSectionsListBox.Items3" xml:space="preserve">
-    <value>Данные о суточных нормах веществ</value>
+    <value>Данные о суточных нормах</value>
   </data>
   <data name="KLSectionsListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>203, 137</value>
