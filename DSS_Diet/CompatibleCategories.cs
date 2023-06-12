@@ -29,6 +29,8 @@ namespace DietProject
             adapter = new SqlDataAdapter("SELECT [ID_совместимой_категории_продуктов] FROM [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ]", Program.sqlConnection);
             adapter.Fill(CategoriesIdTableCC);
             CategoriesIdCCList = CategoriesIdTableCC.AsEnumerable().Select(n => n.Field<int>(0)).ToList();
+            if (Program.sqlConnection.State == ConnectionState.Open)
+                Program.sqlConnection.Close();
             Program.sqlConnection.Open();
             foreach (var categoryIdCC in CategoriesIdCCList)
             {
@@ -96,6 +98,8 @@ namespace DietProject
         {
             if (CCCategoriesComboBox.SelectedIndex != -1)
             {
+                if (Program.sqlConnection.State == ConnectionState.Open)
+                    Program.sqlConnection.Close();
                 Program.sqlConnection.Open();
                 DataRowView item = (DataRowView)CCCategoriesComboBox.SelectedItem;
                 int selectedCategoryId = (int)item.Row[0];

@@ -26,6 +26,8 @@ namespace DietProject
             }
             else
             {
+                if (Program.sqlConnection.State == ConnectionState.Open)
+                    Program.sqlConnection.Close();
                 Program.sqlConnection.Open();
                 SqlCommand checkIsUnique = new SqlCommand("SELECT COUNT(*) FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [Название_категории_продуктов] = N'" + CategoryTextBox.Text.ToString() + "';", Program.sqlConnection);
                 int res = (int)checkIsUnique.ExecuteScalar();
@@ -66,6 +68,8 @@ namespace DietProject
             }
             else
             {
+                if (Program.sqlConnection.State == ConnectionState.Open)
+                    Program.sqlConnection.Close();
                 Program.sqlConnection.Open();
                 SqlCommand checkIsUnique = new SqlCommand("SELECT COUNT(*) FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [Название_категории_продуктов] = N'" + CategoryTextBox.Text.ToString() + "';", Program.sqlConnection);
                 int res = (int)checkIsUnique.ExecuteScalar();
@@ -108,20 +112,36 @@ namespace DietProject
             }
             else
             {
+                if (Program.sqlConnection.State == ConnectionState.Open)
+                    Program.sqlConnection.Close();
                 Program.sqlConnection.Open();
                 DataRowView item = (DataRowView)CCategoriesListBox.SelectedItem;
+                int idToDelete = (int)item.Row[0];
                 string nameToDelete = item.Row[1].ToString();
-                SqlCommand deleteCategory = new SqlCommand("DELETE FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [Название_категории_продуктов] = N'" + nameToDelete + "';", Program.sqlConnection);
-                deleteCategory.ExecuteNonQuery();
-                CategoryTextBox.Clear();
-                CategoriesTable = new DataTable();
-                CCategoriesListBox.DataSource = CategoriesTable;
-                adapter = new SqlDataAdapter("SELECT * FROM [КАТЕГОРИЯ_ПРОДУКТОВ]", Program.sqlConnection);
-                adapter.Fill(CategoriesTable);
-                CCategoriesListBox.DataSource = CategoriesTable;
-                CCategoriesListBox.DisplayMember = "Название_категории_продуктов";
-                CCategoriesListBox.ValueMember = "ID_категории_продуктов";
-                CCategoriesListBox.SelectedIndex = choice - 1;
+                SqlCommand checkIsOkToDelete = new SqlCommand("SELECT COUNT(*) FROM [ПРОДУКТ] WHERE [ID_категории_продуктов] = " + idToDelete + ";", Program.sqlConnection);
+                int res = (int)checkIsOkToDelete.ExecuteScalar();
+                if (res == 0)
+                {
+                    SqlCommand deleteCategory = new SqlCommand("DELETE FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [Название_категории_продуктов] = N'" + nameToDelete + "';", Program.sqlConnection);
+                    deleteCategory.ExecuteNonQuery();
+                    CategoryTextBox.Clear();
+                    CategoriesTable = new DataTable();
+                    CCategoriesListBox.DataSource = CategoriesTable;
+                    adapter = new SqlDataAdapter("SELECT * FROM [КАТЕГОРИЯ_ПРОДУКТОВ]", Program.sqlConnection);
+                    adapter.Fill(CategoriesTable);
+                    CCategoriesListBox.DataSource = CategoriesTable;
+                    CCategoriesListBox.DisplayMember = "Название_категории_продуктов";
+                    CCategoriesListBox.ValueMember = "ID_категории_продуктов";
+                    CCategoriesListBox.SelectedIndex = choice - 1;
+                }
+                else
+                {
+                    MessageFormSmall ErrorForm = new MessageFormSmall();
+                    ErrorForm.LabelText.Text = "Удаление категории невозможно ввиду ее использования для описания как минимум одного продукта.";
+                    ErrorForm.Text = "Ошибка";
+                    ErrorForm.ShowDialog();
+                }
+                Program.sqlConnection.Close();
             }
         }
 

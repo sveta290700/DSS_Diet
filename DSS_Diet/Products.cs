@@ -33,6 +33,8 @@ namespace DietProject
             }
             else
             {
+                if (Program.sqlConnection.State == ConnectionState.Open)
+                    Program.sqlConnection.Close();
                 Program.sqlConnection.Open();
                 SqlCommand checkIsUnique = new SqlCommand("SELECT COUNT(*) FROM [ПРОДУКТ] WHERE [Название_продукта] = N'" + ProductTextBox.Text.ToString() + "';", Program.sqlConnection);
                 int res = (int)checkIsUnique.ExecuteScalar();
@@ -91,6 +93,8 @@ namespace DietProject
             }
             else
             {
+                if (Program.sqlConnection.State == ConnectionState.Open)
+                    Program.sqlConnection.Close();
                 Program.sqlConnection.Open();
                 SqlCommand checkIsUnique = new SqlCommand("SELECT COUNT(*) FROM [ПРОДУКТ] WHERE [Название_продукта] = N'" + ProductTextBox.Text.ToString() + "';", Program.sqlConnection);
                 int res = (int)checkIsUnique.ExecuteScalar();
@@ -154,20 +158,35 @@ namespace DietProject
             }
             else
             {
+                if (Program.sqlConnection.State == ConnectionState.Open)
+                    Program.sqlConnection.Close();
                 Program.sqlConnection.Open();
                 DataRowView item = (DataRowView) PProductsListBox.SelectedItem;
+                int idToDelete = (int)item.Row[0];
                 string nameToDelete = item.Row[1].ToString();
-                SqlCommand deleteProduct = new SqlCommand("DELETE FROM [ПРОДУКТ] WHERE [Название_продукта] = N'" + nameToDelete + "';", Program.sqlConnection);
-                deleteProduct.ExecuteNonQuery();
-                ProductTextBox.Clear();
-                ProductsTable = new DataTable();
-                PProductsListBox.DataSource = ProductsTable;
-                adapter = new SqlDataAdapter("SELECT * FROM [ПРОДУКТ]", Program.sqlConnection);
-                adapter.Fill(ProductsTable);
-                PProductsListBox.DataSource = ProductsTable;
-                PProductsListBox.DisplayMember = "Название_продукта";
-                PProductsListBox.ValueMember = "ID_продукта";
-                PProductsListBox.SelectedIndex = choice - 1;
+                SqlCommand checkIsOkToDelete = new SqlCommand("SELECT COUNT(*) FROM [ЭЛЕМЕНТ_РАЦИОНА] WHERE [ID_продукта] = " + idToDelete + ";", Program.sqlConnection);
+                int res = (int)checkIsOkToDelete.ExecuteScalar();
+                if (res == 0)
+                {
+                    SqlCommand deleteProduct = new SqlCommand("DELETE FROM [ПРОДУКТ] WHERE [Название_продукта] = N'" + nameToDelete + "';", Program.sqlConnection);
+                    deleteProduct.ExecuteNonQuery();
+                    ProductTextBox.Clear();
+                    ProductsTable = new DataTable();
+                    PProductsListBox.DataSource = ProductsTable;
+                    adapter = new SqlDataAdapter("SELECT * FROM [ПРОДУКТ]", Program.sqlConnection);
+                    adapter.Fill(ProductsTable);
+                    PProductsListBox.DataSource = ProductsTable;
+                    PProductsListBox.DisplayMember = "Название_продукта";
+                    PProductsListBox.ValueMember = "ID_продукта";
+                    PProductsListBox.SelectedIndex = choice - 1;
+                }
+                else
+                {
+                    MessageFormSmall ErrorForm = new MessageFormSmall();
+                    ErrorForm.LabelText.Text = "Удаление продукта невозможно ввиду его использования как минимум в одном составленном ранее рационе.";
+                    ErrorForm.Text = "Ошибка";
+                    ErrorForm.ShowDialog();
+                }
                 Program.sqlConnection.Close();
             }
         }

@@ -105,6 +105,8 @@ namespace DietProject
         {
             if (DNPatientParametersSetComboBox.SelectedIndex != -1)
             {
+                if (Program.sqlConnection.State == ConnectionState.Open)
+                    Program.sqlConnection.Close();
                 Program.sqlConnection.Open();
                 SqlCommand checkIfExist = new SqlCommand("SELECT COUNT(*) FROM [СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ] WHERE [ID_набора_параметров_пациента] = " + DNPatientParametersSetComboBox.SelectedValue + ";", Program.sqlConnection);
                 int res = (int)checkIfExist.ExecuteScalar();
