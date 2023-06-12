@@ -2930,4 +2930,7 @@
         8I8AAPCHAADgJwAA5jcAAOA3AADgJwAA4CcAAOAHAADgDwAA
 </value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Данные о совместимости категорий продуктов</value>
+  </data>
 </root>

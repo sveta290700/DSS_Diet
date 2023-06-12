@@ -81,16 +81,16 @@
     <value>21</value>
   </data>
   <data name="KLSectionsListBox.Items" xml:space="preserve">
-    <value>Категории продуктов</value>
+    <value>Данные о категориях продуктов</value>
   </data>
   <data name="KLSectionsListBox.Items1" xml:space="preserve">
-    <value>Совместимые категории</value>
+    <value>Данные о совместимости категорий продуктов</value>
   </data>
   <data name="KLSectionsListBox.Items2" xml:space="preserve">
-    <value>Продукты</value>
+    <value>Данные о продуктах</value>
   </data>
   <data name="KLSectionsListBox.Items3" xml:space="preserve">
-    <value>Суточные нормы веществ</value>
+    <value>Данные о суточных нормах веществ</value>
   </data>
   <data name="KLSectionsListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>203, 137</value>
@@ -124,13 +124,10 @@
     <value>NoControl</value>
   </data>
   <data name="DEChoiceButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>355, 376</value>
+    <value>358, 376</value>
   </data>
   <data name="DEChoiceButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
-  </data>
-  <data name="DEChoiceButton.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="DEChoiceButton.Text" xml:space="preserve">
     <value>Выбрать</value>

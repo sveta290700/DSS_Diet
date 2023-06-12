@@ -57,272 +57,164 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;ProductNameTextBox.Name" xml:space="preserve">
-    <value>ProductNameTextBox</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PNDeleteButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="&gt;&gt;CAddButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="CategoriesLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;CategoriesLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="CCategoriesListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;CAddButton.Name" xml:space="preserve">
-    <value>CAddButton</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="CEditButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>528, 362</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="&gt;&gt;PNAddButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;PNProductsNamesListBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;CategoriesLabel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="CategoryTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="PNDeleteButton.Text" xml:space="preserve">
+    <value>Удалить</value>
   </data>
-  <data name="&gt;&gt;ProductsNamesLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ProductNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 367</value>
+  </data>
+  <data name="CDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>584, 364</value>
+  </data>
+  <data name="&gt;&gt;CAddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CEditButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;PNProductsNamesListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PNProductsNamesListBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="PNAddButton.Text" xml:space="preserve">
-    <value>Добавить</value>
+  <data name="&gt;&gt;CDeleteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PNProductsNamesListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>21</value>
+  <data name="&gt;&gt;CCategoriesListBox.Name" xml:space="preserve">
+    <value>CCategoriesListBox</value>
   </data>
-  <data name="PNDeleteButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 38</value>
-  </data>
-  <data name="&gt;&gt;PNAddButton.Name" xml:space="preserve">
-    <value>PNAddButton</value>
-  </data>
-  <data name="&gt;&gt;CAddButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="CategoryTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 367</value>
-  </data>
-  <data name="&gt;&gt;ProductNameTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CEditButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ProductsNamesLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CategoryTextBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;CDeleteButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CDeleteButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="PNAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 364</value>
-  </data>
-  <data name="CategoriesLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 49</value>
-  </data>
-  <data name="PNProductsNamesListBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
+  <data name="&gt;&gt;ProductNameTextBox.Type" xml:space="preserve">
+    <value>DietProject.WaterMarkTextBox, DietProject, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="PNProductsNamesListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>405, 235</value>
   </data>
-  <data name="&gt;&gt;PNProductsNamesListBox.Name" xml:space="preserve">
-    <value>PNProductsNamesListBox</value>
+  <data name="CDeleteButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;CategoryTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="&gt;&gt;ProductNameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ProductsNamesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ProductNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 29</value>
+  </data>
+  <data name="&gt;&gt;PNDeleteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CategoriesLabel.Name" xml:space="preserve">
+    <value>CategoriesLabel</value>
+  </data>
+  <data name="CAddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 364</value>
+  </data>
+  <data name="ProductsNamesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>405, 24</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="&gt;&gt;CCategoriesListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="CategoryTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;CAddButton.Name" xml:space="preserve">
+    <value>CAddButton</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;ProductsNamesLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PNAddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 364</value>
   </data>
   <data name="&gt;&gt;PNDeleteButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PNAddButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ProductsNamesLabel.Text" xml:space="preserve">
+    <value>Продукты</value>
+  </data>
+  <data name="PNAddButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;CCategoriesListBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CEditButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CAddButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ProductNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CDeleteButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="CCategoriesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>194, 74</value>
-  </data>
-  <data name="&gt;&gt;CDeleteButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>584, 364</value>
-  </data>
-  <data name="&gt;&gt;CDeleteButton.Name" xml:space="preserve">
-    <value>CDeleteButton</value>
-  </data>
-  <data name="PNDeleteButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="&gt;&gt;CategoryTextBox.Name" xml:space="preserve">
-    <value>CategoryTextBox</value>
-  </data>
-  <data name="&gt;&gt;CCategoriesListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="PNAddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 38</value>
   </data>
   <data name="&gt;&gt;CategoryTextBox.Type" xml:space="preserve">
     <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="ProductNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 29</value>
-  </data>
-  <data name="&gt;&gt;PNDeleteButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="CAddButton.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;ProductNameTextBox.Type" xml:space="preserve">
-    <value>DietProject.WaterMarkTextBox, DietProject, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PNAddButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="&gt;&gt;CategoriesLabel.Name" xml:space="preserve">
-    <value>CategoriesLabel</value>
-  </data>
-  <data name="PNAddButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="&gt;&gt;CCategoriesListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Categories</value>
-  </data>
-  <data name="&gt;&gt;PNDeleteButton.Name" xml:space="preserve">
-    <value>PNDeleteButton</value>
-  </data>
-  <data name="PNProductsNamesListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="PNDeleteButton.Text" xml:space="preserve">
-    <value>Удалить</value>
-  </data>
-  <data name="ProductsNamesLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="&gt;&gt;CategoriesLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Categories</value>
-  </data>
-  <data name="PNDeleteButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ProductsNamesLabel.Text" xml:space="preserve">
-    <value>Продукты</value>
-  </data>
-  <data name="&gt;&gt;PNAddButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ProductsNamesLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
   <data name="PNProductsNamesListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>194, 74</value>
   </data>
-  <data name="ProductsNamesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CEditButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;ProductNameTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CCategoriesListBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;CategoriesLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PNDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>584, 364</value>
-  </data>
-  <data name="&gt;&gt;CEditButton.Name" xml:space="preserve">
-    <value>CEditButton</value>
-  </data>
-  <data name="CDeleteButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;ProductsNamesLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;CEditButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="PNDeleteButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;PNDeleteButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PNAddButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="ProductsNamesLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>405, 24</value>
-  </data>
-  <data name="ProductNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="PNAddButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 38</value>
-  </data>
-  <data name="PNAddButton.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="PNAddButton.Text" xml:space="preserve">
+    <value>Добавить</value>
   </data>
   <data name="ProductNameTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;CCategoriesListBox.Name" xml:space="preserve">
-    <value>CCategoriesListBox</value>
+  <data name="&gt;&gt;ProductsNamesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ProductNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 367</value>
-  </data>
-  <data name="&gt;&gt;CEditButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ProductNameTextBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="PNDeleteButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;PNProductsNamesListBox.Name" xml:space="preserve">
+    <value>PNProductsNamesListBox</value>
   </data>
-  <data name="CAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 364</value>
+  <data name="&gt;&gt;PNProductsNamesListBox.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="&gt;&gt;ProductsNamesLabel.Name" xml:space="preserve">
-    <value>ProductsNamesLabel</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="&gt;&gt;PNProductsNamesListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CategoryTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="CCategoriesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;PNAddButton.Parent" xml:space="preserve">
     <value>$this</value>
@@ -330,10 +222,118 @@
   <data name="&gt;&gt;CEditButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CAddButton.Type" xml:space="preserve">
+  <data name="PNAddButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;PNDeleteButton.Name" xml:space="preserve">
+    <value>PNDeleteButton</value>
+  </data>
+  <data name="&gt;&gt;CategoriesLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="PNDeleteButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="ProductsNamesLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="&gt;&gt;ProductNameTextBox.Name" xml:space="preserve">
+    <value>ProductNameTextBox</value>
+  </data>
+  <data name="PNProductsNamesListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="CCategoriesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 74</value>
+  </data>
+  <data name="&gt;&gt;PNAddButton.Name" xml:space="preserve">
+    <value>PNAddButton</value>
+  </data>
+  <data name="&gt;&gt;PNDeleteButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CategoriesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="PNDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>584, 364</value>
+  </data>
+  <data name="&gt;&gt;CategoryTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ProductsNamesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PNDeleteButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ProductsNamesLabel.Name" xml:space="preserve">
+    <value>ProductsNamesLabel</value>
+  </data>
+  <data name="PNAddButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="&gt;&gt;CDeleteButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PNProductsNamesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="PNProductsNamesListBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PNAddButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="CEditButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>528, 362</value>
+  </data>
+  <data name="&gt;&gt;CEditButton.Name" xml:space="preserve">
+    <value>CEditButton</value>
+  </data>
+  <data name="PNDeleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 38</value>
+  </data>
+  <data name="&gt;&gt;PNAddButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ProductsNamesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 49</value>
+  </data>
+  <data name="&gt;&gt;CAddButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CCategoriesListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CategoryTextBox.Name" xml:space="preserve">
+    <value>CategoryTextBox</value>
+  </data>
+  <data name="CAddButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="CategoryTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 367</value>
+  </data>
+  <data name="&gt;&gt;CDeleteButton.Name" xml:space="preserve">
+    <value>CDeleteButton</value>
+  </data>
+  <data name="PNDeleteButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;CategoriesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProductsNamesLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="CategoriesLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>194, 49</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
