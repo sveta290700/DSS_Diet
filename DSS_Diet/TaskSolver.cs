@@ -22,6 +22,15 @@ namespace DietProject
             InitializeComponent();
         }
 
+        /*public static double GetPseudoDoubleWithinRange(double lowerBound, double upperBound)
+        {
+            var random = new Random();
+            var rDouble = random.NextDouble();
+            var rRangeDouble = rDouble * (upperBound - lowerBound) + lowerBound;
+            return rRangeDouble;
+        }
+        */
+
         private void TaskSolver_Load(object sender, EventArgs e)
         {
             adapter = new SqlDataAdapter("SELECT * FROM [НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА]", Program.sqlConnection);
@@ -116,40 +125,40 @@ namespace DietProject
                             int dietProductId = (int)getDietProductId.ExecuteScalar();
                             SqlCommand getFeatureValue = new SqlCommand("SELECT [Содержание_белков_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
                             object featureValueRes = getFeatureValue.ExecuteScalar();
-                            double featureValue = decimal.ToDouble((decimal)featureValueRes);
-                            systemLeft[0, counterProducts] = featureValue / 100;
+                            double featureValue = decimal.ToDouble((decimal)featureValueRes / 100);
+                            systemLeft[0, counterProducts] = featureValue;
                             getFeatureValue = new SqlCommand("SELECT [Содержание_жиров_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
                             featureValueRes = getFeatureValue.ExecuteScalar();
-                            featureValue = decimal.ToDouble((decimal)featureValueRes);
-                            systemLeft[1, counterProducts] = featureValue / 100;
+                            featureValue = decimal.ToDouble((decimal)featureValueRes / 100);
+                            systemLeft[1, counterProducts] = featureValue;
                             getFeatureValue = new SqlCommand("SELECT [Содержание_углеводов_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
                             featureValueRes = getFeatureValue.ExecuteScalar();
-                            featureValue = decimal.ToDouble((decimal)featureValueRes);
-                            systemLeft[2, counterProducts] = featureValue / 100;
+                            featureValue = decimal.ToDouble((decimal)featureValueRes / 100);
+                            systemLeft[2, counterProducts] = featureValue;
                             getFeatureValue = new SqlCommand("SELECT [Содержание_витамина_A_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
                             featureValueRes = getFeatureValue.ExecuteScalar();
-                            featureValue = decimal.ToDouble((decimal)featureValueRes);
-                            systemLeft[3, counterProducts] = featureValue / 100;
+                            featureValue = decimal.ToDouble((decimal)featureValueRes / 100);
+                            systemLeft[3, counterProducts] = featureValue;
                             getFeatureValue = new SqlCommand("SELECT [Содержание_витамина_B1_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
                             featureValueRes = getFeatureValue.ExecuteScalar();
-                            featureValue = decimal.ToDouble((decimal)featureValueRes);
-                            systemLeft[4, counterProducts] = featureValue / 100;
+                            featureValue = decimal.ToDouble((decimal)featureValueRes / 100);
+                            systemLeft[4, counterProducts] = featureValue;
                             getFeatureValue = new SqlCommand("SELECT [Содержание_витамина_C_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
                             featureValueRes = getFeatureValue.ExecuteScalar();
-                            featureValue = decimal.ToDouble((decimal)featureValueRes);
-                            systemLeft[5, counterProducts] = featureValue / 100;
+                            featureValue = decimal.ToDouble((decimal)featureValueRes / 100);
+                            systemLeft[5, counterProducts] = featureValue;
                             getFeatureValue = new SqlCommand("SELECT [Содержание_клетчатки_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
                             featureValueRes = getFeatureValue.ExecuteScalar();
-                            featureValue = decimal.ToDouble((decimal)featureValueRes);
-                            systemLeft[6, counterProducts] = featureValue / 100;
+                            featureValue = decimal.ToDouble((decimal)featureValueRes / 100);
+                            systemLeft[6, counterProducts] = featureValue;
                             getFeatureValue = new SqlCommand("SELECT [Калорийность_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
                             featureValueRes = getFeatureValue.ExecuteScalar();
-                            featureValue = Convert.ToDouble((int)featureValueRes);
-                            systemLeft[7, counterProducts] = featureValue / 100;
+                            featureValue = Convert.ToDouble((int)featureValueRes / 100);
+                            systemLeft[7, counterProducts] = featureValue;
                             getFeatureValue = new SqlCommand("SELECT [Стоимость_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
                             featureValueRes = getFeatureValue.ExecuteScalar();
-                            featureValue = decimal.ToDouble((decimal)featureValueRes);
-                            systemLeft[8, counterProducts] = featureValue / 100;
+                            featureValue = decimal.ToDouble((decimal)featureValueRes / 100);
+                            systemLeft[8, counterProducts] = featureValue;
                             counterProducts++;
                         }
                         DataRowView item = (DataRowView)TSPatientParametersSetComboBox.SelectedItem;
@@ -179,13 +188,12 @@ namespace DietProject
                         dayNorm = Convert.ToDouble((int)getDayNorm.ExecuteScalar());
                         systemRight[7] = dayNorm;
                         systemRight[8] = (double)TSMoneyNumericUpDown.Value;
-                        adapter = new SqlDataAdapter("SELECT Id FROM ProductsNames;", Program.sqlConnection);
                         Solver solver = Solver.CreateSolver("GLOP");
                         List<Variable> foods = new List<Variable>();
                         for (int i = 0; i < TSDietProductsListBox.Items.Cast<string>().ToList().Count; ++i)
                         {
                             string varName = "x" + i;
-                            foods.Add(solver.MakeNumVar(0.0, 1000.0, varName));
+                            foods.Add(solver.MakeNumVar(50.0, 1000.0, varName));
                         }
                         List<Google.OrTools.LinearSolver.Constraint> constraints = new List<Google.OrTools.LinearSolver.Constraint>();
                         Objective objective = solver.Objective();
@@ -216,7 +224,7 @@ namespace DietProject
                         {
                             MessageFormSmall ErrorForm = new MessageFormSmall();
                             ErrorForm.LabelText.Text = "Рацион с таким набором продуктов и доступным бюджетом составить нельзя.";
-                            ErrorForm.Text = "Ошибка";
+                            ErrorForm.Text = "Результат решения задачи";
                             ErrorForm.ShowDialog();
                         }
                         else
@@ -236,7 +244,7 @@ namespace DietProject
                     {
                         MessageFormLarge ErrorFormIncompatible = new MessageFormLarge();
                         ErrorFormIncompatible.LabelText.Text = notCompatibleMessagesString;
-                        ErrorFormIncompatible.Text = "Найдены несовместимые продукты.";
+                        ErrorFormIncompatible.Text = "Найдены несовместимые продукты";
                         ErrorFormIncompatible.ShowDialog();
                     }
                     Program.sqlConnection.Close();

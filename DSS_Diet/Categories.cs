@@ -33,8 +33,12 @@ namespace DietProject
                 int res = (int)checkIsUnique.ExecuteScalar();
                 if (res == 0)
                 {
-                    SqlCommand addProductName = new SqlCommand("INSERT INTO [КАТЕГОРИЯ_ПРОДУКТОВ] VALUES (N'" + CategoryTextBox.Text.ToString() + "');", Program.sqlConnection);
-                    addProductName.ExecuteNonQuery();
+                    SqlCommand addCategoryName = new SqlCommand("INSERT INTO [КАТЕГОРИЯ_ПРОДУКТОВ] VALUES (N'" + CategoryTextBox.Text.ToString() + "');", Program.sqlConnection);
+                    addCategoryName.ExecuteNonQuery();
+                    SqlCommand getCategoryId = new SqlCommand("SELECT [ID_категории_продуктов] FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [Название_категории_продуктов] = N'" + CategoryTextBox.Text.ToString() + "';", Program.sqlConnection);
+                    int categoryId = (int)getCategoryId.ExecuteScalar();
+                    SqlCommand addCategoryCompatibility = new SqlCommand("INSERT INTO [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ] VALUES (" + categoryId + ", " + categoryId + ");", Program.sqlConnection);
+                    addCategoryCompatibility.ExecuteNonQuery();
                     CategoryTextBox.Clear();
                     CategoriesTable = new DataTable();
                     CCategoriesListBox.DataSource = CategoriesTable;

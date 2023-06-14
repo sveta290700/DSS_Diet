@@ -56,6 +56,7 @@ namespace DietProject
                 CCCompatibleCategoriesListBox.Items.Clear();
                 DataRowView item = (DataRowView)CCCategoriesComboBox.SelectedItem;
                 int selectedCategoryId = (int)item.Row[0];
+                string selectedCategoryName = (string)item.Row[1];
                 leftList = new List<string>(CategoriesList);
                 SelectedCategoriesTable = new DataTable();
                 adapter = new SqlDataAdapter("SELECT [Название_категории_продуктов] FROM [КАТЕГОРИЯ_ПРОДУКТОВ] JOIN [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ] ON [КАТЕГОРИЯ_ПРОДУКТОВ].[ID_категории_продуктов] = [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ].[ID_совместимой_категории_продуктов] WHERE [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ].[ID_категории_продуктов] = " + selectedCategoryId + ";", Program.sqlConnection);
@@ -65,6 +66,7 @@ namespace DietProject
                 adapter = new SqlDataAdapter("SELECT [Название_категории_продуктов] FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [ID_категории_продуктов] = " + selectedCategoryId + ";", Program.sqlConnection);
                 adapter.Fill(Category1Table);
                 Category1List = Category1Table.AsEnumerable().Select(n => n.Field<string>(0)).ToList();
+                rightList = rightList.Except(Category1List).ToList();
                 leftList = leftList.Except(rightList).ToList();
                 leftList = leftList.Except(Category1List).ToList();
                 foreach (var itemLeft in leftList)
