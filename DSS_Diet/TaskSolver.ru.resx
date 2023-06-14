@@ -58,41 +58,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DTUnselectButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="TSUnselectButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="DTUnselectButton.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TSUnselectButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
   </data>
-  <data name="DTUnselectButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="TSUnselectButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="DTUnselectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 288</value>
-  </data>
-  <data name="DTUnselectButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSUnselectButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 30</value>
   </data>
-  <data name="DTUnselectButton.Text" xml:space="preserve">
+  <data name="TSUnselectButton.Text" xml:space="preserve">
     <value>&lt;&lt;</value>
   </data>
-  <data name="DTSelectButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="TSSelectButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="DTSelectButton.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TSSelectButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9.75pt</value>
   </data>
-  <data name="DTSelectButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="TSSelectButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="DTSelectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 240</value>
-  </data>
-  <data name="DTSelectButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSSelectButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 30</value>
   </data>
-  <data name="DTSelectButton.Text" xml:space="preserve">
+  <data name="TSSelectButton.Text" xml:space="preserve">
     <value>&gt;&gt;</value>
   </data>
   <data name="TDSolveButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
@@ -113,59 +107,47 @@
   <data name="TDSolveButton.Text" xml:space="preserve">
     <value>Решить задачу</value>
   </data>
-  <data name="DietProductsLabel.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TSDietProductsLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="DietProductsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="TSDietProductsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="DietProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 173</value>
-  </data>
-  <data name="DietProductsLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSDietProductsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>361, 24</value>
   </data>
-  <data name="DietProductsLabel.Text" xml:space="preserve">
+  <data name="TSDietProductsLabel.Text" xml:space="preserve">
     <value>Продукты рациона</value>
   </data>
-  <data name="DietProductsListBox.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TSDietProductsListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DietProductsListBox.ItemHeight" type="System.Int32, mscorlib">
+  <data name="TSDietProductsListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="DietProductsListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 200</value>
-  </data>
-  <data name="DietProductsListBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSDietProductsListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>361, 172</value>
   </data>
-  <data name="DTProductsNamesLabel.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TSProductsNamesLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="DTProductsNamesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="TSProductsNamesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="DTProductsNamesLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 173</value>
-  </data>
-  <data name="DTProductsNamesLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSProductsNamesLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>361, 24</value>
   </data>
-  <data name="DTProductsNamesLabel.Text" xml:space="preserve">
+  <data name="TSProductsNamesLabel.Text" xml:space="preserve">
     <value>Названия продуктов</value>
   </data>
-  <data name="DTProductsNamesListBox.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TSProductsNamesListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="DTProductsNamesListBox.ItemHeight" type="System.Int32, mscorlib">
+  <data name="TSProductsNamesListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="DTProductsNamesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 200</value>
-  </data>
-  <data name="DTProductsNamesListBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSProductsNamesListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>361, 172</value>
   </data>
   <data name="TSMoneyNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
@@ -174,22 +156,22 @@
   <data name="TSMoneyNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 23</value>
   </data>
-  <data name="TDMoneyLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="TSMoneyLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="TDMoneyLabel.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TSMoneyLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="TDMoneyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="TSMoneyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="TDMoneyLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 102</value>
+  <data name="TSMoneyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 102</value>
   </data>
-  <data name="TDMoneyLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSMoneyLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 21</value>
   </data>
-  <data name="TDMoneyLabel.Text" xml:space="preserve">
+  <data name="TSMoneyLabel.Text" xml:space="preserve">
     <value>Доступный бюджет:</value>
   </data>
   <data name="TSRubLabel.AutoSize" type="System.Boolean, mscorlib">
@@ -210,14 +192,17 @@
   <data name="TSRubLabel.Text" xml:space="preserve">
     <value>руб</value>
   </data>
-  <data name="SurnameTextBox.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TSSurnameTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="SurnameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="TSSurnameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>103, 43</value>
   </data>
-  <data name="SurnameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSSurnameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 29</value>
+  </data>
+  <data name="TSSurnameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="TSSurnameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -237,31 +222,25 @@
   <data name="TSSurnameLabel.Text" xml:space="preserve">
     <value>Фамилия:</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="TSPatientParametersSetLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TSPatientParametersSetLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="TSPatientParametersSetLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 9</value>
+  <data name="TSPatientParametersSetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>375, 13</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSPatientParametersSetLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 21</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="TSPatientParametersSetLabel.Text" xml:space="preserve">
     <value>Набор параметров пациента:</value>
   </data>
-  <data name="DNPatientParametersSetComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 45</value>
-  </data>
-  <data name="DNPatientParametersSetComboBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSPatientParametersSetComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>351, 23</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
@@ -274,7 +253,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 9</value>
+    <value>13, 13</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 21</value>
@@ -300,14 +279,17 @@
   <data name="TSPatronymLabel1.Text" xml:space="preserve">
     <value>Отчество:</value>
   </data>
-  <data name="waterMarkTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TSPatronymTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="waterMarkTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="TSPatronymTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>103, 113</value>
   </data>
-  <data name="waterMarkTextBox1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSPatronymTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 29</value>
+  </data>
+  <data name="TSPatronymTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="TSNameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -327,14 +309,17 @@
   <data name="TSNameLabel.Text" xml:space="preserve">
     <value>Имя:</value>
   </data>
-  <data name="waterMarkTextBox2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TSNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <data name="waterMarkTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="TSNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>103, 78</value>
   </data>
-  <data name="waterMarkTextBox2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TSNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 29</value>
+  </data>
+  <data name="TSNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="TSPatronymLabel2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

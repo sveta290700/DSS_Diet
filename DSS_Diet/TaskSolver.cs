@@ -15,28 +15,30 @@ namespace DietProject
         private DataTable ProductsNamesTable = new DataTable();
         private List<string> ProductsNamesList = new List<string>();
 
+        private const int FEATURES_COUNT = 9;
+
         public TaskSolver()
         {
             InitializeComponent();
         }
 
-        private void TaskDataInput_Load(object sender, EventArgs e)
+        private void TaskSolver_Load(object sender, EventArgs e)
         {
             adapter = new SqlDataAdapter("SELECT * FROM [НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА]", Program.sqlConnection);
             adapter.Fill(PatientParametersSetTable);
-            DNPatientParametersSetComboBox.DataSource = PatientParametersSetTable;
+            TSPatientParametersSetComboBox.DataSource = PatientParametersSetTable;
             PatientParametersSetTable.Columns.Add(
                 "Полное_описание_набора",
                 typeof(string),
                 "'Рост: ' + Рост_пациента + ' см, вес: ' + Вес_пациента + ' кг, пол: ' + Пол_пациента");
-            DNPatientParametersSetComboBox.DisplayMember = "Полное_описание_набора";
-            DNPatientParametersSetComboBox.ValueMember = "ID_набора_параметров_пациента";
+            TSPatientParametersSetComboBox.DisplayMember = "Полное_описание_набора";
+            TSPatientParametersSetComboBox.ValueMember = "ID_набора_параметров_пациента";
             adapter = new SqlDataAdapter("SELECT * FROM [ПРОДУКТ]", Program.sqlConnection);
             adapter.Fill(ProductsNamesTable);
             ProductsNamesList = ProductsNamesTable.AsEnumerable().Select(n => n.Field<string>(1)).ToList();
             foreach (var productName in ProductsNamesList)
             {
-                DTProductsNamesListBox.Items.Add(productName);
+                TSProductsNamesListBox.Items.Add(productName);
             }
         }
 
@@ -50,172 +52,202 @@ namespace DietProject
             }
         }
 
-        private void DTSelectButton_Click(object sender, EventArgs e)
+        private void TSSelectButton_Click(object sender, EventArgs e)
         {
-            MoveSelectedItems(DTProductsNamesListBox, DietProductsListBox);
+            MoveSelectedItems(TSProductsNamesListBox, TSDietProductsListBox);
         }
 
-        private void DTUnselectButton_Click(object sender, EventArgs e)
+        private void TSUnselectButton_Click(object sender, EventArgs e)
         {
-            MoveSelectedItems(DietProductsListBox, DTProductsNamesListBox);
+            MoveSelectedItems(TSDietProductsListBox, TSProductsNamesListBox);
         }
 
-        private void TDSolveButton_Click(object sender, EventArgs e)
+        private void TSSolveButton_Click(object sender, EventArgs e)
         {
-            if (DietProductsListBox.Items.Cast<string>().ToList().Count != 0)
+            if (TSDietProductsListBox.Items.Cast<string>().ToList().Count != 0)
             {
-                if (Program.sqlConnection.State == ConnectionState.Open)
-                    Program.sqlConnection.Close();
-                Program.sqlConnection.Open();
-                List<string> notCompatibleMessagesList = new List<string>();
-                string notCompatibleMessagesString = "";
-                foreach (var dietProductName1 in DietProductsListBox.Items)
+                if ((TSSurnameTextBox.Text != "") && (TSNameTextBox.Text != ""))
                 {
-                    SqlCommand getDietProductId1 = new SqlCommand("SELECT Id FROM ProductsNames WHERE Name = N'" + dietProductName1 + "';", Program.sqlConnection);
-                    int dietProductId1 = (int)getDietProductId1.ExecuteScalar();
-                    SqlCommand getDietProductCategoryId1 = new SqlCommand("SELECT CategoryId FROM ProductsOfCategories WHERE ProductId = " + dietProductId1 + ";", Program.sqlConnection);
-                    int dietProductCategoryId1 = (int)getDietProductCategoryId1.ExecuteScalar();
-                    SqlCommand getDietProductCategoryName1 = new SqlCommand("SELECT Name FROM Categories WHERE Id = " + dietProductCategoryId1 + ";", Program.sqlConnection);
-                    string dietProductCategoryName1 = (string)getDietProductCategoryName1.ExecuteScalar();
-                    List<string> dietProductsNamesExceptThis = new List<string>(DietProductsListBox.Items.Cast<string>().ToList());
-                    dietProductsNamesExceptThis.Remove((string)dietProductName1);
-                    foreach (var dietProductName2 in dietProductsNamesExceptThis)
+                    if (Program.sqlConnection.State == ConnectionState.Open)
+                        Program.sqlConnection.Close();
+                    Program.sqlConnection.Open();
+                    List<string> notCompatibleMessagesList = new List<string>();
+                    string notCompatibleMessagesString = "";
+                    foreach (var dietProductName1 in TSDietProductsListBox.Items)
                     {
-                        SqlCommand getDietProductId2 = new SqlCommand("SELECT Id FROM ProductsNames WHERE Name = N'" + dietProductName2 + "';", Program.sqlConnection);
-                        int dietProductId2 = (int)getDietProductId2.ExecuteScalar();
-                        SqlCommand getDietProductCategoryId2 = new SqlCommand("SELECT CategoryId FROM ProductsOfCategories WHERE ProductId = " + dietProductId2 + ";", Program.sqlConnection);
-                        int dietProductCategoryId2 = (int)getDietProductCategoryId2.ExecuteScalar();
-                        SqlCommand getDietProductCategoryName2 = new SqlCommand("SELECT Name FROM Categories WHERE Id = " + dietProductCategoryId2 + ";", Program.sqlConnection);
-                        string dietProductCategoryName2 = (string)getDietProductCategoryName2.ExecuteScalar();
-                        SqlCommand checkIfCompatible = new SqlCommand("SELECT COUNT(*) FROM CompatibleCategories WHERE CategoryId1 = " + dietProductCategoryId1 + " AND CategoryId2 = " + dietProductCategoryId2 + ";", Program.sqlConnection);
-                        int checkIfCompatibleRes = (int)checkIfCompatible.ExecuteScalar();
-                        if (checkIfCompatibleRes == 0)
+                        SqlCommand getDietProductId1 = new SqlCommand("SELECT [ID_продукта] FROM [ПРОДУКТ] WHERE [Название_продукта] = N'" + dietProductName1 + "';", Program.sqlConnection);
+                        int dietProductId1 = (int)getDietProductId1.ExecuteScalar();
+                        SqlCommand getDietProductCategoryId1 = new SqlCommand("SELECT [ID_категории_продуктов] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId1 + ";", Program.sqlConnection);
+                        int dietProductCategoryId1 = (int)getDietProductCategoryId1.ExecuteScalar();
+                        SqlCommand getDietProductCategoryName1 = new SqlCommand("SELECT [Название_категории_продуктов] FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [ID_категории_продуктов] = " + dietProductCategoryId1 + ";", Program.sqlConnection);
+                        string dietProductCategoryName1 = (string)getDietProductCategoryName1.ExecuteScalar();
+                        List<string> dietProductsNamesExceptThis = new List<string>(TSDietProductsListBox.Items.Cast<string>().ToList());
+                        dietProductsNamesExceptThis.Remove((string)dietProductName1);
+                        foreach (var dietProductName2 in dietProductsNamesExceptThis)
                         {
-                            string stringResult1 = "Продукты " + dietProductName1 + " (категория: " + dietProductCategoryName1 + ") и " + dietProductName2 + " (категория: " + dietProductCategoryName2 + ") несовместимы!\n\n";
-                            string stringResult2 = "Продукты " + dietProductName2 + " (категория: " + dietProductCategoryName2 + ") и " + dietProductName1 + " (категория: " + dietProductCategoryName1 + ") несовместимы!\n\n";
-                            if (!notCompatibleMessagesList.Contains(stringResult2))
+                            SqlCommand getDietProductId2 = new SqlCommand("SELECT [ID_продукта] FROM [ПРОДУКТ] WHERE [Название_продукта] = N'" + dietProductName2 + "';", Program.sqlConnection);
+                            int dietProductId2 = (int)getDietProductId2.ExecuteScalar();
+                            SqlCommand getDietProductCategoryId2 = new SqlCommand("SELECT [ID_категории_продуктов] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId2 + ";", Program.sqlConnection);
+                            int dietProductCategoryId2 = (int)getDietProductCategoryId2.ExecuteScalar();
+                            SqlCommand getDietProductCategoryName2 = new SqlCommand("SELECT [Название_категории_продуктов] FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [ID_категории_продуктов] = " + dietProductCategoryId2 + ";", Program.sqlConnection);
+                            string dietProductCategoryName2 = (string)getDietProductCategoryName2.ExecuteScalar();
+                            SqlCommand checkIfCompatible = new SqlCommand("SELECT COUNT(*) FROM [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ] WHERE [ID_категории_продуктов] = " + dietProductCategoryId1 + " AND [ID_совместимой_категории_продуктов] = " + dietProductCategoryId2 + ";", Program.sqlConnection);
+                            int checkIfCompatibleRes = (int)checkIfCompatible.ExecuteScalar();
+                            if (checkIfCompatibleRes == 0)
                             {
-                                notCompatibleMessagesList.Add(stringResult1);
-                                notCompatibleMessagesString += stringResult1;
+                                string stringResult1 = "Продукты " + dietProductName1 + " (категория: " + dietProductCategoryName1 + ") и " + dietProductName2 + " (категория: " + dietProductCategoryName2 + ") несовместимы!\n\n";
+                                string stringResult2 = "Продукты " + dietProductName2 + " (категория: " + dietProductCategoryName2 + ") и " + dietProductName1 + " (категория: " + dietProductCategoryName1 + ") несовместимы!\n\n";
+                                if (!notCompatibleMessagesList.Contains(stringResult2))
+                                {
+                                    notCompatibleMessagesList.Add(stringResult1);
+                                    notCompatibleMessagesString += stringResult1;
+                                }
                             }
                         }
                     }
-                }
-                if (notCompatibleMessagesString.Length == 0)
-                {
-                    SqlDataAdapter adapter = new SqlDataAdapter();
-                    DataTable FeaturesTable = new DataTable();
-                    List<int> FeaturesIdList = new List<int>();
-                    SqlCommand getFeaturesCount = new SqlCommand("SELECT COUNT (*) FROM Features;", Program.sqlConnection);
-                    int featuresCount = (int)getFeaturesCount.ExecuteScalar();
-                    double[,] systemLeft = new double[featuresCount, DietProductsListBox.Items.Count];
-                    double[] systemRight = new double[featuresCount];
-                    int counterProducts = 0;
-                    foreach (var dietProductName in DietProductsListBox.Items)
+                    if (notCompatibleMessagesString.Length == 0)
                     {
-                        SqlCommand getDietProductId = new SqlCommand("SELECT Id FROM ProductsNames WHERE Name = N'" + dietProductName + "';", Program.sqlConnection);
-                        int dietProductId = (int)getDietProductId.ExecuteScalar();
-                        adapter = new SqlDataAdapter("SELECT Id FROM Features;", Program.sqlConnection);
-                        FeaturesTable.Clear();
-                        adapter.Fill(FeaturesTable);
-                        FeaturesIdList.Clear();
-                        FeaturesIdList = FeaturesTable.AsEnumerable().Select(n => n.Field<int>(0)).ToList();
-                        int counterFeatures = 0;
-                        foreach (var featureId in FeaturesIdList)
+                        double[,] systemLeft = new double[FEATURES_COUNT, TSDietProductsListBox.Items.Count];
+                        double[] systemRight = new double[FEATURES_COUNT];
+                        int counterProducts = 0;
+                        foreach (var dietProductName in TSDietProductsListBox.Items)
                         {
-                            SqlCommand getFeatureValue = new SqlCommand("SELECT Value FROM ProductsFeaturesValues WHERE ProductId = " + dietProductId + " AND FeatureId = " + featureId + ";", Program.sqlConnection);
+                            SqlCommand getDietProductId = new SqlCommand("SELECT [ID_продукта] FROM [ПРОДУКТ] WHERE [Название_продукта] = N'" + dietProductName + "';", Program.sqlConnection);
+                            int dietProductId = (int)getDietProductId.ExecuteScalar();
+                            SqlCommand getFeatureValue = new SqlCommand("SELECT [Содержание_белков_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
                             object featureValueRes = getFeatureValue.ExecuteScalar();
-                            double featureValue = 0.0;
-                            if (featureValueRes != null)
-                            {
-                                featureValue = decimal.ToDouble((decimal)featureValueRes);
-                            }
-                            systemLeft[counterFeatures, counterProducts] = featureValue;
-                            counterFeatures++;
+                            double featureValue = decimal.ToDouble((decimal)featureValueRes);
+                            systemLeft[0, counterProducts] = featureValue / 100;
+                            getFeatureValue = new SqlCommand("SELECT [Содержание_жиров_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
+                            featureValueRes = getFeatureValue.ExecuteScalar();
+                            featureValue = decimal.ToDouble((decimal)featureValueRes);
+                            systemLeft[1, counterProducts] = featureValue / 100;
+                            getFeatureValue = new SqlCommand("SELECT [Содержание_углеводов_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
+                            featureValueRes = getFeatureValue.ExecuteScalar();
+                            featureValue = decimal.ToDouble((decimal)featureValueRes);
+                            systemLeft[2, counterProducts] = featureValue / 100;
+                            getFeatureValue = new SqlCommand("SELECT [Содержание_витамина_A_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
+                            featureValueRes = getFeatureValue.ExecuteScalar();
+                            featureValue = decimal.ToDouble((decimal)featureValueRes);
+                            systemLeft[3, counterProducts] = featureValue / 100;
+                            getFeatureValue = new SqlCommand("SELECT [Содержание_витамина_B1_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
+                            featureValueRes = getFeatureValue.ExecuteScalar();
+                            featureValue = decimal.ToDouble((decimal)featureValueRes);
+                            systemLeft[4, counterProducts] = featureValue / 100;
+                            getFeatureValue = new SqlCommand("SELECT [Содержание_витамина_C_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
+                            featureValueRes = getFeatureValue.ExecuteScalar();
+                            featureValue = decimal.ToDouble((decimal)featureValueRes);
+                            systemLeft[5, counterProducts] = featureValue / 100;
+                            getFeatureValue = new SqlCommand("SELECT [Содержание_клетчатки_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
+                            featureValueRes = getFeatureValue.ExecuteScalar();
+                            featureValue = decimal.ToDouble((decimal)featureValueRes);
+                            systemLeft[6, counterProducts] = featureValue / 100;
+                            getFeatureValue = new SqlCommand("SELECT [Калорийность_на_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
+                            featureValueRes = getFeatureValue.ExecuteScalar();
+                            featureValue = Convert.ToDouble((int)featureValueRes);
+                            systemLeft[7, counterProducts] = featureValue / 100;
+                            getFeatureValue = new SqlCommand("SELECT [Стоимость_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + dietProductId + ";", Program.sqlConnection);
+                            featureValueRes = getFeatureValue.ExecuteScalar();
+                            featureValue = decimal.ToDouble((decimal)featureValueRes);
+                            systemLeft[8, counterProducts] = featureValue / 100;
+                            counterProducts++;
                         }
-                        counterProducts++;               
-                    }
-                    int counterFeaturesRight = 0;
-                    foreach (var featureId in FeaturesIdList)
-                    {
-                        if (featureId != 1)
+                        DataRowView item = (DataRowView)TSPatientParametersSetComboBox.SelectedItem;
+                        int selectedSetId = (int)item.Row[0];
+                        SqlCommand getDayNorm = new SqlCommand("SELECT [Значение_суточной_нормы_белков] FROM [СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ] WHERE [ID_набора_параметров_пациента] = " + selectedSetId + ";", Program.sqlConnection);
+                        double dayNorm = decimal.ToDouble((decimal)getDayNorm.ExecuteScalar());
+                        systemRight[0] = dayNorm;
+                        getDayNorm = new SqlCommand("SELECT [Значение_суточной_нормы_жиров] FROM [СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ] WHERE [ID_набора_параметров_пациента] = " + selectedSetId + ";", Program.sqlConnection);
+                        dayNorm = decimal.ToDouble((decimal)getDayNorm.ExecuteScalar());
+                        systemRight[1] = dayNorm;
+                        getDayNorm = new SqlCommand("SELECT [Значение_суточной_нормы_углеводов] FROM [СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ] WHERE [ID_набора_параметров_пациента] = " + selectedSetId + ";", Program.sqlConnection);
+                        dayNorm = decimal.ToDouble((decimal)getDayNorm.ExecuteScalar());
+                        systemRight[2] = dayNorm;
+                        getDayNorm = new SqlCommand("SELECT [Значение_суточной_нормы_витамина_A] FROM [СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ] WHERE [ID_набора_параметров_пациента] = " + selectedSetId + ";", Program.sqlConnection);
+                        dayNorm = decimal.ToDouble((decimal)getDayNorm.ExecuteScalar());
+                        systemRight[3] = dayNorm;
+                        getDayNorm = new SqlCommand("SELECT [Значение_суточной_нормы_витамина_B1] FROM [СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ] WHERE [ID_набора_параметров_пациента] = " + selectedSetId + ";", Program.sqlConnection);
+                        dayNorm = decimal.ToDouble((decimal)getDayNorm.ExecuteScalar());
+                        systemRight[4] = dayNorm;
+                        getDayNorm = new SqlCommand("SELECT [Значение_суточной_нормы_витамина_C] FROM [СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ] WHERE [ID_набора_параметров_пациента] = " + selectedSetId + ";", Program.sqlConnection);
+                        dayNorm = decimal.ToDouble((decimal)getDayNorm.ExecuteScalar());
+                        systemRight[5] = dayNorm;
+                        getDayNorm = new SqlCommand("SELECT [Значение_суточной_нормы_клетчатки] FROM [СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ] WHERE [ID_набора_параметров_пациента] = " + selectedSetId + ";", Program.sqlConnection);
+                        dayNorm = decimal.ToDouble((decimal)getDayNorm.ExecuteScalar());
+                        systemRight[6] = dayNorm;
+                        getDayNorm = new SqlCommand("SELECT [Значение_суточной_нормы_калорий] FROM [СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ] WHERE [ID_набора_параметров_пациента] = " + selectedSetId + ";", Program.sqlConnection);
+                        dayNorm = Convert.ToDouble((int)getDayNorm.ExecuteScalar());
+                        systemRight[7] = dayNorm;
+                        systemRight[8] = (double)TSMoneyNumericUpDown.Value;
+                        adapter = new SqlDataAdapter("SELECT Id FROM ProductsNames;", Program.sqlConnection);
+                        Solver solver = Solver.CreateSolver("GLOP");
+                        List<Variable> foods = new List<Variable>();
+                        for (int i = 0; i < TSDietProductsListBox.Items.Cast<string>().ToList().Count; ++i)
                         {
-                            SqlCommand getDayNorm = new SqlCommand("SELECT Value FROM DayNorms WHERE SubstanceId = " + featureId + ";", Program.sqlConnection);
-                            double dayNorm = decimal.ToDouble((decimal)getDayNorm.ExecuteScalar());
-                            systemRight[counterFeaturesRight] = dayNorm;
+                            string varName = "x" + i;
+                            foods.Add(solver.MakeNumVar(0.0, 1000.0, varName));
+                        }
+                        List<Google.OrTools.LinearSolver.Constraint> constraints = new List<Google.OrTools.LinearSolver.Constraint>();
+                        Objective objective = solver.Objective();
+                        for (int i = 0; i < FEATURES_COUNT; i++)
+                        {
+                            Google.OrTools.LinearSolver.Constraint constraint = solver.MakeConstraint();
+                            if (i == FEATURES_COUNT - 1)
+                            {
+                                constraint.SetBounds(0.0, systemRight[FEATURES_COUNT - 1]);
+                            }
+                            else
+                            {
+                                constraint.SetBounds(systemRight[i], double.PositiveInfinity);
+                            }
+                            for (int j = 0; j < TSDietProductsListBox.Items.Count; j++)
+                            {
+                                if (i == FEATURES_COUNT - 1)
+                                {
+                                    objective.SetCoefficient(foods[j], systemLeft[i, j]);
+                                }
+                                constraint.SetCoefficient(foods[j], systemLeft[i, j]);
+                            }
+                            constraints.Add(constraint);
+                        }
+                        objective.SetMinimization();
+                        Solver.ResultStatus resultStatus = solver.Solve();
+                        if (resultStatus == Solver.ResultStatus.INFEASIBLE)
+                        {
+                            MessageFormSmall ErrorForm = new MessageFormSmall();
+                            ErrorForm.LabelText.Text = "Рацион с таким набором продуктов и доступным бюджетом составить нельзя.";
+                            ErrorForm.Text = "Ошибка";
+                            ErrorForm.ShowDialog();
                         }
                         else
                         {
-                            systemRight[counterFeaturesRight] = (double)TSMoneyNumericUpDown.Value;
-                        }
-                        counterFeaturesRight++;
-                    }
-                    adapter = new SqlDataAdapter("SELECT Id FROM ProductsNames;", Program.sqlConnection);
-                    FeaturesTable.Clear();
-                    adapter.Fill(FeaturesTable);
-                    FeaturesIdList.Clear();
-                    FeaturesIdList = FeaturesTable.AsEnumerable().Select(n => n.Field<int>(0)).ToList();
-                    Solver solver = Solver.CreateSolver("GLOP");
-                    List<Variable> foods = new List<Variable>();
-                    for (int i = 0; i < DietProductsListBox.Items.Cast<string>().ToList().Count; ++i)
-                    {
-                        string varName = "x" + i;
-                        foods.Add(solver.MakeNumVar(0.0, 10.0, varName));
-                    }
-                    List<Google.OrTools.LinearSolver.Constraint> constraints = new List<Google.OrTools.LinearSolver.Constraint>();
-                    Objective objective = solver.Objective();
-                    for (int i = 0; i < featuresCount; i++)
-                    {
-                        Google.OrTools.LinearSolver.Constraint constraint = solver.MakeConstraint();
-                        if (i == 0)
-                        {
-                            constraint.SetBounds(0.0, systemRight[i]);
-                        }
-                        else
-                        {
-                            constraint.SetBounds(systemRight[i], double.PositiveInfinity);
-                        }
-                        for (int j = 0; j < DietProductsListBox.Items.Count; j++)
-                        {
-                            if (i == 0)
+                            string dietReady = "";
+                            for (int i = 0; i < foods.Count; ++i)
                             {
-                                objective.SetCoefficient(foods[j], systemLeft[i, j]);
+                                dietReady += $"{TSDietProductsListBox.Items[i]} - {foods[i].SolutionValue():N3} г\n\n";
                             }
-                            constraint.SetCoefficient(foods[j], systemLeft[i, j]);
+                            MessageFormLarge TaskResultForm = new MessageFormLarge();
+                            TaskResultForm.LabelText.Text = "Согласно списку выбранных продуктов и доступному бюджету\n для Вас был спроектирован следующий суточный рацион:\n\n" + dietReady;
+                            TaskResultForm.Text = "Результат решения задачи";
+                            TaskResultForm.ShowDialog();
                         }
-                        constraints.Add(constraint);
-                    }
-                    objective.SetMinimization();
-                    Solver.ResultStatus resultStatus = solver.Solve();
-                    if (resultStatus == Solver.ResultStatus.INFEASIBLE)
-                    {
-                        MessageFormSmall ErrorForm = new MessageFormSmall();
-                        ErrorForm.LabelText.Text = "Рацион с таким набором продуктов и доступным бюджетом составить нельзя.";
-                        ErrorForm.Text = "Ошибка";
-                        ErrorForm.ShowDialog();
                     }
                     else
                     {
-                        double[] solveResult = new double[DietProductsListBox.Items.Count];
-                        string dietReady = "";
-                        for (int i = 0; i < foods.Count; ++i)
-                        {
-                            dietReady += $"{DietProductsListBox.Items[i]} - {foods[i].SolutionValue():N3} кг\n\n";
-                        }
-                        MessageFormLarge TaskResultForm = new MessageFormLarge();
-                        TaskResultForm.LabelText.Text = "Согласно списку выбранных продуктов и доступному бюджету для Вас был спроектирован следующий суточный рацион:\n\n" + dietReady;
-                        TaskResultForm.Text = "Результат решения задачи";
-                        TaskResultForm.ShowDialog();
+                        MessageFormLarge ErrorFormIncompatible = new MessageFormLarge();
+                        ErrorFormIncompatible.LabelText.Text = notCompatibleMessagesString;
+                        ErrorFormIncompatible.Text = "Найдены несовместимые продукты.";
+                        ErrorFormIncompatible.ShowDialog();
                     }
+                    Program.sqlConnection.Close();
                 }
                 else
                 {
-                    MessageFormLarge ErrorFormIncompatible = new MessageFormLarge();
-                    ErrorFormIncompatible.LabelText.Text = notCompatibleMessagesString;
-                    ErrorFormIncompatible.Text = "Найдены несовместимые продукты";
-                    ErrorFormIncompatible.ShowDialog();
+                    MessageFormSmall ErrorForm = new MessageFormSmall();
+                    ErrorForm.LabelText.Text = "Фамилия и имя пациента не могут быть пустыми.";
+                    ErrorForm.Text = "Ошибка";
+                    ErrorForm.ShowDialog();
                 }
-                Program.sqlConnection.Close();
             }
             else
             {

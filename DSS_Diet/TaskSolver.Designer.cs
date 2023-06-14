@@ -30,48 +30,48 @@ namespace DietProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TaskSolver));
-            this.DTUnselectButton = new System.Windows.Forms.Button();
-            this.DTSelectButton = new System.Windows.Forms.Button();
+            this.TSUnselectButton = new System.Windows.Forms.Button();
+            this.TSSelectButton = new System.Windows.Forms.Button();
             this.TDSolveButton = new System.Windows.Forms.Button();
-            this.DietProductsLabel = new System.Windows.Forms.Label();
-            this.DietProductsListBox = new System.Windows.Forms.ListBox();
-            this.DTProductsNamesLabel = new System.Windows.Forms.Label();
-            this.DTProductsNamesListBox = new System.Windows.Forms.ListBox();
+            this.TSDietProductsLabel = new System.Windows.Forms.Label();
+            this.TSDietProductsListBox = new System.Windows.Forms.ListBox();
+            this.TSProductsNamesLabel = new System.Windows.Forms.Label();
+            this.TSProductsNamesListBox = new System.Windows.Forms.ListBox();
             this.TSMoneyNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.TDMoneyLabel = new System.Windows.Forms.Label();
+            this.TSMoneyLabel = new System.Windows.Forms.Label();
             this.TSRubLabel = new System.Windows.Forms.Label();
-            this.SurnameTextBox = new DietProject.WaterMarkTextBox();
+            this.TSSurnameTextBox = new DietProject.WaterMarkTextBox();
             this.TSSurnameLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.DNPatientParametersSetComboBox = new System.Windows.Forms.ComboBox();
+            this.TSPatientParametersSetLabel = new System.Windows.Forms.Label();
+            this.TSPatientParametersSetComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.TSPatronymLabel1 = new System.Windows.Forms.Label();
-            this.waterMarkTextBox1 = new DietProject.WaterMarkTextBox();
+            this.TSPatronymTextBox = new DietProject.WaterMarkTextBox();
             this.TSNameLabel = new System.Windows.Forms.Label();
-            this.waterMarkTextBox2 = new DietProject.WaterMarkTextBox();
+            this.TSNameTextBox = new DietProject.WaterMarkTextBox();
             this.TSPatronymLabel2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.TSMoneyNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
-            // DTUnselectButton
+            // TSUnselectButton
             // 
-            resources.ApplyResources(this.DTUnselectButton, "DTUnselectButton");
-            this.DTUnselectButton.BackColor = System.Drawing.SystemColors.Window;
-            this.DTUnselectButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.DTUnselectButton.Name = "DTUnselectButton";
-            this.DTUnselectButton.TabStop = false;
-            this.DTUnselectButton.UseVisualStyleBackColor = false;
-            this.DTUnselectButton.Click += new System.EventHandler(this.DTUnselectButton_Click);
+            resources.ApplyResources(this.TSUnselectButton, "TSUnselectButton");
+            this.TSUnselectButton.BackColor = System.Drawing.SystemColors.Window;
+            this.TSUnselectButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.TSUnselectButton.Name = "TSUnselectButton";
+            this.TSUnselectButton.TabStop = false;
+            this.TSUnselectButton.UseVisualStyleBackColor = false;
+            this.TSUnselectButton.Click += new System.EventHandler(this.TSUnselectButton_Click);
             // 
-            // DTSelectButton
+            // TSSelectButton
             // 
-            resources.ApplyResources(this.DTSelectButton, "DTSelectButton");
-            this.DTSelectButton.BackColor = System.Drawing.SystemColors.Window;
-            this.DTSelectButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.DTSelectButton.Name = "DTSelectButton";
-            this.DTSelectButton.TabStop = false;
-            this.DTSelectButton.UseVisualStyleBackColor = false;
-            this.DTSelectButton.Click += new System.EventHandler(this.DTSelectButton_Click);
+            resources.ApplyResources(this.TSSelectButton, "TSSelectButton");
+            this.TSSelectButton.BackColor = System.Drawing.SystemColors.Window;
+            this.TSSelectButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.TSSelectButton.Name = "TSSelectButton";
+            this.TSSelectButton.TabStop = false;
+            this.TSSelectButton.UseVisualStyleBackColor = false;
+            this.TSSelectButton.Click += new System.EventHandler(this.TSSelectButton_Click);
             // 
             // TDSolveButton
             // 
@@ -81,37 +81,37 @@ namespace DietProject
             this.TDSolveButton.Name = "TDSolveButton";
             this.TDSolveButton.TabStop = false;
             this.TDSolveButton.UseVisualStyleBackColor = false;
-            this.TDSolveButton.Click += new System.EventHandler(this.TDSolveButton_Click);
+            this.TDSolveButton.Click += new System.EventHandler(this.TSSolveButton_Click);
             // 
-            // DietProductsLabel
+            // TSDietProductsLabel
             // 
-            resources.ApplyResources(this.DietProductsLabel, "DietProductsLabel");
-            this.DietProductsLabel.BackColor = System.Drawing.Color.LightGreen;
-            this.DietProductsLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DietProductsLabel.Name = "DietProductsLabel";
+            resources.ApplyResources(this.TSDietProductsLabel, "TSDietProductsLabel");
+            this.TSDietProductsLabel.BackColor = System.Drawing.Color.LightGreen;
+            this.TSDietProductsLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TSDietProductsLabel.Name = "TSDietProductsLabel";
             // 
-            // DietProductsListBox
+            // TSDietProductsListBox
             // 
-            resources.ApplyResources(this.DietProductsListBox, "DietProductsListBox");
-            this.DietProductsListBox.FormattingEnabled = true;
-            this.DietProductsListBox.Name = "DietProductsListBox";
-            this.DietProductsListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.DietProductsListBox.TabStop = false;
+            resources.ApplyResources(this.TSDietProductsListBox, "TSDietProductsListBox");
+            this.TSDietProductsListBox.FormattingEnabled = true;
+            this.TSDietProductsListBox.Name = "TSDietProductsListBox";
+            this.TSDietProductsListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.TSDietProductsListBox.TabStop = false;
             // 
-            // DTProductsNamesLabel
+            // TSProductsNamesLabel
             // 
-            resources.ApplyResources(this.DTProductsNamesLabel, "DTProductsNamesLabel");
-            this.DTProductsNamesLabel.BackColor = System.Drawing.Color.LightGreen;
-            this.DTProductsNamesLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DTProductsNamesLabel.Name = "DTProductsNamesLabel";
+            resources.ApplyResources(this.TSProductsNamesLabel, "TSProductsNamesLabel");
+            this.TSProductsNamesLabel.BackColor = System.Drawing.Color.LightGreen;
+            this.TSProductsNamesLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TSProductsNamesLabel.Name = "TSProductsNamesLabel";
             // 
-            // DTProductsNamesListBox
+            // TSProductsNamesListBox
             // 
-            resources.ApplyResources(this.DTProductsNamesListBox, "DTProductsNamesListBox");
-            this.DTProductsNamesListBox.FormattingEnabled = true;
-            this.DTProductsNamesListBox.Name = "DTProductsNamesListBox";
-            this.DTProductsNamesListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.DTProductsNamesListBox.TabStop = false;
+            resources.ApplyResources(this.TSProductsNamesListBox, "TSProductsNamesListBox");
+            this.TSProductsNamesListBox.FormattingEnabled = true;
+            this.TSProductsNamesListBox.Name = "TSProductsNamesListBox";
+            this.TSProductsNamesListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.TSProductsNamesListBox.TabStop = false;
             // 
             // TSMoneyNumericUpDown
             // 
@@ -134,41 +134,41 @@ namespace DietProject
             0,
             0});
             // 
-            // TDMoneyLabel
+            // TSMoneyLabel
             // 
-            resources.ApplyResources(this.TDMoneyLabel, "TDMoneyLabel");
-            this.TDMoneyLabel.Name = "TDMoneyLabel";
+            resources.ApplyResources(this.TSMoneyLabel, "TSMoneyLabel");
+            this.TSMoneyLabel.Name = "TSMoneyLabel";
             // 
             // TSRubLabel
             // 
             resources.ApplyResources(this.TSRubLabel, "TSRubLabel");
             this.TSRubLabel.Name = "TSRubLabel";
             // 
-            // SurnameTextBox
+            // TSSurnameTextBox
             // 
-            resources.ApplyResources(this.SurnameTextBox, "SurnameTextBox");
-            this.SurnameTextBox.Name = "SurnameTextBox";
-            this.SurnameTextBox.TabStop = false;
-            this.SurnameTextBox.WaterMarkColor = System.Drawing.Color.Gray;
-            this.SurnameTextBox.WaterMarkText = "Фамилия пациента";
+            resources.ApplyResources(this.TSSurnameTextBox, "TSSurnameTextBox");
+            this.TSSurnameTextBox.Name = "TSSurnameTextBox";
+            this.TSSurnameTextBox.TabStop = false;
+            this.TSSurnameTextBox.WaterMarkColor = System.Drawing.Color.Gray;
+            this.TSSurnameTextBox.WaterMarkText = "Фамилия пациента";
             // 
             // TSSurnameLabel
             // 
             resources.ApplyResources(this.TSSurnameLabel, "TSSurnameLabel");
             this.TSSurnameLabel.Name = "TSSurnameLabel";
             // 
-            // label1
+            // TSPatientParametersSetLabel
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.TSPatientParametersSetLabel, "TSPatientParametersSetLabel");
+            this.TSPatientParametersSetLabel.Name = "TSPatientParametersSetLabel";
             // 
-            // DNPatientParametersSetComboBox
+            // TSPatientParametersSetComboBox
             // 
-            resources.ApplyResources(this.DNPatientParametersSetComboBox, "DNPatientParametersSetComboBox");
-            this.DNPatientParametersSetComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.DNPatientParametersSetComboBox.FormattingEnabled = true;
-            this.DNPatientParametersSetComboBox.Name = "DNPatientParametersSetComboBox";
-            this.DNPatientParametersSetComboBox.TabStop = false;
+            resources.ApplyResources(this.TSPatientParametersSetComboBox, "TSPatientParametersSetComboBox");
+            this.TSPatientParametersSetComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TSPatientParametersSetComboBox.FormattingEnabled = true;
+            this.TSPatientParametersSetComboBox.Name = "TSPatientParametersSetComboBox";
+            this.TSPatientParametersSetComboBox.TabStop = false;
             // 
             // label2
             // 
@@ -180,26 +180,26 @@ namespace DietProject
             resources.ApplyResources(this.TSPatronymLabel1, "TSPatronymLabel1");
             this.TSPatronymLabel1.Name = "TSPatronymLabel1";
             // 
-            // waterMarkTextBox1
+            // TSPatronymTextBox
             // 
-            resources.ApplyResources(this.waterMarkTextBox1, "waterMarkTextBox1");
-            this.waterMarkTextBox1.Name = "waterMarkTextBox1";
-            this.waterMarkTextBox1.TabStop = false;
-            this.waterMarkTextBox1.WaterMarkColor = System.Drawing.Color.Gray;
-            this.waterMarkTextBox1.WaterMarkText = "Отчество пациента";
+            resources.ApplyResources(this.TSPatronymTextBox, "TSPatronymTextBox");
+            this.TSPatronymTextBox.Name = "TSPatronymTextBox";
+            this.TSPatronymTextBox.TabStop = false;
+            this.TSPatronymTextBox.WaterMarkColor = System.Drawing.Color.Gray;
+            this.TSPatronymTextBox.WaterMarkText = "Отчество пациента";
             // 
             // TSNameLabel
             // 
             resources.ApplyResources(this.TSNameLabel, "TSNameLabel");
             this.TSNameLabel.Name = "TSNameLabel";
             // 
-            // waterMarkTextBox2
+            // TSNameTextBox
             // 
-            resources.ApplyResources(this.waterMarkTextBox2, "waterMarkTextBox2");
-            this.waterMarkTextBox2.Name = "waterMarkTextBox2";
-            this.waterMarkTextBox2.TabStop = false;
-            this.waterMarkTextBox2.WaterMarkColor = System.Drawing.Color.Gray;
-            this.waterMarkTextBox2.WaterMarkText = "Имя пациента";
+            resources.ApplyResources(this.TSNameTextBox, "TSNameTextBox");
+            this.TSNameTextBox.Name = "TSNameTextBox";
+            this.TSNameTextBox.TabStop = false;
+            this.TSNameTextBox.WaterMarkColor = System.Drawing.Color.Gray;
+            this.TSNameTextBox.WaterMarkText = "Имя пациента";
             // 
             // TSPatronymLabel2
             // 
@@ -213,28 +213,28 @@ namespace DietProject
             this.BackColor = System.Drawing.SystemColors.Window;
             this.Controls.Add(this.TSPatronymLabel2);
             this.Controls.Add(this.TSNameLabel);
-            this.Controls.Add(this.waterMarkTextBox2);
+            this.Controls.Add(this.TSNameTextBox);
             this.Controls.Add(this.TSPatronymLabel1);
-            this.Controls.Add(this.waterMarkTextBox1);
+            this.Controls.Add(this.TSPatronymTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.DNPatientParametersSetComboBox);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.TSPatientParametersSetComboBox);
+            this.Controls.Add(this.TSPatientParametersSetLabel);
             this.Controls.Add(this.TSSurnameLabel);
-            this.Controls.Add(this.SurnameTextBox);
+            this.Controls.Add(this.TSSurnameTextBox);
             this.Controls.Add(this.TSRubLabel);
             this.Controls.Add(this.TSMoneyNumericUpDown);
-            this.Controls.Add(this.TDMoneyLabel);
-            this.Controls.Add(this.DTUnselectButton);
-            this.Controls.Add(this.DTSelectButton);
+            this.Controls.Add(this.TSMoneyLabel);
+            this.Controls.Add(this.TSUnselectButton);
+            this.Controls.Add(this.TSSelectButton);
             this.Controls.Add(this.TDSolveButton);
-            this.Controls.Add(this.DietProductsLabel);
-            this.Controls.Add(this.DietProductsListBox);
-            this.Controls.Add(this.DTProductsNamesLabel);
-            this.Controls.Add(this.DTProductsNamesListBox);
+            this.Controls.Add(this.TSDietProductsLabel);
+            this.Controls.Add(this.TSDietProductsListBox);
+            this.Controls.Add(this.TSProductsNamesLabel);
+            this.Controls.Add(this.TSProductsNamesListBox);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TaskSolver";
-            this.Load += new System.EventHandler(this.TaskDataInput_Load);
+            this.Load += new System.EventHandler(this.TaskSolver_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TSMoneyNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -243,25 +243,25 @@ namespace DietProject
 
         #endregion
 
-        private System.Windows.Forms.Button DTUnselectButton;
-        private System.Windows.Forms.Button DTSelectButton;
+        private System.Windows.Forms.Button TSUnselectButton;
+        private System.Windows.Forms.Button TSSelectButton;
         private System.Windows.Forms.Button TDSolveButton;
-        private System.Windows.Forms.Label DietProductsLabel;
-        private System.Windows.Forms.ListBox DietProductsListBox;
-        private System.Windows.Forms.Label DTProductsNamesLabel;
-        private System.Windows.Forms.ListBox DTProductsNamesListBox;
+        private System.Windows.Forms.Label TSDietProductsLabel;
+        private System.Windows.Forms.ListBox TSDietProductsListBox;
+        private System.Windows.Forms.Label TSProductsNamesLabel;
+        private System.Windows.Forms.ListBox TSProductsNamesListBox;
         private System.Windows.Forms.NumericUpDown TSMoneyNumericUpDown;
-        private System.Windows.Forms.Label TDMoneyLabel;
+        private System.Windows.Forms.Label TSMoneyLabel;
         private System.Windows.Forms.Label TSRubLabel;
-        private WaterMarkTextBox SurnameTextBox;
+        private WaterMarkTextBox TSSurnameTextBox;
         private System.Windows.Forms.Label TSSurnameLabel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox DNPatientParametersSetComboBox;
+        private System.Windows.Forms.Label TSPatientParametersSetLabel;
+        private System.Windows.Forms.ComboBox TSPatientParametersSetComboBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label TSPatronymLabel1;
-        private WaterMarkTextBox waterMarkTextBox1;
+        private WaterMarkTextBox TSPatronymTextBox;
         private System.Windows.Forms.Label TSNameLabel;
-        private WaterMarkTextBox waterMarkTextBox2;
+        private WaterMarkTextBox TSNameTextBox;
         private System.Windows.Forms.Label TSPatronymLabel2;
     }
 }
