@@ -11,6 +11,7 @@ namespace DietProject
     public partial class TaskSolver : Form
     {
         private SqlDataAdapter adapter;
+        private DataTable PatientParametersSetTable = new DataTable();
         private DataTable ProductsNamesTable = new DataTable();
         private List<string> ProductsNamesList = new List<string>();
 
@@ -21,7 +22,16 @@ namespace DietProject
 
         private void TaskDataInput_Load(object sender, EventArgs e)
         {
-            adapter = new SqlDataAdapter("SELECT * FROM ProductsNames", Program.sqlConnection);
+            adapter = new SqlDataAdapter("SELECT * FROM [НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА]", Program.sqlConnection);
+            adapter.Fill(PatientParametersSetTable);
+            DNPatientParametersSetComboBox.DataSource = PatientParametersSetTable;
+            PatientParametersSetTable.Columns.Add(
+                "Полное_описание_набора",
+                typeof(string),
+                "'Рост: ' + Рост_пациента + ' см, вес: ' + Вес_пациента + ' кг, пол: ' + Пол_пациента");
+            DNPatientParametersSetComboBox.DisplayMember = "Полное_описание_набора";
+            DNPatientParametersSetComboBox.ValueMember = "ID_набора_параметров_пациента";
+            adapter = new SqlDataAdapter("SELECT * FROM [ПРОДУКТ]", Program.sqlConnection);
             adapter.Fill(ProductsNamesTable);
             ProductsNamesList = ProductsNamesTable.AsEnumerable().Select(n => n.Field<string>(1)).ToList();
             foreach (var productName in ProductsNamesList)
@@ -54,6 +64,8 @@ namespace DietProject
         {
             if (DietProductsListBox.Items.Cast<string>().ToList().Count != 0)
             {
+                if (Program.sqlConnection.State == ConnectionState.Open)
+                    Program.sqlConnection.Close();
                 Program.sqlConnection.Open();
                 List<string> notCompatibleMessagesList = new List<string>();
                 string notCompatibleMessagesString = "";
@@ -134,7 +146,7 @@ namespace DietProject
                         }
                         else
                         {
-                            systemRight[counterFeaturesRight] = (double)PVFromNumericUpDown.Value;
+                            systemRight[counterFeaturesRight] = (double)TSMoneyNumericUpDown.Value;
                         }
                         counterFeaturesRight++;
                     }

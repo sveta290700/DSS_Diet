@@ -109,7 +109,7 @@ namespace DietProject
             this.ProductTextBox.Name = "ProductTextBox";
             this.ProductTextBox.TabStop = false;
             this.ProductTextBox.WaterMarkColor = System.Drawing.Color.Gray;
-            this.ProductTextBox.WaterMarkText = "Введите название продукта";
+            this.ProductTextBox.WaterMarkText = "Название продукта";
             // 
             // CEditButton
             // 

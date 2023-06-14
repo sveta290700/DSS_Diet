@@ -44,7 +44,7 @@ namespace DietProject
             this.CategoryTextBox.Name = "CategoryTextBox";
             this.CategoryTextBox.TabStop = false;
             this.CategoryTextBox.WaterMarkColor = System.Drawing.Color.Gray;
-            this.CategoryTextBox.WaterMarkText = "Введите название категории";
+            this.CategoryTextBox.WaterMarkText = "Название категории";
             // 
             // CDeleteButton
             // 

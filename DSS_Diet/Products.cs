@@ -19,7 +19,6 @@ namespace DietProject
             PCategoriesComboBox.DataSource = CategoriesTable;
             PCategoriesComboBox.DisplayMember = "Название_категории_продуктов";
             PCategoriesComboBox.ValueMember = "ID_категории_продуктов";
-            PCategoriesComboBox.SelectedIndex = -1;
         }
 
         private void PAddButton_Click(object sender, EventArgs e)

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Data.SqlClient;
@@ -40,9 +41,11 @@ namespace DietProject
 
         private DECheck CheckIfHasProductsNames()
         {
+            if (Program.sqlConnection.State == ConnectionState.Open)
+                Program.sqlConnection.Close();
             Program.sqlConnection.Open();
             DECheck result = new DECheck();
-            SqlCommand countProductsNames = new SqlCommand("SELECT COUNT(*) FROM ProductsNames;", Program.sqlConnection);
+            SqlCommand countProductsNames = new SqlCommand("SELECT COUNT(*) FROM [ПРОДУКТ];", Program.sqlConnection);
             int countProductsNamesRes = (int)countProductsNames.ExecuteScalar();
             if (countProductsNamesRes == 0)
             {
@@ -56,9 +59,11 @@ namespace DietProject
 
         private DECheck CheckIfHasCategories()
         {
+            if (Program.sqlConnection.State == ConnectionState.Open)
+                Program.sqlConnection.Close();
             Program.sqlConnection.Open();
             DECheck result = new DECheck();
-            SqlCommand countCategories = new SqlCommand("SELECT COUNT(*) FROM Categories;", Program.sqlConnection);
+            SqlCommand countCategories = new SqlCommand("SELECT COUNT(*) FROM [КАТЕГОРИЯ_ПРОДУКТОВ];", Program.sqlConnection);
             int countCategoriesRes = (int)countCategories.ExecuteScalar();
             if (countCategoriesRes == 0)
             {
@@ -72,9 +77,11 @@ namespace DietProject
 
         private DECheck CheckIfHasCompatibleCategories()
         {
+            if (Program.sqlConnection.State == ConnectionState.Open)
+                Program.sqlConnection.Close();
             Program.sqlConnection.Open();
             DECheck result = new DECheck();
-            SqlCommand countCompatibleCategories = new SqlCommand("SELECT COUNT(*) FROM CompatibleCategories;", Program.sqlConnection);
+            SqlCommand countCompatibleCategories = new SqlCommand("SELECT COUNT(*) FROM [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ];", Program.sqlConnection);
             int countCompatibleCategoriesRes = (int)countCompatibleCategories.ExecuteScalar();
             if (countCompatibleCategoriesRes == 0)
             {
@@ -88,29 +95,31 @@ namespace DietProject
 
         private DECheck CheckIfAllHasDayNorms()
         {
+            if (Program.sqlConnection.State == ConnectionState.Open)
+                Program.sqlConnection.Close();
             Program.sqlConnection.Open();
             DECheck result = new DECheck();
-            SqlCommand countNullDN = new SqlCommand("SELECT COUNT(*) FROM DayNorms WHERE Value IS NULL;", Program.sqlConnection);
-            int countNullDNRes = (int)countNullDN.ExecuteScalar();
-            if (countNullDNRes > 0)
+            SqlCommand countPS = new SqlCommand("SELECT COUNT(*) FROM [НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА];", Program.sqlConnection);
+            int countPSRes = (int)countPS.ExecuteScalar();
+            SqlCommand countDN = new SqlCommand("SELECT COUNT(*) FROM [СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ];", Program.sqlConnection);
+            int countDNRes = (int)countDN.ExecuteScalar();
+            if (countPSRes != countDNRes)
             {
                 result.ResultCheck = false;
-                result.MessageCheck = "Не все значения суточных норм веществ были заданы.\n\n";
+                result.MessageCheck = "Не все суточные нормы веществ были заданы.\n\n";
                 ErrorsList.Add(result);
             }
             Program.sqlConnection.Close();
             return result;
         }
 
-        private string CheckKnowledgeIntegrity()
+        private string CheckIntegrity()
         {
             string errorsText = "";
             ErrorsList.Clear();
             CheckIfHasProductsNames();
             CheckIfHasCategories();
             CheckIfHasCompatibleCategories();
-            DayNorms DayNorms = new DayNorms();
-            DayNorms.Close();
             CheckIfAllHasDayNorms();
             if (ErrorsList.Count != 0)
             {
@@ -123,19 +132,19 @@ namespace DietProject
         }
         private void ButtonToTS_Click(object sender, EventArgs e)
         {
-            string knowledgeErrors = CheckKnowledgeIntegrity();
-            if (knowledgeErrors != "")
+            string integrityErrors = CheckIntegrity();
+            if (integrityErrors != "")
             {
                 MessageFormLarge ErrorFormIntegrity = new MessageFormLarge();
-                ErrorFormIntegrity.LabelText.Text = knowledgeErrors;
-                ErrorFormIntegrity.Text = "Проверка целостности базы знаний";
+                ErrorFormIntegrity.LabelText.Text = integrityErrors;
+                ErrorFormIntegrity.Text = "Проверка целостности базы данных";
                 ErrorFormIntegrity.ShowDialog();
             }
             else 
             {
                 MessageFormSmall OKFormIntegrity = new MessageFormSmall();
-                OKFormIntegrity.LabelText.Text = "Проверка целостности базы знаний прошла успешно.\nЗакройте это окно для дальнейшей работы.";
-                OKFormIntegrity.Text = "Проверка целостности базы знаний";
+                OKFormIntegrity.LabelText.Text = "Проверка целостности базы данных прошла успешно.\nЗакройте это окно для дальнейшей работы.";
+                OKFormIntegrity.Text = "Проверка целостности базы данных";
                 OKFormIntegrity.ShowDialog();
                 TaskSolver TaskSolver = new TaskSolver();
                 TaskSolver.ShowDialog();

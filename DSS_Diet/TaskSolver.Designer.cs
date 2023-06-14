@@ -37,10 +37,20 @@ namespace DietProject
             this.DietProductsListBox = new System.Windows.Forms.ListBox();
             this.DTProductsNamesLabel = new System.Windows.Forms.Label();
             this.DTProductsNamesListBox = new System.Windows.Forms.ListBox();
-            this.PVFromNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.TDLabel = new System.Windows.Forms.Label();
+            this.TSMoneyNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.TDMoneyLabel = new System.Windows.Forms.Label();
+            this.TSRubLabel = new System.Windows.Forms.Label();
+            this.SurnameTextBox = new DietProject.WaterMarkTextBox();
+            this.TSSurnameLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.PVFromNumericUpDown)).BeginInit();
+            this.DNPatientParametersSetComboBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TSPatronymLabel1 = new System.Windows.Forms.Label();
+            this.waterMarkTextBox1 = new DietProject.WaterMarkTextBox();
+            this.TSNameLabel = new System.Windows.Forms.Label();
+            this.waterMarkTextBox2 = new DietProject.WaterMarkTextBox();
+            this.TSPatronymLabel2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.TSMoneyNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // DTUnselectButton
@@ -103,45 +113,117 @@ namespace DietProject
             this.DTProductsNamesListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.DTProductsNamesListBox.TabStop = false;
             // 
-            // PVFromNumericUpDown
+            // TSMoneyNumericUpDown
             // 
-            resources.ApplyResources(this.PVFromNumericUpDown, "PVFromNumericUpDown");
-            this.PVFromNumericUpDown.Maximum = new decimal(new int[] {
+            resources.ApplyResources(this.TSMoneyNumericUpDown, "TSMoneyNumericUpDown");
+            this.TSMoneyNumericUpDown.Maximum = new decimal(new int[] {
             1500,
             0,
             0,
             0});
-            this.PVFromNumericUpDown.Minimum = new decimal(new int[] {
+            this.TSMoneyNumericUpDown.Minimum = new decimal(new int[] {
             300,
             0,
             0,
             0});
-            this.PVFromNumericUpDown.Name = "PVFromNumericUpDown";
-            this.PVFromNumericUpDown.TabStop = false;
-            this.PVFromNumericUpDown.Value = new decimal(new int[] {
+            this.TSMoneyNumericUpDown.Name = "TSMoneyNumericUpDown";
+            this.TSMoneyNumericUpDown.TabStop = false;
+            this.TSMoneyNumericUpDown.Value = new decimal(new int[] {
             500,
             0,
             0,
             0});
             // 
-            // TDLabel
+            // TDMoneyLabel
             // 
-            resources.ApplyResources(this.TDLabel, "TDLabel");
-            this.TDLabel.Name = "TDLabel";
+            resources.ApplyResources(this.TDMoneyLabel, "TDMoneyLabel");
+            this.TDMoneyLabel.Name = "TDMoneyLabel";
+            // 
+            // TSRubLabel
+            // 
+            resources.ApplyResources(this.TSRubLabel, "TSRubLabel");
+            this.TSRubLabel.Name = "TSRubLabel";
+            // 
+            // SurnameTextBox
+            // 
+            resources.ApplyResources(this.SurnameTextBox, "SurnameTextBox");
+            this.SurnameTextBox.Name = "SurnameTextBox";
+            this.SurnameTextBox.TabStop = false;
+            this.SurnameTextBox.WaterMarkColor = System.Drawing.Color.Gray;
+            this.SurnameTextBox.WaterMarkText = "Фамилия пациента";
+            // 
+            // TSSurnameLabel
+            // 
+            resources.ApplyResources(this.TSSurnameLabel, "TSSurnameLabel");
+            this.TSSurnameLabel.Name = "TSSurnameLabel";
             // 
             // label1
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // DNPatientParametersSetComboBox
+            // 
+            resources.ApplyResources(this.DNPatientParametersSetComboBox, "DNPatientParametersSetComboBox");
+            this.DNPatientParametersSetComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DNPatientParametersSetComboBox.FormattingEnabled = true;
+            this.DNPatientParametersSetComboBox.Name = "DNPatientParametersSetComboBox";
+            this.DNPatientParametersSetComboBox.TabStop = false;
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // TSPatronymLabel1
+            // 
+            resources.ApplyResources(this.TSPatronymLabel1, "TSPatronymLabel1");
+            this.TSPatronymLabel1.Name = "TSPatronymLabel1";
+            // 
+            // waterMarkTextBox1
+            // 
+            resources.ApplyResources(this.waterMarkTextBox1, "waterMarkTextBox1");
+            this.waterMarkTextBox1.Name = "waterMarkTextBox1";
+            this.waterMarkTextBox1.TabStop = false;
+            this.waterMarkTextBox1.WaterMarkColor = System.Drawing.Color.Gray;
+            this.waterMarkTextBox1.WaterMarkText = "Отчество пациента";
+            // 
+            // TSNameLabel
+            // 
+            resources.ApplyResources(this.TSNameLabel, "TSNameLabel");
+            this.TSNameLabel.Name = "TSNameLabel";
+            // 
+            // waterMarkTextBox2
+            // 
+            resources.ApplyResources(this.waterMarkTextBox2, "waterMarkTextBox2");
+            this.waterMarkTextBox2.Name = "waterMarkTextBox2";
+            this.waterMarkTextBox2.TabStop = false;
+            this.waterMarkTextBox2.WaterMarkColor = System.Drawing.Color.Gray;
+            this.waterMarkTextBox2.WaterMarkText = "Имя пациента";
+            // 
+            // TSPatronymLabel2
+            // 
+            resources.ApplyResources(this.TSPatronymLabel2, "TSPatronymLabel2");
+            this.TSPatronymLabel2.Name = "TSPatronymLabel2";
+            // 
             // TaskSolver
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.TSPatronymLabel2);
+            this.Controls.Add(this.TSNameLabel);
+            this.Controls.Add(this.waterMarkTextBox2);
+            this.Controls.Add(this.TSPatronymLabel1);
+            this.Controls.Add(this.waterMarkTextBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.DNPatientParametersSetComboBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.PVFromNumericUpDown);
-            this.Controls.Add(this.TDLabel);
+            this.Controls.Add(this.TSSurnameLabel);
+            this.Controls.Add(this.SurnameTextBox);
+            this.Controls.Add(this.TSRubLabel);
+            this.Controls.Add(this.TSMoneyNumericUpDown);
+            this.Controls.Add(this.TDMoneyLabel);
             this.Controls.Add(this.DTUnselectButton);
             this.Controls.Add(this.DTSelectButton);
             this.Controls.Add(this.TDSolveButton);
@@ -153,7 +235,7 @@ namespace DietProject
             this.MinimizeBox = false;
             this.Name = "TaskSolver";
             this.Load += new System.EventHandler(this.TaskDataInput_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.PVFromNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TSMoneyNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,8 +250,18 @@ namespace DietProject
         private System.Windows.Forms.ListBox DietProductsListBox;
         private System.Windows.Forms.Label DTProductsNamesLabel;
         private System.Windows.Forms.ListBox DTProductsNamesListBox;
-        private System.Windows.Forms.NumericUpDown PVFromNumericUpDown;
-        private System.Windows.Forms.Label TDLabel;
+        private System.Windows.Forms.NumericUpDown TSMoneyNumericUpDown;
+        private System.Windows.Forms.Label TDMoneyLabel;
+        private System.Windows.Forms.Label TSRubLabel;
+        private WaterMarkTextBox SurnameTextBox;
+        private System.Windows.Forms.Label TSSurnameLabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox DNPatientParametersSetComboBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label TSPatronymLabel1;
+        private WaterMarkTextBox waterMarkTextBox1;
+        private System.Windows.Forms.Label TSNameLabel;
+        private WaterMarkTextBox waterMarkTextBox2;
+        private System.Windows.Forms.Label TSPatronymLabel2;
     }
 }
