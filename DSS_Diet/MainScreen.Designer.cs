@@ -1,7 +1,7 @@
 ﻿
 namespace DietProject
 {
-    partial class MainScreen
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,12 +29,12 @@ namespace DietProject
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreen));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.ButtonToDE = new System.Windows.Forms.Button();
             this.ButtonToTS = new System.Windows.Forms.Button();
             this.ButtonToDDB = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.DietImagePictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.DietImagePictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // ButtonToDE
@@ -66,27 +66,27 @@ namespace DietProject
             this.ButtonToDDB.TabStop = false;
             this.ButtonToDDB.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // DietImagePictureBox
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::DSS_Diet.Properties.Resources.StartImage;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(this.DietImagePictureBox, "DietImagePictureBox");
+            this.DietImagePictureBox.Image = global::DSS_Diet.Properties.Resources.StartImage;
+            this.DietImagePictureBox.Name = "DietImagePictureBox";
+            this.DietImagePictureBox.TabStop = false;
             // 
-            // MainScreen
+            // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.DietImagePictureBox);
             this.Controls.Add(this.ButtonToDDB);
             this.Controls.Add(this.ButtonToTS);
             this.Controls.Add(this.ButtonToDE);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "MainScreen";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Name = "MainForm";
+            ((System.ComponentModel.ISupportInitialize)(this.DietImagePictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -96,7 +96,7 @@ namespace DietProject
         private System.Windows.Forms.Button ButtonToDE;
         private System.Windows.Forms.Button ButtonToTS;
         private System.Windows.Forms.Button ButtonToDDB;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox DietImagePictureBox;
     }
 }
 

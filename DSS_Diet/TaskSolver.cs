@@ -22,14 +22,13 @@ namespace DietProject
             InitializeComponent();
         }
 
-        /*public static double GetPseudoDoubleWithinRange(double lowerBound, double upperBound)
+        public static double GetPseudoDoubleWithinRange(double lowerBound, double upperBound)
         {
             var random = new Random();
             var rDouble = random.NextDouble();
             var rRangeDouble = rDouble * (upperBound - lowerBound) + lowerBound;
             return rRangeDouble;
-        }
-        */
+        }   
 
         private void TaskSolver_Load(object sender, EventArgs e)
         {
@@ -193,7 +192,8 @@ namespace DietProject
                         for (int i = 0; i < TSDietProductsListBox.Items.Cast<string>().ToList().Count; ++i)
                         {
                             string varName = "x" + i;
-                            foods.Add(solver.MakeNumVar(50.0, 1000.0, varName));
+                            foods.Add(solver.MakeNumVar(GetPseudoDoubleWithinRange(50.0, 100.0), GetPseudoDoubleWithinRange(800.0, 1000.0), varName));
+                            //foods.Add(solver.MakeNumVar(50.0, 1000.0, varName));
                         }
                         List<Google.OrTools.LinearSolver.Constraint> constraints = new List<Google.OrTools.LinearSolver.Constraint>();
                         Objective objective = solver.Objective();
@@ -232,7 +232,7 @@ namespace DietProject
                             string dietReady = "";
                             for (int i = 0; i < foods.Count; ++i)
                             {
-                                dietReady += $"{TSDietProductsListBox.Items[i]} - {foods[i].SolutionValue():N3} г\n\n";
+                                dietReady += $"{TSDietProductsListBox.Items[i]} - {foods[i].SolutionValue():N0} г\n\n";
                             }
                             MessageFormLarge TaskResultForm = new MessageFormLarge();
                             TaskResultForm.LabelText.Text = "Согласно списку выбранных продуктов и доступному бюджету\n для Вас был спроектирован следующий суточный рацион:\n\n" + dietReady;

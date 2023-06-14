@@ -6,11 +6,11 @@ using System.Data.SqlClient;
 
 namespace DietProject
 {
-    public partial class MainScreen : Form
+    public partial class MainForm : Form
     {
         private List<DECheck> ErrorsList = new List<DECheck>();
 
-        public MainScreen()
+        public MainForm()
         {
             InitializeComponent();
         }
