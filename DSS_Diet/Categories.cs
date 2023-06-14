@@ -118,9 +118,11 @@ namespace DietProject
                 DataRowView item = (DataRowView)CCategoriesListBox.SelectedItem;
                 int idToDelete = (int)item.Row[0];
                 string nameToDelete = item.Row[1].ToString();
-                SqlCommand checkIsOkToDelete = new SqlCommand("SELECT COUNT(*) FROM [ПРОДУКТ] WHERE [ID_категории_продуктов] = " + idToDelete + ";", Program.sqlConnection);
-                int res = (int)checkIsOkToDelete.ExecuteScalar();
-                if (res == 0)
+                SqlCommand checkIsOkToDelete1 = new SqlCommand("SELECT COUNT(*) FROM [ПРОДУКТ] WHERE [ID_категории_продуктов] = " + idToDelete + ";", Program.sqlConnection);
+                int res1 = (int)checkIsOkToDelete1.ExecuteScalar();
+                SqlCommand checkIsOkToDelete2 = new SqlCommand("SELECT COUNT(*) FROM [ЭЛЕМЕНТ_РАЦИОНА] JOIN [ПРОДУКТ] ON [ЭЛЕМЕНТ_РАЦИОНА].[ID_продукта] = [ПРОДУКТ].[ID_продукта] WHERE [ПРОДУКТ].[ID_категории_продуктов] = " + idToDelete + ";", Program.sqlConnection);
+                int res2 = (int)checkIsOkToDelete2.ExecuteScalar();
+                if ((res1 == 0) && (res2 == 0))
                 {
                     SqlCommand deleteCategory = new SqlCommand("DELETE FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [Название_категории_продуктов] = N'" + nameToDelete + "';", Program.sqlConnection);
                     deleteCategory.ExecuteNonQuery();
