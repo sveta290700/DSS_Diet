@@ -76,9 +76,24 @@ namespace DietProject
             {
                 if ((TSSurnameTextBox.Text != "") && (TSNameTextBox.Text != ""))
                 {
+                    DataRowView item = (DataRowView)TSPatientParametersSetComboBox.SelectedItem;
+                    int selectedSetId = (int)item.Row[0];
                     if (Program.sqlConnection.State == ConnectionState.Open)
                         Program.sqlConnection.Close();
                     Program.sqlConnection.Open();
+                    string stringCheckIfPaientExists = "SELECT COUNT(*) FROM [ПАЦИЕНТ] WHERE [Фамилия_пациента] = N'" + TSSurnameTextBox.Text.ToString() + "' AND [Имя_пациента] = N'" + TSNameTextBox.Text.ToString() + "' AND [Отчество_пациента] IS NULL AND [ID_набора_параметров_пациента] = " + selectedSetId + ";";
+                    if (TSPatronymTextBox.Text != "")
+                        stringCheckIfPaientExists = "SELECT COUNT(*) FROM [ПАЦИЕНТ] WHERE [Фамилия_пациента] = N'" + TSSurnameTextBox.Text.ToString() + "' AND [Имя_пациента] = N'" + TSNameTextBox.Text.ToString() + "' AND [Отчество_пациента] = N'" + TSPatronymTextBox.Text.ToString() + "' AND [ID_набора_параметров_пациента] = " + selectedSetId + ";";
+                    SqlCommand checkIfPaientExists = new SqlCommand(stringCheckIfPaientExists, Program.sqlConnection);
+                    int res = (int)checkIfPaientExists.ExecuteScalar();
+                    if (res == 0)
+                    {
+                        string stringAddPatient = "INSERT INTO [ПАЦИЕНТ] ([ID_набора_параметров_пациента], [Фамилия_пациента], [Имя_пациента], [Отчество_пациента]) VALUES (" + selectedSetId + ", N'" + TSSurnameTextBox.Text.ToString() + "', N'" + TSNameTextBox.Text.ToString() + "', NULL);";
+                        if (TSPatronymTextBox.Text != "")
+                            stringAddPatient = "INSERT INTO [ПАЦИЕНТ] ([ID_набора_параметров_пациента], [Фамилия_пациента], [Имя_пациента], [Отчество_пациента]) VALUES (" + selectedSetId + ", N'" + TSSurnameTextBox.Text.ToString() + "', N'" + TSNameTextBox.Text.ToString() + "', N'" + TSPatronymTextBox.Text.ToString() + "');";
+                        SqlCommand addPatient = new SqlCommand(stringAddPatient, Program.sqlConnection);
+                        addPatient.ExecuteNonQuery();
+                    }
                     List<string> notCompatibleMessagesList = new List<string>();
                     string notCompatibleMessagesString = "";
                     foreach (var dietProductName1 in TSDietProductsListBox.Items)
@@ -160,8 +175,6 @@ namespace DietProject
                             systemLeft[8, counterProducts] = featureValue;
                             counterProducts++;
                         }
-                        DataRowView item = (DataRowView)TSPatientParametersSetComboBox.SelectedItem;
-                        int selectedSetId = (int)item.Row[0];
                         SqlCommand getDayNorm = new SqlCommand("SELECT [Значение_суточной_нормы_белков] FROM [СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ] WHERE [ID_набора_параметров_пациента] = " + selectedSetId + ";", Program.sqlConnection);
                         double dayNorm = decimal.ToDouble((decimal)getDayNorm.ExecuteScalar());
                         systemRight[0] = dayNorm;
@@ -229,10 +242,26 @@ namespace DietProject
                         }
                         else
                         {
-                            string dietReady = "";
+                            string dietReady = "";                           
+                            string stringGetPaientID = "SELECT [ID_пациента] FROM [ПАЦИЕНТ] WHERE [Фамилия_пациента] = N'" + TSSurnameTextBox.Text.ToString() + "' AND [Имя_пациента] = N'" + TSNameTextBox.Text.ToString() + "' AND [Отчество_пациента] IS NULL AND [ID_набора_параметров_пациента] = " + selectedSetId + ";";
+                            if (TSPatronymTextBox.Text != "")
+                            {
+                                stringGetPaientID = "SELECT [ID_пациента] FROM [ПАЦИЕНТ] WHERE [Фамилия_пациента] = N'" + TSSurnameTextBox.Text.ToString() + "' AND [Имя_пациента] = N'" + TSNameTextBox.Text.ToString() + "' AND [Отчество_пациента] = N'" + TSPatronymTextBox.Text + "' AND [ID_набора_параметров_пациента] = " + selectedSetId + ";";
+                            }
+                            SqlCommand getPatientID = new SqlCommand(stringGetPaientID, Program.sqlConnection);
+                            int patientID = (int)getPatientID.ExecuteScalar();
+                            SqlCommand addDiet = new SqlCommand("INSERT INTO [РАЦИОН] ([ID_набора_параметров_пациента], [Доступный_бюджет], [ID_пациента]) VALUES (" + selectedSetId + ", CONVERT(DECIMAL(6, 2), " + TSMoneyNumericUpDown.Value + "), " + patientID + ");", Program.sqlConnection);
+                            addDiet.ExecuteNonQuery();
+                            SqlCommand getDietID = new SqlCommand("SELECT [ID_рациона] FROM [РАЦИОН] WHERE [ID_набора_параметров_пациента] = " + selectedSetId + " AND [Доступный_бюджет] = CONVERT(DECIMAL(6, 2), " + TSMoneyNumericUpDown.Value + ") AND [ID_пациента] = " + patientID + ";", Program.sqlConnection);
+                            int dietID = (int)getDietID.ExecuteScalar();
                             for (int i = 0; i < foods.Count; ++i)
                             {
+                                SqlCommand getProductID = new SqlCommand("SELECT [ID_продукта] FROM [Продукт] WHERE [Название_продукта] = N'" + TSDietProductsListBox.Items[i] + "';", Program.sqlConnection);
+                                int productID = (int)getProductID.ExecuteScalar();
                                 dietReady += $"{TSDietProductsListBox.Items[i]} - {foods[i].SolutionValue():N0} г\n\n";
+                                //переписать CONVERT
+                                SqlCommand addDietElement = new SqlCommand("INSERT INTO [ЭЛЕМЕНТ_РАЦИОНА] ([ID_продукта], [Количество_продукта], [ID_рациона]) VALUES (" + productID + ", CONVERT(DECIMAL(6, 3), " + foods[i].SolutionValue().ToString("N0") + "), " + dietID + ");", Program.sqlConnection);
+                                addDietElement.ExecuteNonQuery();
                             }
                             MessageFormLarge TaskResultForm = new MessageFormLarge();
                             TaskResultForm.LabelText.Text = "Согласно списку выбранных продуктов и доступному бюджету\n для Вас был спроектирован следующий суточный рацион:\n\n" + dietReady;
