@@ -43,6 +43,10 @@ namespace DietProject
             this.DSurnameTextBox = new DietProject.WaterMarkTextBox();
             this.DPatientParametersSetComboBox = new System.Windows.Forms.ComboBox();
             this.DDietsDataGridView = new System.Windows.Forms.DataGridView();
+            this.DietID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ParametersSet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DDietsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,9 +141,51 @@ namespace DietProject
             this.DDietsDataGridView.AllowUserToDeleteRows = false;
             this.DDietsDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
             this.DDietsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DDietsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DietID,
+            this.FIO,
+            this.Price,
+            this.ParametersSet});
             this.DDietsDataGridView.Name = "DDietsDataGridView";
             this.DDietsDataGridView.ReadOnly = true;
+            this.DDietsDataGridView.RowHeadersVisible = false;
             this.DDietsDataGridView.RowTemplate.Height = 25;
+            // 
+            // DietID
+            // 
+            this.DietID.Frozen = true;
+            resources.ApplyResources(this.DietID, "DietID");
+            this.DietID.Name = "DietID";
+            this.DietID.ReadOnly = true;
+            this.DietID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.DietID.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // FIO
+            // 
+            this.FIO.Frozen = true;
+            resources.ApplyResources(this.FIO, "FIO");
+            this.FIO.Name = "FIO";
+            this.FIO.ReadOnly = true;
+            this.FIO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.FIO.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Price
+            // 
+            this.Price.Frozen = true;
+            resources.ApplyResources(this.Price, "Price");
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
+            this.Price.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Price.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // ParametersSet
+            // 
+            this.ParametersSet.Frozen = true;
+            resources.ApplyResources(this.ParametersSet, "ParametersSet");
+            this.ParametersSet.Name = "ParametersSet";
+            this.ParametersSet.ReadOnly = true;
+            this.ParametersSet.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ParametersSet.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Diets
             // 
@@ -185,5 +231,9 @@ namespace DietProject
         private WaterMarkTextBox DSurnameTextBox;
         private System.Windows.Forms.ComboBox DPatientParametersSetComboBox;
         private System.Windows.Forms.DataGridView DDietsDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DietID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FIO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ParametersSet;
     }
 }
