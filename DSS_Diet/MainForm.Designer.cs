@@ -65,6 +65,7 @@ namespace DietProject
             this.ButtonToDDB.Name = "ButtonToDDB";
             this.ButtonToDDB.TabStop = false;
             this.ButtonToDDB.UseVisualStyleBackColor = false;
+            this.ButtonToDDB.Click += new System.EventHandler(this.ButtonToDDB_Click);
             // 
             // DietImagePictureBox
             // 

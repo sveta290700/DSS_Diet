@@ -111,6 +111,9 @@
   <data name="DSetChoiceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DSetChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>360, 18</value>
+  </data>
   <data name="DSetChoiceLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 21</value>
   </data>
@@ -125,6 +128,9 @@
   </data>
   <data name="DSearchLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="DSearchLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
   </data>
   <data name="DSearchLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 21</value>
@@ -197,27 +203,6 @@
   </data>
   <data name="DPatientParametersSetComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>426, 23</value>
-  </data>
-  <data name="DietID.HeaderText" xml:space="preserve">
-    <value>ID рациона</value>
-  </data>
-  <data name="FIO.HeaderText" xml:space="preserve">
-    <value>ФИО пациента</value>
-  </data>
-  <data name="FIO.Width" type="System.Int32, mscorlib">
-    <value>250</value>
-  </data>
-  <data name="Price.HeaderText" xml:space="preserve">
-    <value>Доступный бюджет</value>
-  </data>
-  <data name="Price.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
-  <data name="ParametersSet.HeaderText" xml:space="preserve">
-    <value>Набор параметров пациента</value>
-  </data>
-  <data name="ParametersSet.Width" type="System.Int32, mscorlib">
-    <value>236</value>
   </data>
   <data name="DDietsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
     <value>736, 209</value>

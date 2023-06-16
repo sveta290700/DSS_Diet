@@ -150,5 +150,11 @@ namespace DietProject
                 TaskSolver.ShowDialog();
             }
         }
+
+        private void ButtonToDDB_Click(object sender, EventArgs e)
+        {
+            Diets DietsDB = new Diets();
+            DietsDB.ShowDialog();
+        }
     }
 }
