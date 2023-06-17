@@ -70,7 +70,9 @@ namespace DietProject
             this.DIDietInfoDataGridView.RowHeadersVisible = false;
             this.DIDietInfoDataGridView.RowTemplate.Height = 25;
             this.DIDietInfoDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DIDietInfoDataGridView.ShowCellToolTips = false;
             this.DIDietInfoDataGridView.TabStop = false;
+            this.DIDietInfoDataGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.DIDietInfoDataGridView_DataBindingComplete);
             // 
             // DIDIetInfoLabel
             // 

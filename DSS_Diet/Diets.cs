@@ -63,7 +63,7 @@ namespace DietProject
                 DDietsDataGridView.EnableHeadersVisualStyles = false;
                 DDietsDataGridView.ColumnHeadersDefaultCellStyle.SelectionBackColor = DDietsDataGridView.ColumnHeadersDefaultCellStyle.BackColor;
             }
-            else if ((DPatientParametersSetComboBox.SelectedIndex == -1) && (DSurnameTextBox.Text == "") && (DNameTextBox.Text == "") && (DPatronymTextBox.Text == ""))
+            else if ((DPatientParametersSetComboBox.SelectedIndex == -1) && ((DSurnameTextBox.Text != "") || (DNameTextBox.Text != "") || (DPatronymTextBox.Text != "")))
             {
                 DietsTable.Clear();
                 if ((DSurnameTextBox.Text != "") && (DNameTextBox.Text == "") && (DPatronymTextBox.Text == ""))
@@ -139,6 +139,11 @@ namespace DietProject
             string selectedDietId = DDietsDataGridView.SelectedRows[0].Cells[0].Value.ToString();
             DietInfo DietInfo = new DietInfo(selectedDietId);
             DietInfo.ShowDialog();
+        }
+
+        private void DDietsDataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            DDietsDataGridView.ClearSelection();
         }
     }
 }

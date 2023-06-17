@@ -109,6 +109,8 @@ namespace DietProject
                 deleteOldRecords1.ExecuteNonQuery();
                 SqlCommand deleteOldRecords2 = new SqlCommand("DELETE FROM [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ] WHERE [ID_совместимой_категории_продуктов] = " + selectedCategoryId + ";", Program.sqlConnection);
                 deleteOldRecords2.ExecuteNonQuery();
+                SqlCommand addCategoryCompatibility = new SqlCommand("INSERT INTO [СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ] VALUES (" + selectedCategoryId + ", " + selectedCategoryId + ");", Program.sqlConnection);
+                addCategoryCompatibility.ExecuteNonQuery();
                 foreach (var itemToAdd in CCCompatibleCategoriesListBox.Items)
                 {
                     SqlCommand getCatId = new SqlCommand("SELECT [ID_категории_продуктов] FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [Название_категории_продуктов] = N'" + itemToAdd + "';", Program.sqlConnection);

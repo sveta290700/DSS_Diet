@@ -157,8 +157,10 @@ namespace DietProject
             this.DDietsDataGridView.RowHeadersVisible = false;
             this.DDietsDataGridView.RowTemplate.Height = 25;
             this.DDietsDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DDietsDataGridView.ShowCellToolTips = false;
             this.DDietsDataGridView.TabStop = false;
             this.DDietsDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DDietsDataGridView_CellDoubleClick);
+            this.DDietsDataGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.DDietsDataGridView_DataBindingComplete);
             // 
             // Diets
             // 

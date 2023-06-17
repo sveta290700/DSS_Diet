@@ -259,12 +259,11 @@ namespace DietProject
                                 SqlCommand getProductID = new SqlCommand("SELECT [ID_продукта] FROM [Продукт] WHERE [Название_продукта] = N'" + TSDietProductsListBox.Items[i] + "';", Program.sqlConnection);
                                 int productID = (int)getProductID.ExecuteScalar();
                                 dietReady += $"{TSDietProductsListBox.Items[i]} - {foods[i].SolutionValue():N0} г\n\n";
-                                //переписать CONVERT
-                                SqlCommand addDietElement = new SqlCommand("INSERT INTO [ЭЛЕМЕНТ_РАЦИОНА] ([ID_продукта], [Количество_продукта], [ID_рациона]) VALUES (" + productID + ", CONVERT(DECIMAL(6, 3), " + foods[i].SolutionValue().ToString("N0") + "), " + dietID + ");", Program.sqlConnection);
+                                SqlCommand addDietElement = new SqlCommand("INSERT INTO [ЭЛЕМЕНТ_РАЦИОНА] ([ID_продукта], [Количество_продукта], [ID_рациона]) VALUES (" + productID + ", CONVERT(INTEGER, " + foods[i].SolutionValue().ToString("N0") + "), " + dietID + ");", Program.sqlConnection);
                                 addDietElement.ExecuteNonQuery();
                             }
                             MessageFormLarge TaskResultForm = new MessageFormLarge();
-                            TaskResultForm.LabelText.Text = "Согласно списку выбранных продуктов и доступному бюджету\n для Вас был спроектирован следующий суточный рацион:\n\n" + dietReady;
+                            TaskResultForm.LabelText.Text = "Согласно списку выбранных продуктов и доступному бюджету\nбыл спроектирован следующий суточный рацион:\n\n" + dietReady;
                             TaskResultForm.Text = "Результат решения задачи";
                             TaskResultForm.ShowDialog();
                         }

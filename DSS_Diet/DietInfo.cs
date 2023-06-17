@@ -19,7 +19,7 @@ namespace DietProject
         
         private void DietInfo_Load(object sender, EventArgs e)
         {
-            adapter = new SqlDataAdapter("SELECT [ПРОДУКТ].[Название_продукта] AS [Название продукта], [ЭЛЕМЕНТ_РАЦИОНА].[Количество_продукта] AS [Количество продукта] FROM [ЭЛЕМЕНТ_РАЦИОНА] JOIN [РАЦИОН] ON [ЭЛЕМЕНТ_РАЦИОНА].[ID_рациона] = [РАЦИОН].[ID_рациона] JOIN [ПРОДУКТ] ON [ЭЛЕМЕНТ_РАЦИОНА].[ID_продукта] = [ПРОДУКТ].[ID_продукта] WHERE [РАЦИОН].[ID_рациона] = " + dietId + ";", Program.sqlConnection);
+            adapter = new SqlDataAdapter("SELECT [ПРОДУКТ].[Название_продукта] AS [Название продукта], [ЭЛЕМЕНТ_РАЦИОНА].[Количество_продукта] AS [Количество продукта (в г)] FROM [ЭЛЕМЕНТ_РАЦИОНА] JOIN [РАЦИОН] ON [ЭЛЕМЕНТ_РАЦИОНА].[ID_рациона] = [РАЦИОН].[ID_рациона] JOIN [ПРОДУКТ] ON [ЭЛЕМЕНТ_РАЦИОНА].[ID_продукта] = [ПРОДУКТ].[ID_продукта] WHERE [РАЦИОН].[ID_рациона] = " + dietId + ";", Program.sqlConnection);
             adapter.Fill(DietElementsTable);
             DIDietInfoDataGridView.AutoGenerateColumns = true;
             DIDietInfoDataGridView.DataSource = DietElementsTable;
@@ -31,6 +31,11 @@ namespace DietProject
             DIDietInfoDataGridView.ColumnHeadersDefaultCellStyle.SelectionBackColor = DIDietInfoDataGridView.ColumnHeadersDefaultCellStyle.BackColor;
             this.Text += dietId;
             DIDIetInfoLabel.Text += dietId;
+        }
+
+        private void DIDietInfoDataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            DIDietInfoDataGridView.ClearSelection();
         }
     }
 }
