@@ -39,7 +39,7 @@ namespace DietProject
             }
         }
 
-        private DECheck CheckIfHasProductsNames()
+        private DECheck CheckIfHasProducts()
         {
             if (Program.sqlConnection.State == ConnectionState.Open)
                 Program.sqlConnection.Close();
@@ -50,7 +50,7 @@ namespace DietProject
             if (countProductsNamesRes == 0)
             {
                 result.ResultCheck = false;
-                result.MessageCheck = "Не задано ни одно название продукта.\n\n";
+                result.MessageCheck = "Не задан ни один продукт.\n\n";
                 ErrorsList.Add(result);
             }
             Program.sqlConnection.Close();
@@ -93,6 +93,24 @@ namespace DietProject
             return result;
         }
 
+        private DECheck CheckIfHasParametersSet()
+        {
+            if (Program.sqlConnection.State == ConnectionState.Open)
+                Program.sqlConnection.Close();
+            Program.sqlConnection.Open();
+            DECheck result = new DECheck();
+            SqlCommand countParametersSet = new SqlCommand("SELECT COUNT(*) FROM [НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА];", Program.sqlConnection);
+            int countParametersSetRes = (int)countParametersSet.ExecuteScalar();
+            if (countParametersSetRes == 0)
+            {
+                result.ResultCheck = false;
+                result.MessageCheck = "Не задан ни один набор параметров пациентов.\n\n";
+                ErrorsList.Add(result);
+            }
+            Program.sqlConnection.Close();
+            return result;
+        }
+
         private DECheck CheckIfAllHasDayNorms()
         {
             if (Program.sqlConnection.State == ConnectionState.Open)
@@ -117,9 +135,10 @@ namespace DietProject
         {
             string errorsText = "";
             ErrorsList.Clear();
-            CheckIfHasProductsNames();
+            CheckIfHasProducts();
             CheckIfHasCategories();
             CheckIfHasCompatibleCategories();
+            CheckIfHasParametersSet();
             CheckIfAllHasDayNorms();
             if (ErrorsList.Count != 0)
             {
