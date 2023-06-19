@@ -136,9 +136,16 @@ namespace DietProject
 
         private void DDietsDataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            string selectedDietId = DDietsDataGridView.SelectedRows[0].Cells[0].Value.ToString();
-            DietInfo DietInfo = new DietInfo(selectedDietId);
-            DietInfo.ShowDialog();
+            try
+            {
+                string selectedDietId = DDietsDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+                DietInfo DietInfo = new DietInfo(selectedDietId);
+                DietInfo.ShowDialog();
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
         private void DDietsDataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
