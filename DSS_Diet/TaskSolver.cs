@@ -263,7 +263,7 @@ namespace DietProject
                                 addDietElement.ExecuteNonQuery();
                             }
                             MessageFormLarge TaskResultForm = new MessageFormLarge();
-                            TaskResultForm.LabelText.Text = "Согласно списку выбранных продуктов и доступному бюджету\nбыл спроектирован следующий суточный рацион:\n\n" + dietReady;
+                            TaskResultForm.LabelText.Text = "Согласно списку выбранных продуктов и доступному бюджету\nбыл составлен следующий суточный рацион:\n\n" + dietReady;
                             TaskResultForm.Text = "Результат решения задачи";
                             TaskResultForm.ShowDialog();
                         }

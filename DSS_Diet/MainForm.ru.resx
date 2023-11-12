@@ -87,7 +87,7 @@
     <value>313, 48</value>
   </data>
   <data name="ButtonToTS.Text" xml:space="preserve">
-    <value>Проектирование оптимального рациона</value>
+    <value>Составление оптимального рациона</value>
   </data>
   <data name="ButtonToDDB.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -2873,6 +2873,6 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>СППР врача-диетолога</value>
+    <value>ИСППР врача-диетолога</value>
   </data>
 </root>
