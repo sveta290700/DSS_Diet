@@ -81,14 +81,10 @@
     <value>NoControl</value>
   </data>
   <data name="DRPrintButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 394</value>
+    <value>326, 391</value>
   </data>
   <data name="DRPrintButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 38</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DRPrintButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
   </data>
   <data name="DRPrintButton.Text" xml:space="preserve">
     <value>Печать рациона</value>

@@ -11,8 +11,6 @@
 
   <ItemGroup>
     <PackageReference Include="Google.OrTools" Version="9.2.9972" />
-    <PackageReference Include="Microsoft.ReportingServices.ReportViewerControl.Winforms" Version="150.1404.0" />
-    <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.19" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
@@ -31,6 +29,7 @@
     <Compile Update="DietResult.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="DietReportViewer.cs" />
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

@@ -34,6 +34,7 @@ namespace DietProject
             this.DietsLabel = new System.Windows.Forms.Label();
             this.DIDietInfoDataGridView = new System.Windows.Forms.DataGridView();
             this.DIDIetInfoLabel = new System.Windows.Forms.Label();
+            this.DIPrintButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DIDietInfoDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,11 +80,22 @@ namespace DietProject
             resources.ApplyResources(this.DIDIetInfoLabel, "DIDIetInfoLabel");
             this.DIDIetInfoLabel.Name = "DIDIetInfoLabel";
             // 
+            // DIPrintButton
+            // 
+            resources.ApplyResources(this.DIPrintButton, "DIPrintButton");
+            this.DIPrintButton.BackColor = System.Drawing.Color.PaleGreen;
+            this.DIPrintButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.DIPrintButton.Name = "DIPrintButton";
+            this.DIPrintButton.TabStop = false;
+            this.DIPrintButton.UseVisualStyleBackColor = false;
+            this.DIPrintButton.Click += new System.EventHandler(this.DIPrintButton_Click);
+            // 
             // DietInfo
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.DIPrintButton);
             this.Controls.Add(this.DIDIetInfoLabel);
             this.Controls.Add(this.DIDietInfoDataGridView);
             this.Controls.Add(this.DietsLabel);
@@ -103,5 +115,6 @@ namespace DietProject
         private System.Windows.Forms.Label DietsLabel;
         private System.Windows.Forms.DataGridView DIDietInfoDataGridView;
         private System.Windows.Forms.Label DIDIetInfoLabel;
+        private System.Windows.Forms.Button DIPrintButton;
     }
 }

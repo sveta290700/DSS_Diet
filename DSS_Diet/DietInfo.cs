@@ -37,5 +37,11 @@ namespace DietProject
         {
             DIDietInfoDataGridView.ClearSelection();
         }
+
+        private void DIPrintButton_Click(object sender, EventArgs e)
+        {
+            DietReportViewer dietReportViewer = new DietReportViewer(Convert.ToInt32(dietId));
+            dietReportViewer.ShowDialog();
+        }
     }
 }

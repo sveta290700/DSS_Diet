@@ -99,7 +99,7 @@
     <value>NoControl</value>
   </data>
   <data name="TDSolveButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 394</value>
+    <value>326, 391</value>
   </data>
   <data name="TDSolveButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>143, 38</value>

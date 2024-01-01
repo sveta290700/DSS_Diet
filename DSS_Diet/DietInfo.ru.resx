@@ -75,7 +75,7 @@
     <value>Элементы рациона</value>
   </data>
   <data name="DIDietInfoDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>736, 314</value>
+    <value>736, 272</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="DIDIetInfoLabel.AutoSize" type="System.Boolean, mscorlib">
@@ -92,6 +92,24 @@
   </data>
   <data name="DIDIetInfoLabel.Text" xml:space="preserve">
     <value>Состав рациона с ID = </value>
+  </data>
+  <data name="DIPrintButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="DIPrintButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="DIPrintButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DIPrintButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 391</value>
+  </data>
+  <data name="DIPrintButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 38</value>
+  </data>
+  <data name="DIPrintButton.Text" xml:space="preserve">
+    <value>Печать рациона</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
