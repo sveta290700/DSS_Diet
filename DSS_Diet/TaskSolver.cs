@@ -262,7 +262,7 @@ namespace DietProject
                                 SqlCommand addDietElement = new SqlCommand("INSERT INTO [ЭЛЕМЕНТ_РАЦИОНА] ([ID_продукта], [Количество_продукта], [ID_рациона]) VALUES (" + productID + ", CONVERT(INTEGER, " + foods[i].SolutionValue().ToString("N0") + "), " + dietID + ");", Program.sqlConnection);
                                 addDietElement.ExecuteNonQuery();
                             }
-                            MessageFormLarge TaskResultForm = new MessageFormLarge();
+                            DietResult TaskResultForm = new DietResult();
                             TaskResultForm.LabelText.Text = "Согласно списку выбранных продуктов и доступному бюджету\nбыл составлен следующий суточный рацион:\n\n" + dietReady;
                             TaskResultForm.Text = "Результат решения задачи";
                             TaskResultForm.ShowDialog();
