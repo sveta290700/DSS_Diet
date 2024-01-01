@@ -40,7 +40,7 @@ namespace DSS_Diet {
         
         private СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВDataTable tableСОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ;
         
-        private DietReportTableAdapterDataTable tableDietReportTableAdapter;
+        private DietReportDataTable tableDietReport;
         
         private global::System.Data.DataRelation relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ;
         
@@ -110,8 +110,8 @@ namespace DSS_Diet {
                 if ((ds.Tables["СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ"] != null)) {
                     base.Tables.Add(new СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВDataTable(ds.Tables["СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ"]));
                 }
-                if ((ds.Tables["DietReportTableAdapter"] != null)) {
-                    base.Tables.Add(new DietReportTableAdapterDataTable(ds.Tables["DietReportTableAdapter"]));
+                if ((ds.Tables["DietReport"] != null)) {
+                    base.Tables.Add(new DietReportDataTable(ds.Tables["DietReport"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -215,9 +215,9 @@ namespace DSS_Diet {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DietReportTableAdapterDataTable DietReportTableAdapter {
+        public DietReportDataTable DietReport {
             get {
-                return this.tableDietReportTableAdapter;
+                return this.tableDietReport;
             }
         }
         
@@ -312,8 +312,8 @@ namespace DSS_Diet {
                 if ((ds.Tables["СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ"] != null)) {
                     base.Tables.Add(new СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВDataTable(ds.Tables["СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ"]));
                 }
-                if ((ds.Tables["DietReportTableAdapter"] != null)) {
-                    base.Tables.Add(new DietReportTableAdapterDataTable(ds.Tables["DietReportTableAdapter"]));
+                if ((ds.Tables["DietReport"] != null)) {
+                    base.Tables.Add(new DietReportDataTable(ds.Tables["DietReport"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -396,10 +396,10 @@ namespace DSS_Diet {
                     this.tableСОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ.InitVars();
                 }
             }
-            this.tableDietReportTableAdapter = ((DietReportTableAdapterDataTable)(base.Tables["DietReportTableAdapter"]));
+            this.tableDietReport = ((DietReportDataTable)(base.Tables["DietReport"]));
             if ((initTable == true)) {
-                if ((this.tableDietReportTableAdapter != null)) {
-                    this.tableDietReportTableAdapter.InitVars();
+                if ((this.tableDietReport != null)) {
+                    this.tableDietReport.InitVars();
                 }
             }
             this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ = this.Relations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ"];
@@ -436,8 +436,8 @@ namespace DSS_Diet {
             base.Tables.Add(this.tableСУТОЧНАЯ_НОРМА_ВЕЩЕСТВ);
             this.tableСОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ = new СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВDataTable();
             base.Tables.Add(this.tableСОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ);
-            this.tableDietReportTableAdapter = new DietReportTableAdapterDataTable();
-            base.Tables.Add(this.tableDietReportTableAdapter);
+            this.tableDietReport = new DietReportDataTable();
+            base.Tables.Add(this.tableDietReport);
             this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ = new global::System.Data.DataRelation("НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ", new global::System.Data.DataColumn[] {
                         this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.ID_набора_параметров_пациентаColumn}, new global::System.Data.DataColumn[] {
                         this.tableПАЦИЕНТ.ID_набора_параметров_пациентаColumn}, false);
@@ -522,7 +522,7 @@ namespace DSS_Diet {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeDietReportTableAdapter() {
+        private bool ShouldSerializeDietReport() {
             return false;
         }
         
@@ -606,7 +606,7 @@ namespace DSS_Diet {
         public delegate void СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВRowChangeEventHandler(object sender, СОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void DietReportTableAdapterRowChangeEventHandler(object sender, DietReportTableAdapterRowChangeEvent e);
+        public delegate void DietReportRowChangeEventHandler(object sender, DietReportRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -3223,18 +3223,16 @@ namespace DSS_Diet {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DietReportTableAdapterDataTable : global::System.Data.TypedTableBase<DietReportTableAdapterRow> {
+        public partial class DietReportDataTable : global::System.Data.TypedTableBase<DietReportRow> {
             
-            private global::System.Data.DataColumn columnID_элемента_рациона;
+            private global::System.Data.DataColumn columnProductName;
             
-            private global::System.Data.DataColumn columnНазвание_продукта;
-            
-            private global::System.Data.DataColumn columnКоличество_продукта;
+            private global::System.Data.DataColumn columnProductCount;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DietReportTableAdapterDataTable() {
-                this.TableName = "DietReportTableAdapter";
+            public DietReportDataTable() {
+                this.TableName = "DietReport";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -3242,7 +3240,7 @@ namespace DSS_Diet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal DietReportTableAdapterDataTable(global::System.Data.DataTable table) {
+            internal DietReportDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -3259,32 +3257,24 @@ namespace DSS_Diet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected DietReportTableAdapterDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected DietReportDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ID_элемента_рационаColumn {
+            public global::System.Data.DataColumn ProductNameColumn {
                 get {
-                    return this.columnID_элемента_рациона;
+                    return this.columnProductName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Название_продуктаColumn {
+            public global::System.Data.DataColumn ProductCountColumn {
                 get {
-                    return this.columnНазвание_продукта;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Количество_продуктаColumn {
-                get {
-                    return this.columnКоличество_продукта;
+                    return this.columnProductCount;
                 }
             }
             
@@ -3299,47 +3289,46 @@ namespace DSS_Diet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DietReportTableAdapterRow this[int index] {
+            public DietReportRow this[int index] {
                 get {
-                    return ((DietReportTableAdapterRow)(this.Rows[index]));
+                    return ((DietReportRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DietReportTableAdapterRowChangeEventHandler DietReportTableAdapterRowChanging;
+            public event DietReportRowChangeEventHandler DietReportRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DietReportTableAdapterRowChangeEventHandler DietReportTableAdapterRowChanged;
+            public event DietReportRowChangeEventHandler DietReportRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DietReportTableAdapterRowChangeEventHandler DietReportTableAdapterRowDeleting;
+            public event DietReportRowChangeEventHandler DietReportRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DietReportTableAdapterRowChangeEventHandler DietReportTableAdapterRowDeleted;
+            public event DietReportRowChangeEventHandler DietReportRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddDietReportTableAdapterRow(DietReportTableAdapterRow row) {
+            public void AddDietReportRow(DietReportRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DietReportTableAdapterRow AddDietReportTableAdapterRow(string Название_продукта, int Количество_продукта) {
-                DietReportTableAdapterRow rowDietReportTableAdapterRow = ((DietReportTableAdapterRow)(this.NewRow()));
+            public DietReportRow AddDietReportRow(string ProductName, int ProductCount) {
+                DietReportRow rowDietReportRow = ((DietReportRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
-                        Название_продукта,
-                        Количество_продукта};
-                rowDietReportTableAdapterRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowDietReportTableAdapterRow);
-                return rowDietReportTableAdapterRow;
+                        ProductName,
+                        ProductCount};
+                rowDietReportRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDietReportRow);
+                return rowDietReportRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                DietReportTableAdapterDataTable cln = ((DietReportTableAdapterDataTable)(base.Clone()));
+                DietReportDataTable cln = ((DietReportDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -3347,60 +3336,52 @@ namespace DSS_Diet {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new DietReportTableAdapterDataTable();
+                return new DietReportDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnID_элемента_рациона = base.Columns["ID_элемента_рациона"];
-                this.columnНазвание_продукта = base.Columns["Название_продукта"];
-                this.columnКоличество_продукта = base.Columns["Количество_продукта"];
+                this.columnProductName = base.Columns["ProductName"];
+                this.columnProductCount = base.Columns["ProductCount"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnID_элемента_рациона = new global::System.Data.DataColumn("ID_элемента_рациона", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID_элемента_рациона);
-                this.columnНазвание_продукта = new global::System.Data.DataColumn("Название_продукта", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnНазвание_продукта);
-                this.columnКоличество_продукта = new global::System.Data.DataColumn("Количество_продукта", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnКоличество_продукта);
-                this.columnID_элемента_рациона.AutoIncrement = true;
-                this.columnID_элемента_рациона.AutoIncrementSeed = -1;
-                this.columnID_элемента_рациона.AutoIncrementStep = -1;
-                this.columnID_элемента_рациона.AllowDBNull = false;
-                this.columnID_элемента_рациона.ReadOnly = true;
-                this.columnНазвание_продукта.AllowDBNull = false;
-                this.columnНазвание_продукта.MaxLength = 30;
-                this.columnКоличество_продукта.AllowDBNull = false;
+                this.columnProductName = new global::System.Data.DataColumn("ProductName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProductName);
+                this.columnProductCount = new global::System.Data.DataColumn("ProductCount", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProductCount);
+                this.columnProductName.AllowDBNull = false;
+                this.columnProductName.MaxLength = 30;
+                this.columnProductCount.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DietReportTableAdapterRow NewDietReportTableAdapterRow() {
-                return ((DietReportTableAdapterRow)(this.NewRow()));
+            public DietReportRow NewDietReportRow() {
+                return ((DietReportRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new DietReportTableAdapterRow(builder);
+                return new DietReportRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(DietReportTableAdapterRow);
+                return typeof(DietReportRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.DietReportTableAdapterRowChanged != null)) {
-                    this.DietReportTableAdapterRowChanged(this, new DietReportTableAdapterRowChangeEvent(((DietReportTableAdapterRow)(e.Row)), e.Action));
+                if ((this.DietReportRowChanged != null)) {
+                    this.DietReportRowChanged(this, new DietReportRowChangeEvent(((DietReportRow)(e.Row)), e.Action));
                 }
             }
             
@@ -3408,8 +3389,8 @@ namespace DSS_Diet {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.DietReportTableAdapterRowChanging != null)) {
-                    this.DietReportTableAdapterRowChanging(this, new DietReportTableAdapterRowChangeEvent(((DietReportTableAdapterRow)(e.Row)), e.Action));
+                if ((this.DietReportRowChanging != null)) {
+                    this.DietReportRowChanging(this, new DietReportRowChangeEvent(((DietReportRow)(e.Row)), e.Action));
                 }
             }
             
@@ -3417,8 +3398,8 @@ namespace DSS_Diet {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.DietReportTableAdapterRowDeleted != null)) {
-                    this.DietReportTableAdapterRowDeleted(this, new DietReportTableAdapterRowChangeEvent(((DietReportTableAdapterRow)(e.Row)), e.Action));
+                if ((this.DietReportRowDeleted != null)) {
+                    this.DietReportRowDeleted(this, new DietReportRowChangeEvent(((DietReportRow)(e.Row)), e.Action));
                 }
             }
             
@@ -3426,14 +3407,14 @@ namespace DSS_Diet {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.DietReportTableAdapterRowDeleting != null)) {
-                    this.DietReportTableAdapterRowDeleting(this, new DietReportTableAdapterRowChangeEvent(((DietReportTableAdapterRow)(e.Row)), e.Action));
+                if ((this.DietReportRowDeleting != null)) {
+                    this.DietReportRowDeleting(this, new DietReportRowChangeEvent(((DietReportRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveDietReportTableAdapterRow(DietReportTableAdapterRow row) {
+            public void RemoveDietReportRow(DietReportRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -3460,7 +3441,7 @@ namespace DSS_Diet {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "DietReportTableAdapterDataTable";
+                attribute2.FixedValue = "DietReportDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -4441,47 +4422,36 @@ namespace DSS_Diet {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class DietReportTableAdapterRow : global::System.Data.DataRow {
+        public partial class DietReportRow : global::System.Data.DataRow {
             
-            private DietReportTableAdapterDataTable tableDietReportTableAdapter;
+            private DietReportDataTable tableDietReport;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal DietReportTableAdapterRow(global::System.Data.DataRowBuilder rb) : 
+            internal DietReportRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableDietReportTableAdapter = ((DietReportTableAdapterDataTable)(this.Table));
+                this.tableDietReport = ((DietReportDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int ID_элемента_рациона {
+            public string ProductName {
                 get {
-                    return ((int)(this[this.tableDietReportTableAdapter.ID_элемента_рационаColumn]));
+                    return ((string)(this[this.tableDietReport.ProductNameColumn]));
                 }
                 set {
-                    this[this.tableDietReportTableAdapter.ID_элемента_рационаColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Название_продукта {
-                get {
-                    return ((string)(this[this.tableDietReportTableAdapter.Название_продуктаColumn]));
-                }
-                set {
-                    this[this.tableDietReportTableAdapter.Название_продуктаColumn] = value;
+                    this[this.tableDietReport.ProductNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Количество_продукта {
+            public int ProductCount {
                 get {
-                    return ((int)(this[this.tableDietReportTableAdapter.Количество_продуктаColumn]));
+                    return ((int)(this[this.tableDietReport.ProductCountColumn]));
                 }
                 set {
-                    this[this.tableDietReportTableAdapter.Количество_продуктаColumn] = value;
+                    this[this.tableDietReport.ProductCountColumn] = value;
                 }
             }
         }
@@ -4762,22 +4732,22 @@ namespace DSS_Diet {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class DietReportTableAdapterRowChangeEvent : global::System.EventArgs {
+        public class DietReportRowChangeEvent : global::System.EventArgs {
             
-            private DietReportTableAdapterRow eventRow;
+            private DietReportRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DietReportTableAdapterRowChangeEvent(DietReportTableAdapterRow row, global::System.Data.DataRowAction action) {
+            public DietReportRowChangeEvent(DietReportRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DietReportTableAdapterRow Row {
+            public DietReportRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -5250,9 +5220,9 @@ SELECT ID_элемента_рациона, ID_рациона, ID_продукт�
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[КАТЕГОРИЯ_ПРОДУКТОВ] ([Название_категории_продуктов]) VALUES (" +
-                "@Название_категории_продуктов);\r\nSELECT ID_категории_продуктов, Название_категор" +
-                "ии_продуктов FROM КАТЕГОРИЯ_ПРОДУКТОВ WHERE (ID_категории_продуктов = SCOPE_IDEN" +
-                "TITY())";
+                "@Название_категории_продуктов);\nSELECT ID_категории_продуктов, Название_категори" +
+                "и_продуктов FROM КАТЕГОРИЯ_ПРОДУКТОВ WHERE (ID_категории_продуктов = SCOPE_IDENT" +
+                "ITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Название_категории_продуктов", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_категории_продуктов", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
@@ -6354,13 +6324,13 @@ SELECT ID_продукта, Название_продукта, Содержан�
                 "ржание_клетчатки_на_100_г_продукта] = @Original_Содержание_клетчатки_на_100_г_пр" +
                 "одукта) AND ([Калорийность_на_100_г_продукта] = @Original_Калорийность_на_100_г_" +
                 "продукта) AND ([ID_категории_продуктов] = @Original_ID_категории_продуктов) AND " +
-                "([Стоимость_100_г_продукта] = @Original_Стоимость_100_г_продукта));\r\nSELECT ID_п" +
-                "родукта, Название_продукта, Содержание_белков_на_100_г_продукта, Содержание_жиро" +
-                "в_на_100_г_продукта, Содержание_углеводов_на_100_г_продукта, Содержание_витамина" +
-                "_A_на_100_г_продукта, Содержание_витамина_B1_на_100_г_продукта, Содержание_витам" +
-                "ина_C_на_100_г_продукта, Содержание_клетчатки_на_100_г_продукта, Калорийность_на" +
-                "_100_г_продукта, ID_категории_продуктов, Стоимость_100_г_продукта FROM ПРОДУКТ W" +
-                "HERE (ID_продукта = @ID_продукта)";
+                "([Стоимость_100_г_продукта] = @Original_Стоимость_100_г_продукта));\nSELECT ID_пр" +
+                "одукта, Название_продукта, Содержание_белков_на_100_г_продукта, Содержание_жиров" +
+                "_на_100_г_продукта, Содержание_углеводов_на_100_г_продукта, Содержание_витамина_" +
+                "A_на_100_г_продукта, Содержание_витамина_B1_на_100_г_продукта, Содержание_витами" +
+                "на_C_на_100_г_продукта, Содержание_клетчатки_на_100_г_продукта, Калорийность_на_" +
+                "100_г_продукта, ID_категории_продуктов, Стоимость_100_г_продукта FROM ПРОДУКТ WH" +
+                "ERE (ID_продукта = @ID_продукта)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Название_продукта", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Название_продукта", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Содержание_белков_на_100_г_продукта", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 3, "Содержание_белков_на_100_г_продукта", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -7178,12 +7148,12 @@ SELECT ID_набора_параметров_пациента, Значение_�
                 "S NULL) OR ([Значение_суточной_нормы_клетчатки] = @Original_Значение_суточной_но" +
                 "рмы_клетчатки)) AND ((@IsNull_Значение_суточной_нормы_калорий = 1 AND [Значение_" +
                 "суточной_нормы_калорий] IS NULL) OR ([Значение_суточной_нормы_калорий] = @Origin" +
-                "al_Значение_суточной_нормы_калорий)));\r\nSELECT ID_набора_параметров_пациента, Зн" +
-                "ачение_суточной_нормы_белков, Значение_суточной_нормы_жиров, Значение_суточной_н" +
-                "ормы_углеводов, Значение_суточной_нормы_витамина_A, Значение_суточной_нормы_вита" +
-                "мина_B1, Значение_суточной_нормы_витамина_C, Значение_суточной_нормы_клетчатки, " +
-                "Значение_суточной_нормы_калорий FROM СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ WHERE (ID_набора_пар" +
-                "аметров_пациента = @ID_набора_параметров_пациента)";
+                "al_Значение_суточной_нормы_калорий)));\nSELECT ID_набора_параметров_пациента, Зна" +
+                "чение_суточной_нормы_белков, Значение_суточной_нормы_жиров, Значение_суточной_но" +
+                "рмы_углеводов, Значение_суточной_нормы_витамина_A, Значение_суточной_нормы_витам" +
+                "ина_B1, Значение_суточной_нормы_витамина_C, Значение_суточной_нормы_клетчатки, З" +
+                "начение_суточной_нормы_калорий FROM СУТОЧНАЯ_НОРМА_ВЕЩЕСТВ WHERE (ID_набора_пара" +
+                "метров_пациента = @ID_набора_параметров_пациента)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Значение_суточной_нормы_белков", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 3, "Значение_суточной_нормы_белков", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Значение_суточной_нормы_жиров", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 6, 3, "Значение_суточной_нормы_жиров", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -7862,7 +7832,7 @@ SELECT ID_набора_параметров_пациента, Значение_�
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class DietReportTableAdapterTableAdapter : global::System.ComponentModel.Component {
+    public partial class DietReportTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -7876,7 +7846,7 @@ SELECT ID_набора_параметров_пациента, Значение_�
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public DietReportTableAdapterTableAdapter() {
+        public DietReportTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -7973,10 +7943,9 @@ SELECT ID_набора_параметров_пациента, Значение_�
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "DietReportTableAdapter";
-            tableMapping.ColumnMappings.Add("ID_элемента_рациона", "ID_элемента_рациона");
-            tableMapping.ColumnMappings.Add("Название_продукта", "Название_продукта");
-            tableMapping.ColumnMappings.Add("Количество_продукта", "Количество_продукта");
+            tableMapping.DataSetTable = "DietReport";
+            tableMapping.ColumnMappings.Add("ProductName", "ProductName");
+            tableMapping.ColumnMappings.Add("ProductCount", "ProductCount");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -7994,19 +7963,16 @@ SELECT ID_набора_параметров_пациента, Значение_�
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        ЭЛЕМЕНТ_РАЦИОНА.ID_элемента_рациона, ПРОДУКТ.Название_продукта, ЭЛЕМЕНТ_РАЦИОНА.Количество_продукта
-FROM            ПРОДУКТ INNER JOIN
-                         ЭЛЕМЕНТ_РАЦИОНА ON ПРОДУКТ.ID_продукта = ЭЛЕМЕНТ_РАЦИОНА.ID_продукта
-WHERE ЭЛЕМЕНТ_РАЦИОНА.ID_рациона = @param_id";
+            this._commandCollection[0].CommandText = "SELECT ProductName, ProductCount FROM dbo.DietReport(@param_id)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@param_id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID_рациона", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@param_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DietDBDataSet.DietReportTableAdapterDataTable dataTable, int param_id) {
+        public virtual int Fill(DietDBDataSet.DietReportDataTable dataTable, int param_id) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(param_id));
             if ((this.ClearBeforeFill == true)) {
@@ -8020,10 +7986,10 @@ WHERE ЭЛЕМЕНТ_РАЦИОНА.ID_рациона = @param_id";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DietDBDataSet.DietReportTableAdapterDataTable GetData(int param_id) {
+        public virtual DietDBDataSet.DietReportDataTable GetData(int param_id) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             this.Adapter.SelectCommand.Parameters[0].Value = ((int)(param_id));
-            DietDBDataSet.DietReportTableAdapterDataTable dataTable = new DietDBDataSet.DietReportTableAdapterDataTable();
+            DietDBDataSet.DietReportDataTable dataTable = new DietDBDataSet.DietReportDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

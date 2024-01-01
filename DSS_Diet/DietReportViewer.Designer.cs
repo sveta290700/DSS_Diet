@@ -30,7 +30,17 @@ namespace DietProject
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DietReportViewer));
+            this.DRVreportViewer = new Microsoft.Reporting.WinForms.ReportViewer();
             this.SuspendLayout();
+            // 
+            // DRVreportViewer
+            // 
+            resources.ApplyResources(this.DRVreportViewer, "DRVreportViewer");
+            this.DRVreportViewer.Name = "DRVreportViewer";
+            this.DRVreportViewer.ServerReport.BearerToken = null;
+            this.DRVreportViewer.ShowFindControls = false;
+            this.DRVreportViewer.ShowPrintButton = false;
+            this.DRVreportViewer.ShowStopButton = false;
             // 
             // DietReportViewer
             // 
@@ -41,10 +51,13 @@ namespace DietProject
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DietReportViewer";
+            this.Load += new System.EventHandler(this.DietReportViewer_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private Microsoft.Reporting.WinForms.ReportViewer DRVreportViewer;
     }
 }

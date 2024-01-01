@@ -2,23 +2,23 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
-      <Tablix Name="Tablix5">
+      <Tablix Name="Tablix2">
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>4.45792cm</Width>
+              <Width>3.50542cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.45792cm</Width>
+              <Width>3.50542cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>1.28792cm</Height>
+              <Height>0.5074cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox26">
+                    <Textbox Name="Textbox8">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -32,7 +32,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox26</rd:DefaultName>
+                      <rd:DefaultName>Textbox8</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -48,7 +48,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox28">
+                    <Textbox Name="Textbox10">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -62,7 +62,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox28</rd:DefaultName>
+                      <rd:DefaultName>Textbox10</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -79,25 +79,25 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>1.28792cm</Height>
+              <Height>0.5074cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Название_продукта">
+                    <Textbox Name="ProductName">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Название_продукта.Value</Value>
+                              <Value>=Fields!ProductName.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Название_продукта</rd:DefaultName>
+                      <rd:DefaultName>ProductName</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -113,21 +113,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Количество_продукта">
+                    <Textbox Name="ProductCount">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Количество_продукта.Value</Value>
+                              <Value>=Fields!ProductCount.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Количество_продукта</rd:DefaultName>
+                      <rd:DefaultName>ProductCount</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -161,11 +161,11 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DietReportDataSet</DataSetName>
-        <Top>1.16099cm</Top>
-        <Left>1.53141cm</Left>
-        <Height>2.57583cm</Height>
-        <Width>8.91583cm</Width>
+        <DataSetName>DietDataSet</DataSetName>
+        <Top>1.39912cm</Top>
+        <Left>2.77495cm</Left>
+        <Height>1.01479cm</Height>
+        <Width>7.01083cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -173,7 +173,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>2in</Height>
+    <Height>2.29411in</Height>
     <Style />
   </Body>
   <Width>6.5in</Width>
@@ -182,6 +182,37 @@
       <Height>2.54cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox15">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Заголовок</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox15</rd:DefaultName>
+          <Top>0.86995cm</Top>
+          <Left>2.64266cm</Left>
+          <Height>0.67938cm</Height>
+          <Width>1.98438cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
       <Style>
         <Border>
           <Style>None</Style>
@@ -218,32 +249,28 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DietReportDataSet">
+    <DataSet Name="DietDataSet">
       <Query>
         <DataSourceName>DietDBDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="ID_элемента_рациона">
-          <DataField>ID_элемента_рациона</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Название_продукта">
-          <DataField>Название_продукта</DataField>
+        <Field Name="ProductName">
+          <DataField>ProductName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Количество_продукта">
-          <DataField>Количество_продукта</DataField>
+        <Field Name="ProductCount">
+          <DataField>ProductCount</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DietDBDataSet</rd:DataSetName>
         <rd:SchemaPath>D:\SVETA@mail.ru - ЛИЧНАЯ ПАПКА\всякое\ДВФУ\Магистратура\ВКР\DSS_Diet\DSS_Diet\DietDBDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>DietReportTableAdapter</rd:TableName>
+        <rd:TableName>DietReport</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>DietReportTableAdapterTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>DietReportTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

@@ -11,6 +11,8 @@
 
   <ItemGroup>
     <PackageReference Include="Google.OrTools" Version="9.2.9972" />
+    <PackageReference Include="ReportViewerCore.NETCore" Version="15.1.19" />
+    <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.19" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
   </ItemGroup>
 
