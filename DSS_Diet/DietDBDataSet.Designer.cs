@@ -3229,6 +3229,18 @@ namespace DSS_Diet {
             
             private global::System.Data.DataColumn columnProductCount;
             
+            private global::System.Data.DataColumn columnPatientName;
+            
+            private global::System.Data.DataColumn columnPatientSurname;
+            
+            private global::System.Data.DataColumn columnPatientPatronym;
+            
+            private global::System.Data.DataColumn columnPatientGender;
+            
+            private global::System.Data.DataColumn columnPatientHeight;
+            
+            private global::System.Data.DataColumn columnPatientWeight;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public DietReportDataTable() {
@@ -3280,6 +3292,54 @@ namespace DSS_Diet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PatientNameColumn {
+                get {
+                    return this.columnPatientName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PatientSurnameColumn {
+                get {
+                    return this.columnPatientSurname;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PatientPatronymColumn {
+                get {
+                    return this.columnPatientPatronym;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PatientGenderColumn {
+                get {
+                    return this.columnPatientGender;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PatientHeightColumn {
+                get {
+                    return this.columnPatientHeight;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn PatientWeightColumn {
+                get {
+                    return this.columnPatientWeight;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -3315,11 +3375,17 @@ namespace DSS_Diet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DietReportRow AddDietReportRow(string ProductName, int ProductCount) {
+            public DietReportRow AddDietReportRow(string ProductName, int ProductCount, string PatientName, string PatientSurname, string PatientPatronym, string PatientGender, int PatientHeight, int PatientWeight) {
                 DietReportRow rowDietReportRow = ((DietReportRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ProductName,
-                        ProductCount};
+                        ProductCount,
+                        PatientName,
+                        PatientSurname,
+                        PatientPatronym,
+                        PatientGender,
+                        PatientHeight,
+                        PatientWeight};
                 rowDietReportRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDietReportRow);
                 return rowDietReportRow;
@@ -3344,6 +3410,12 @@ namespace DSS_Diet {
             internal void InitVars() {
                 this.columnProductName = base.Columns["ProductName"];
                 this.columnProductCount = base.Columns["ProductCount"];
+                this.columnPatientName = base.Columns["PatientName"];
+                this.columnPatientSurname = base.Columns["PatientSurname"];
+                this.columnPatientPatronym = base.Columns["PatientPatronym"];
+                this.columnPatientGender = base.Columns["PatientGender"];
+                this.columnPatientHeight = base.Columns["PatientHeight"];
+                this.columnPatientWeight = base.Columns["PatientWeight"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3353,9 +3425,30 @@ namespace DSS_Diet {
                 base.Columns.Add(this.columnProductName);
                 this.columnProductCount = new global::System.Data.DataColumn("ProductCount", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProductCount);
+                this.columnPatientName = new global::System.Data.DataColumn("PatientName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPatientName);
+                this.columnPatientSurname = new global::System.Data.DataColumn("PatientSurname", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPatientSurname);
+                this.columnPatientPatronym = new global::System.Data.DataColumn("PatientPatronym", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPatientPatronym);
+                this.columnPatientGender = new global::System.Data.DataColumn("PatientGender", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPatientGender);
+                this.columnPatientHeight = new global::System.Data.DataColumn("PatientHeight", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPatientHeight);
+                this.columnPatientWeight = new global::System.Data.DataColumn("PatientWeight", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPatientWeight);
                 this.columnProductName.AllowDBNull = false;
                 this.columnProductName.MaxLength = 30;
                 this.columnProductCount.AllowDBNull = false;
+                this.columnPatientName.AllowDBNull = false;
+                this.columnPatientName.MaxLength = 20;
+                this.columnPatientSurname.AllowDBNull = false;
+                this.columnPatientSurname.MaxLength = 20;
+                this.columnPatientPatronym.MaxLength = 20;
+                this.columnPatientGender.AllowDBNull = false;
+                this.columnPatientGender.MaxLength = 10;
+                this.columnPatientHeight.AllowDBNull = false;
+                this.columnPatientWeight.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4453,6 +4546,89 @@ namespace DSS_Diet {
                 set {
                     this[this.tableDietReport.ProductCountColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PatientName {
+                get {
+                    return ((string)(this[this.tableDietReport.PatientNameColumn]));
+                }
+                set {
+                    this[this.tableDietReport.PatientNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PatientSurname {
+                get {
+                    return ((string)(this[this.tableDietReport.PatientSurnameColumn]));
+                }
+                set {
+                    this[this.tableDietReport.PatientSurnameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PatientPatronym {
+                get {
+                    try {
+                        return ((string)(this[this.tableDietReport.PatientPatronymColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'PatientPatronym\' в таблице \'DietReport\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDietReport.PatientPatronymColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string PatientGender {
+                get {
+                    return ((string)(this[this.tableDietReport.PatientGenderColumn]));
+                }
+                set {
+                    this[this.tableDietReport.PatientGenderColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int PatientHeight {
+                get {
+                    return ((int)(this[this.tableDietReport.PatientHeightColumn]));
+                }
+                set {
+                    this[this.tableDietReport.PatientHeightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int PatientWeight {
+                get {
+                    return ((int)(this[this.tableDietReport.PatientWeightColumn]));
+                }
+                set {
+                    this[this.tableDietReport.PatientWeightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsPatientPatronymNull() {
+                return this.IsNull(this.tableDietReport.PatientPatronymColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetPatientPatronymNull() {
+                this[this.tableDietReport.PatientPatronymColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -7946,6 +8122,12 @@ SELECT ID_набора_параметров_пациента, Значение_�
             tableMapping.DataSetTable = "DietReport";
             tableMapping.ColumnMappings.Add("ProductName", "ProductName");
             tableMapping.ColumnMappings.Add("ProductCount", "ProductCount");
+            tableMapping.ColumnMappings.Add("PatientName", "PatientName");
+            tableMapping.ColumnMappings.Add("PatientSurname", "PatientSurname");
+            tableMapping.ColumnMappings.Add("PatientPatronym", "PatientPatronym");
+            tableMapping.ColumnMappings.Add("PatientGender", "PatientGender");
+            tableMapping.ColumnMappings.Add("PatientHeight", "PatientHeight");
+            tableMapping.ColumnMappings.Add("PatientWeight", "PatientWeight");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -7963,7 +8145,8 @@ SELECT ID_набора_параметров_пациента, Значение_�
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ProductName, ProductCount FROM dbo.DietReport(@param_id)";
+            this._commandCollection[0].CommandText = "SELECT ProductName, ProductCount, PatientName, PatientSurname, PatientPatronym, P" +
+                "atientGender, PatientHeight, PatientWeight FROM dbo.DietReport(@param_id)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@param_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
