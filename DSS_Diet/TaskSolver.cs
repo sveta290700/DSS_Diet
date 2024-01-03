@@ -264,7 +264,6 @@ namespace DietProject
                             }
                             DietResult TaskResultForm = new DietResult();
                             TaskResultForm.LabelText.Text = "Согласно списку выбранных продуктов и доступному бюджету\nбыл составлен следующий суточный рацион:\n\n" + dietReady;
-                            TaskResultForm.Text = "Результат решения задачи";
                             TaskResultForm.ShowDialog();
                         }
                     }
