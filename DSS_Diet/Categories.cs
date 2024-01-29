@@ -72,35 +72,45 @@ namespace DietProject
             }
             else
             {
-                if (Program.sqlConnection.State == ConnectionState.Open)
-                    Program.sqlConnection.Close();
-                Program.sqlConnection.Open();
-                SqlCommand checkIsUnique = new SqlCommand("SELECT COUNT(*) FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [Название_категории_продуктов] = N'" + CategoryTextBox.Text.ToString() + "';", Program.sqlConnection);
-                int res = (int)checkIsUnique.ExecuteScalar();
-                if (res == 0)
-                {
-                    DataRowView itemCat = (DataRowView)CCategoriesListBox.SelectedItem;
-                    string nameToEdit = itemCat.Row[1].ToString();
-                    SqlCommand editCategory = new SqlCommand("UPDATE [КАТЕГОРИЯ_ПРОДУКТОВ] SET [Название_категории_продуктов] = N'" + CategoryTextBox.Text.ToString() + "' WHERE [Название_категории_продуктов] = N'" + nameToEdit + "'; ", Program.sqlConnection);
-                    editCategory.ExecuteNonQuery();
-                    CategoryTextBox.Clear();
-                    CategoriesTable = new DataTable();
-                    CCategoriesListBox.DataSource = CategoriesTable;
-                    adapter = new SqlDataAdapter("SELECT * FROM [КАТЕГОРИЯ_ПРОДУКТОВ]", Program.sqlConnection);
-                    adapter.Fill(CategoriesTable);
-                    CCategoriesListBox.DataSource = CategoriesTable;
-                    CCategoriesListBox.DisplayMember = "Название_категории_продуктов";
-                    CCategoriesListBox.ValueMember = "ID_категории_продуктов";
-                    CCategoriesListBox.SelectedIndex = choice;
-                }
-                else
+                if (CategoryTextBox.Text == "")
                 {
                     MessageFormSmall ErrorForm = new MessageFormSmall();
-                    ErrorForm.LabelText.Text = "Категория с таким названием уже существует.";
+                    ErrorForm.LabelText.Text = "Название категории не может быть пустым.";
                     ErrorForm.Text = "Ошибка";
                     ErrorForm.ShowDialog();
                 }
-                Program.sqlConnection.Close();
+                else
+                {
+                    if (Program.sqlConnection.State == ConnectionState.Open)
+                        Program.sqlConnection.Close();
+                    Program.sqlConnection.Open();
+                    SqlCommand checkIsUnique = new SqlCommand("SELECT COUNT(*) FROM [КАТЕГОРИЯ_ПРОДУКТОВ] WHERE [Название_категории_продуктов] = N'" + CategoryTextBox.Text.ToString() + "';", Program.sqlConnection);
+                    int res = (int)checkIsUnique.ExecuteScalar();
+                    if (res == 0)
+                    {
+                        DataRowView itemCat = (DataRowView)CCategoriesListBox.SelectedItem;
+                        string nameToEdit = itemCat.Row[1].ToString();
+                        SqlCommand editCategory = new SqlCommand("UPDATE [КАТЕГОРИЯ_ПРОДУКТОВ] SET [Название_категории_продуктов] = N'" + CategoryTextBox.Text.ToString() + "' WHERE [Название_категории_продуктов] = N'" + nameToEdit + "'; ", Program.sqlConnection);
+                        editCategory.ExecuteNonQuery();
+                        CategoryTextBox.Clear();
+                        CategoriesTable = new DataTable();
+                        CCategoriesListBox.DataSource = CategoriesTable;
+                        adapter = new SqlDataAdapter("SELECT * FROM [КАТЕГОРИЯ_ПРОДУКТОВ]", Program.sqlConnection);
+                        adapter.Fill(CategoriesTable);
+                        CCategoriesListBox.DataSource = CategoriesTable;
+                        CCategoriesListBox.DisplayMember = "Название_категории_продуктов";
+                        CCategoriesListBox.ValueMember = "ID_категории_продуктов";
+                        CCategoriesListBox.SelectedIndex = choice;
+                    }
+                    else
+                    {
+                        MessageFormSmall ErrorForm = new MessageFormSmall();
+                        ErrorForm.LabelText.Text = "Категория с таким названием уже существует.";
+                        ErrorForm.Text = "Ошибка";
+                        ErrorForm.ShowDialog();
+                    }
+                    Program.sqlConnection.Close();
+                }
             }
         }
 

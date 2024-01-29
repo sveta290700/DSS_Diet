@@ -391,10 +391,10 @@
     <Height>2.03369in</Height>
     <Style />
   </Body>
-  <Width>6.51042in</Width>
+  <Width>6.66009in</Width>
   <Page>
     <PageHeader>
-      <Height>3.62479cm</Height>
+      <Height>4.78896cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -485,9 +485,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox7</rd:DefaultName>
           <Top>1.41965cm</Top>
-          <Left>12.56453cm</Left>
+          <Left>10.95057cm</Left>
           <Height>0.6cm</Height>
-          <Width>1.30938cm</Width>
+          <Width>2.92334cm</Width>
           <ZIndex>2</ZIndex>
           <Style>
             <Border>
@@ -519,9 +519,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox9</rd:DefaultName>
           <Top>2.48391cm</Top>
-          <Left>12.56453cm</Left>
+          <Left>10.95057cm</Left>
           <Height>0.6cm</Height>
-          <Width>1.30938cm</Width>
+          <Width>2.92334cm</Width>
           <ZIndex>3</ZIndex>
           <Style>
             <Border>
@@ -553,9 +553,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox11</rd:DefaultName>
           <Top>0.36724cm</Top>
-          <Left>12.56453cm</Left>
+          <Left>10.95057cm</Left>
           <Height>0.6cm</Height>
-          <Width>1.30938cm</Width>
+          <Width>2.92334cm</Width>
           <ZIndex>4</ZIndex>
           <Style>
             <Border>
@@ -795,6 +795,70 @@
             <PaddingBottom>2pt</PaddingBottom>
           </Style>
         </Textbox>
+        <Textbox Name="Textbox18">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Заболевание:</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox11</rd:DefaultName>
+          <Top>3.54969cm</Top>
+          <Left>10.95057cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.92334cm</Width>
+          <ZIndex>12</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox19">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=First(Fields!PatientIllness.Value, "DietDataSet")</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox19</rd:DefaultName>
+          <Top>3.54969cm</Top>
+          <Left>13.87391cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.37901cm</Width>
+          <ZIndex>13</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
       </ReportItems>
       <Style>
         <Border>
@@ -966,6 +1030,10 @@
         <Field Name="PatientWeight">
           <DataField>PatientWeight</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PatientIllness">
+          <DataField>PatientIllness</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>

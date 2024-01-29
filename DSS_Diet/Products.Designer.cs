@@ -57,6 +57,10 @@ namespace DietProject
             this.PEnergyNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.PPriceLabel = new System.Windows.Forms.Label();
             this.PPriceNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.PPGastritisLabel = new System.Windows.Forms.Label();
+            this.PPDiabetesLabel = new System.Windows.Forms.Label();
+            this.PPGastritisCheckbox = new System.Windows.Forms.CheckBox();
+            this.PPDiabetesCheckbox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.PProteinsNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PFatsNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PCarhydNumericUpDown)).BeginInit();
@@ -331,11 +335,37 @@ namespace DietProject
             0,
             131072});
             // 
+            // PPGastritisLabel
+            // 
+            resources.ApplyResources(this.PPGastritisLabel, "PPGastritisLabel");
+            this.PPGastritisLabel.Name = "PPGastritisLabel";
+            // 
+            // PPDiabetesLabel
+            // 
+            resources.ApplyResources(this.PPDiabetesLabel, "PPDiabetesLabel");
+            this.PPDiabetesLabel.Name = "PPDiabetesLabel";
+            // 
+            // PPGastritisCheckbox
+            // 
+            resources.ApplyResources(this.PPGastritisCheckbox, "PPGastritisCheckbox");
+            this.PPGastritisCheckbox.Name = "PPGastritisCheckbox";
+            this.PPGastritisCheckbox.UseVisualStyleBackColor = true;
+            // 
+            // PPDiabetesCheckbox
+            // 
+            resources.ApplyResources(this.PPDiabetesCheckbox, "PPDiabetesCheckbox");
+            this.PPDiabetesCheckbox.Name = "PPDiabetesCheckbox";
+            this.PPDiabetesCheckbox.UseVisualStyleBackColor = true;
+            // 
             // Products
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.Controls.Add(this.PPDiabetesCheckbox);
+            this.Controls.Add(this.PPGastritisCheckbox);
+            this.Controls.Add(this.PPDiabetesLabel);
+            this.Controls.Add(this.PPGastritisLabel);
             this.Controls.Add(this.PPriceNumericUpDown);
             this.Controls.Add(this.PPriceLabel);
             this.Controls.Add(this.PEnergyLabel);
@@ -411,5 +441,9 @@ namespace DietProject
         private System.Windows.Forms.NumericUpDown PEnergyNumericUpDown;
         private System.Windows.Forms.Label PPriceLabel;
         private System.Windows.Forms.NumericUpDown PPriceNumericUpDown;
+        private System.Windows.Forms.Label PPGastritisLabel;
+        private System.Windows.Forms.Label PPDiabetesLabel;
+        private System.Windows.Forms.CheckBox PPGastritisCheckbox;
+        private System.Windows.Forms.CheckBox PPDiabetesCheckbox;
     }
 }

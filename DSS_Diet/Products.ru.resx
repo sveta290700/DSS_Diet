@@ -71,13 +71,16 @@
   <data name="ProductsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>405, 24</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ProductsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="ProductsLabel.Text" xml:space="preserve">
     <value>Названия продуктов</value>
   </data>
   <data name="PProductsListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PProductsListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
@@ -86,6 +89,9 @@
   </data>
   <data name="PProductsListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>405, 214</value>
+  </data>
+  <data name="PProductsListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="PAddButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -97,10 +103,13 @@
     <value>NoControl</value>
   </data>
   <data name="PAddButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>413, 362</value>
+    <value>432, 391</value>
   </data>
   <data name="PAddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
+  </data>
+  <data name="PAddButton.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
   <data name="PAddButton.Text" xml:space="preserve">
     <value>Добавить</value>
@@ -115,10 +124,13 @@
     <value>NoControl</value>
   </data>
   <data name="PDeleteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>642, 362</value>
+    <value>671, 391</value>
   </data>
   <data name="PDeleteButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
+  </data>
+  <data name="PDeleteButton.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
   <data name="PDeleteButton.Text" xml:space="preserve">
     <value>Удалить</value>
@@ -132,6 +144,9 @@
   <data name="ProductTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>245, 29</value>
   </data>
+  <data name="ProductTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="CEditButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -141,8 +156,14 @@
   <data name="CEditButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="CEditButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>551, 391</value>
+  </data>
   <data name="CEditButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 38</value>
+  </data>
+  <data name="CEditButton.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
   </data>
   <data name="CEditButton.Text" xml:space="preserve">
     <value>Изменить</value>
@@ -156,14 +177,26 @@
   <data name="PSubstanceFeaturesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PSubstanceFeaturesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>487, 12</value>
+  </data>
   <data name="PSubstanceFeaturesLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>237, 21</value>
+  </data>
+  <data name="PSubstanceFeaturesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="PSubstanceFeaturesLabel.Text" xml:space="preserve">
     <value>Содержание на 100 г продукта:</value>
   </data>
+  <data name="PProteinsNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>451, 69</value>
+  </data>
   <data name="PProteinsNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
+  </data>
+  <data name="PProteinsNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="PProteinsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -174,8 +207,14 @@
   <data name="PProteinsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PProteinsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>447, 43</value>
+  </data>
   <data name="PProteinsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 21</value>
+  </data>
+  <data name="PProteinsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="PProteinsLabel.Text" xml:space="preserve">
     <value>белков (в г)</value>
@@ -189,14 +228,26 @@
   <data name="PFatsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PFatsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>562, 43</value>
+  </data>
   <data name="PFatsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 21</value>
+  </data>
+  <data name="PFatsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="PFatsLabel.Text" xml:space="preserve">
     <value>жиров (в г)</value>
   </data>
+  <data name="PFatsNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 69</value>
+  </data>
   <data name="PFatsNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
+  </data>
+  <data name="PFatsNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="PCarhydLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -207,14 +258,26 @@
   <data name="PCarhydLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PCarhydLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>669, 43</value>
+  </data>
   <data name="PCarhydLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 21</value>
+  </data>
+  <data name="PCarhydLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="PCarhydLabel.Text" xml:space="preserve">
     <value>углеводов (в г)</value>
   </data>
+  <data name="PCarhydNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>681, 69</value>
+  </data>
   <data name="PCarhydNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
+  </data>
+  <data name="PCarhydNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="PVitB1Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -225,14 +288,26 @@
   <data name="PVitB1Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PVitB1Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>625, 100</value>
+  </data>
   <data name="PVitB1Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 21</value>
+  </data>
+  <data name="PVitB1Label.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="PVitB1Label.Text" xml:space="preserve">
     <value>витамина B1 (в мг)</value>
   </data>
+  <data name="PVitB1NumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>648, 126</value>
+  </data>
   <data name="PVitB1NumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
+  </data>
+  <data name="PVitB1NumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="PVitALabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -243,14 +318,26 @@
   <data name="PVitALabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PVitALabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>447, 100</value>
+  </data>
   <data name="PVitALabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 21</value>
+  </data>
+  <data name="PVitALabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="PVitALabel.Text" xml:space="preserve">
     <value>витамина А (в мкг)</value>
   </data>
+  <data name="PVitANumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 126</value>
+  </data>
   <data name="PVitANumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
+  </data>
+  <data name="PVitANumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <data name="PCellLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -261,14 +348,26 @@
   <data name="PCellLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PCellLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>637, 159</value>
+  </data>
   <data name="PCellLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>114, 21</value>
+  </data>
+  <data name="PCellLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
   <data name="PCellLabel.Text" xml:space="preserve">
     <value>клетчатки (в г)</value>
   </data>
+  <data name="PCellNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>648, 185</value>
+  </data>
   <data name="PCellNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
+  </data>
+  <data name="PCellNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
   <data name="PVitCLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -279,17 +378,32 @@
   <data name="PVitCLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PVitCLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>447, 159</value>
+  </data>
   <data name="PVitCLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>136, 21</value>
+  </data>
+  <data name="PVitCLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="PVitCLabel.Text" xml:space="preserve">
     <value>витамина C (в мг)</value>
   </data>
+  <data name="PVitCNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 185</value>
+  </data>
   <data name="PVitCNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
   </data>
+  <data name="PVitCNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
   <data name="PCategoriesComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>313, 23</value>
+  </data>
+  <data name="PCategoriesComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="PChoiceLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -303,6 +417,9 @@
   <data name="PChoiceLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 21</value>
   </data>
+  <data name="PChoiceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="PChoiceLabel.Text" xml:space="preserve">
     <value>Категория:</value>
   </data>
@@ -315,14 +432,26 @@
   <data name="PEnergyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PEnergyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>542, 216</value>
+  </data>
   <data name="PEnergyLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 21</value>
+  </data>
+  <data name="PEnergyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
   <data name="PEnergyLabel.Text" xml:space="preserve">
     <value>энергии (в ккал)</value>
   </data>
+  <data name="PEnergyNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>563, 243</value>
+  </data>
   <data name="PEnergyNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
+  </data>
+  <data name="PEnergyNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
   <data name="PPriceLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -333,17 +462,83 @@
   <data name="PPriceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="PPriceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>447, 278</value>
+  </data>
   <data name="PPriceLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>202, 21</value>
+  </data>
+  <data name="PPriceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
   </data>
   <data name="PPriceLabel.Text" xml:space="preserve">
     <value>Стоимость 100 г продукта:</value>
   </data>
   <data name="PPriceNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>660, 302</value>
+    <value>657, 280</value>
   </data>
   <data name="PPriceNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 23</value>
+  </data>
+  <data name="PPriceNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="PPGastritisLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PPGastritisLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PPGastritisLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PPGastritisLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>447, 313</value>
+  </data>
+  <data name="PPGastritisLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 21</value>
+  </data>
+  <data name="PPGastritisLabel.Text" xml:space="preserve">
+    <value>Запрет при гастрите:</value>
+  </data>
+  <data name="PPDiabetesLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PPDiabetesLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="PPDiabetesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PPDiabetesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>447, 349</value>
+  </data>
+  <data name="PPDiabetesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 21</value>
+  </data>
+  <data name="PPDiabetesLabel.Text" xml:space="preserve">
+    <value>Запрет при сахарном диабете:</value>
+  </data>
+  <data name="PPGastritisCheckbox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PPGastritisCheckbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>613, 319</value>
+  </data>
+  <data name="PPGastritisCheckbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
+  </data>
+  <data name="PPDiabetesCheckbox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PPDiabetesCheckbox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PPDiabetesCheckbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>681, 354</value>
+  </data>
+  <data name="PPDiabetesCheckbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>15, 14</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
