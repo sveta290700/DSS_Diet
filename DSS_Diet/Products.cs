@@ -57,8 +57,8 @@ namespace DietProject
                     string idCat = PCategoriesComboBox.SelectedValue.ToString();
                     string price = PPriceNumericUpDown.Value.ToString();
                     price = price.Replace(',', '.');
-                    int noGastritis = Convert.ToInt32(PPGastritisCheckbox.Checked);
-                    int noDiabetes = Convert.ToInt32(PPDiabetesCheckbox.Checked);
+                    byte noGastritis = Convert.ToByte(PPGastritisCheckbox.Checked);
+                    byte noDiabetes = Convert.ToByte(PPDiabetesCheckbox.Checked);
                     SqlCommand addProduct = new SqlCommand("INSERT INTO [ПРОДУКТ] VALUES (N'" + ProductTextBox.Text.ToString() + "', CONVERT(DECIMAL(6, 3), " + proteins + "), CONVERT(DECIMAL(6, 3), " + fats + "), CONVERT(DECIMAL(6, 3), " + carhyd + "), CONVERT(DECIMAL(7, 3), " + vitA + "), CONVERT(DECIMAL(6, 3), " + vitB1 + "), CONVERT(DECIMAL(6, 3), " + vitC + "), CONVERT(DECIMAL(6, 3), " + cellss + "), " + energy + ", " + idCat + ", CONVERT(DECIMAL(6, 2), " + price + "), " + noGastritis + ", " + noDiabetes + ");", Program.sqlConnection);
                     addProduct.ExecuteNonQuery();
                     ProductTextBox.Clear();
@@ -248,6 +248,18 @@ namespace DietProject
             getValue = new SqlCommand("SELECT [Стоимость_100_г_продукта] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
             value = getValue.ExecuteScalar();
             PPriceNumericUpDown.Value = (decimal)value;
+            getValue = new SqlCommand("SELECT [Запрет_при_гастрите] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
+            value = getValue.ExecuteScalar();
+            if (value.ToString() == "1")
+                PPGastritisCheckbox.Checked = true;
+            else
+                PPGastritisCheckbox.Checked = false;
+            getValue = new SqlCommand("SELECT [Запрет_при_диабете] FROM [ПРОДУКТ] WHERE [ID_продукта] = " + selectedProductId + ";", Program.sqlConnection);
+            value = getValue.ExecuteScalar();
+            if (value.ToString() == "1")
+                PPDiabetesCheckbox.Checked = true;
+            else
+                PPDiabetesCheckbox.Checked = false;
             Program.sqlConnection.Close();
         }
     }
