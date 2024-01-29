@@ -38,7 +38,7 @@ namespace DietProject
             PatientParametersSetTable.Columns.Add(
                 "Полное_описание_набора",
                 typeof(string),
-                "'Рост: ' + Рост_пациента + ' см, вес: ' + Вес_пациента + ' кг, пол: ' + Пол_пациента");
+                "'Рост: ' + Рост_пациента + ' см, вес: ' + Вес_пациента + ' кг, пол: ' + Пол_пациента + ', заболевание: ' + Заболевание_пациента");
             TSPatientParametersSetComboBox.DisplayMember = "Полное_описание_набора";
             TSPatientParametersSetComboBox.ValueMember = "ID_набора_параметров_пациента";
             adapter = new SqlDataAdapter("SELECT * FROM [ПРОДУКТ]", Program.sqlConnection);

@@ -1,3 +1,1 @@
-﻿namespace DSS_Diet
-{
-}
+﻿

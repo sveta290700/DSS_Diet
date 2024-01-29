@@ -38,23 +38,23 @@ namespace DSS_Diet {
         
         private ПАЦИЕНТDataTable tableПАЦИЕНТ;
         
-        private НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА;
-        
         private DietReportDataTable tableDietReport;
+        
+        private НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА;
         
         private global::System.Data.DataRelation relationПРОДУКТ_Является_частью_ЭЛЕМЕНТ_РАЦИОНА;
         
         private global::System.Data.DataRelation relationРАЦИОН_Состоит_из_ЭЛЕМЕНТ_РАЦИОНА;
         
-        private global::System.Data.DataRelation relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА;
-        
         private global::System.Data.DataRelation relationКАТЕГОРИЯ_ПРОДУКТОВ_Обладает_СОВМЕСТИМОСТЬ_КАТЕГОРИЙ;
-        
-        private global::System.Data.DataRelation relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН;
         
         private global::System.Data.DataRelation relationПАЦИЕНТ_Назначается_РАЦИОН;
         
         private global::System.Data.DataRelation relationКАТЕГОРИЯ_ПРОДУКТОВ_Включает_в_себя_ПРОДУКТ;
+        
+        private global::System.Data.DataRelation relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА;
+        
+        private global::System.Data.DataRelation relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН;
         
         private global::System.Data.DataRelation relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ;
         
@@ -107,11 +107,11 @@ namespace DSS_Diet {
                 if ((ds.Tables["ПАЦИЕНТ"] != null)) {
                     base.Tables.Add(new ПАЦИЕНТDataTable(ds.Tables["ПАЦИЕНТ"]));
                 }
-                if ((ds.Tables["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА"] != null)) {
-                    base.Tables.Add(new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable(ds.Tables["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА"]));
-                }
                 if ((ds.Tables["DietReport"] != null)) {
                     base.Tables.Add(new DietReportDataTable(ds.Tables["DietReport"]));
+                }
+                if ((ds.Tables["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА"] != null)) {
+                    base.Tables.Add(new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable(ds.Tables["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -205,9 +205,9 @@ namespace DSS_Diet {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА {
+        public DietReportDataTable DietReport {
             get {
-                return this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА;
+                return this.tableDietReport;
             }
         }
         
@@ -215,9 +215,9 @@ namespace DSS_Diet {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DietReportDataTable DietReport {
+        public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА {
             get {
-                return this.tableDietReport;
+                return this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА;
             }
         }
         
@@ -309,11 +309,11 @@ namespace DSS_Diet {
                 if ((ds.Tables["ПАЦИЕНТ"] != null)) {
                     base.Tables.Add(new ПАЦИЕНТDataTable(ds.Tables["ПАЦИЕНТ"]));
                 }
-                if ((ds.Tables["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА"] != null)) {
-                    base.Tables.Add(new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable(ds.Tables["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА"]));
-                }
                 if ((ds.Tables["DietReport"] != null)) {
                     base.Tables.Add(new DietReportDataTable(ds.Tables["DietReport"]));
+                }
+                if ((ds.Tables["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА"] != null)) {
+                    base.Tables.Add(new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable(ds.Tables["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -390,25 +390,25 @@ namespace DSS_Diet {
                     this.tableПАЦИЕНТ.InitVars();
                 }
             }
-            this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА = ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable)(base.Tables["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА"]));
-            if ((initTable == true)) {
-                if ((this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА != null)) {
-                    this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.InitVars();
-                }
-            }
             this.tableDietReport = ((DietReportDataTable)(base.Tables["DietReport"]));
             if ((initTable == true)) {
                 if ((this.tableDietReport != null)) {
                     this.tableDietReport.InitVars();
                 }
             }
+            this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА = ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable)(base.Tables["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА"]));
+            if ((initTable == true)) {
+                if ((this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА != null)) {
+                    this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.InitVars();
+                }
+            }
             this.relationПРОДУКТ_Является_частью_ЭЛЕМЕНТ_РАЦИОНА = this.Relations["ПРОДУКТ_Является_частью_ЭЛЕМЕНТ_РАЦИОНА"];
             this.relationРАЦИОН_Состоит_из_ЭЛЕМЕНТ_РАЦИОНА = this.Relations["РАЦИОН_Состоит_из_ЭЛЕМЕНТ_РАЦИОНА"];
-            this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА = this.Relations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА"];
             this.relationКАТЕГОРИЯ_ПРОДУКТОВ_Обладает_СОВМЕСТИМОСТЬ_КАТЕГОРИЙ = this.Relations["КАТЕГОРИЯ_ПРОДУКТОВ_Обладает_СОВМЕСТИМОСТЬ_КАТЕГОРИЙ"];
-            this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН = this.Relations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН"];
             this.relationПАЦИЕНТ_Назначается_РАЦИОН = this.Relations["ПАЦИЕНТ_Назначается_РАЦИОН"];
             this.relationКАТЕГОРИЯ_ПРОДУКТОВ_Включает_в_себя_ПРОДУКТ = this.Relations["КАТЕГОРИЯ_ПРОДУКТОВ_Включает_в_себя_ПРОДУКТ"];
+            this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА = this.Relations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА"];
+            this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН = this.Relations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН"];
             this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ = this.Relations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ"];
         }
         
@@ -434,10 +434,10 @@ namespace DSS_Diet {
             base.Tables.Add(this.tableПРОДУКТ);
             this.tableПАЦИЕНТ = new ПАЦИЕНТDataTable();
             base.Tables.Add(this.tableПАЦИЕНТ);
-            this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА = new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable();
-            base.Tables.Add(this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА);
             this.tableDietReport = new DietReportDataTable();
             base.Tables.Add(this.tableDietReport);
+            this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА = new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable();
+            base.Tables.Add(this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА);
             this.relationПРОДУКТ_Является_частью_ЭЛЕМЕНТ_РАЦИОНА = new global::System.Data.DataRelation("ПРОДУКТ_Является_частью_ЭЛЕМЕНТ_РАЦИОНА", new global::System.Data.DataColumn[] {
                         this.tableПРОДУКТ.ID_продуктаColumn}, new global::System.Data.DataColumn[] {
                         this.tableЭЛЕМЕНТ_РАЦИОНА.ID_продуктаColumn}, false);
@@ -446,18 +446,10 @@ namespace DSS_Diet {
                         this.tableРАЦИОН.ID_рационаColumn}, new global::System.Data.DataColumn[] {
                         this.tableЭЛЕМЕНТ_РАЦИОНА.ID_рационаColumn}, false);
             this.Relations.Add(this.relationРАЦИОН_Состоит_из_ЭЛЕМЕНТ_РАЦИОНА);
-            this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА = new global::System.Data.DataRelation("НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА", new global::System.Data.DataColumn[] {
-                        this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.ID_набора_параметров_пациентаColumn}, new global::System.Data.DataColumn[] {
-                        this.tableСУТОЧНАЯ_НОРМА_ВЕЩЕСТВ.ID_набора_параметров_пациентаColumn}, false);
-            this.Relations.Add(this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА);
             this.relationКАТЕГОРИЯ_ПРОДУКТОВ_Обладает_СОВМЕСТИМОСТЬ_КАТЕГОРИЙ = new global::System.Data.DataRelation("КАТЕГОРИЯ_ПРОДУКТОВ_Обладает_СОВМЕСТИМОСТЬ_КАТЕГОРИЙ", new global::System.Data.DataColumn[] {
                         this.tableКАТЕГОРИЯ_ПРОДУКТОВ.ID_категории_продуктовColumn}, new global::System.Data.DataColumn[] {
                         this.tableСОВМЕСТИМОСТЬ_КАТЕГОРИЙ_ПРОДУКТОВ.ID_категории_продуктовColumn}, false);
             this.Relations.Add(this.relationКАТЕГОРИЯ_ПРОДУКТОВ_Обладает_СОВМЕСТИМОСТЬ_КАТЕГОРИЙ);
-            this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН = new global::System.Data.DataRelation("НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН", new global::System.Data.DataColumn[] {
-                        this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.ID_набора_параметров_пациентаColumn}, new global::System.Data.DataColumn[] {
-                        this.tableРАЦИОН.ID_набора_параметров_пациентаColumn}, false);
-            this.Relations.Add(this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН);
             this.relationПАЦИЕНТ_Назначается_РАЦИОН = new global::System.Data.DataRelation("ПАЦИЕНТ_Назначается_РАЦИОН", new global::System.Data.DataColumn[] {
                         this.tableПАЦИЕНТ.ID_пациентаColumn}, new global::System.Data.DataColumn[] {
                         this.tableРАЦИОН.ID_пациентаColumn}, false);
@@ -466,6 +458,14 @@ namespace DSS_Diet {
                         this.tableКАТЕГОРИЯ_ПРОДУКТОВ.ID_категории_продуктовColumn}, new global::System.Data.DataColumn[] {
                         this.tableПРОДУКТ.ID_категории_продуктовColumn}, false);
             this.Relations.Add(this.relationКАТЕГОРИЯ_ПРОДУКТОВ_Включает_в_себя_ПРОДУКТ);
+            this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА = new global::System.Data.DataRelation("НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА", new global::System.Data.DataColumn[] {
+                        this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.ID_набора_параметров_пациентаColumn}, new global::System.Data.DataColumn[] {
+                        this.tableСУТОЧНАЯ_НОРМА_ВЕЩЕСТВ.ID_набора_параметров_пациентаColumn}, false);
+            this.Relations.Add(this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА);
+            this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН = new global::System.Data.DataRelation("НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН", new global::System.Data.DataColumn[] {
+                        this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.ID_набора_параметров_пациентаColumn}, new global::System.Data.DataColumn[] {
+                        this.tableРАЦИОН.ID_набора_параметров_пациентаColumn}, false);
+            this.Relations.Add(this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН);
             this.relationНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ = new global::System.Data.DataRelation("НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ", new global::System.Data.DataColumn[] {
                         this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.ID_набора_параметров_пациентаColumn}, new global::System.Data.DataColumn[] {
                         this.tableПАЦИЕНТ.ID_набора_параметров_пациентаColumn}, false);
@@ -516,13 +516,13 @@ namespace DSS_Diet {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА() {
+        private bool ShouldSerializeDietReport() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeDietReport() {
+        private bool ShouldSerializeНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА() {
             return false;
         }
         
@@ -603,10 +603,10 @@ namespace DSS_Diet {
         public delegate void ПАЦИЕНТRowChangeEventHandler(object sender, ПАЦИЕНТRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEventHandler(object sender, НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent e);
+        public delegate void DietReportRowChangeEventHandler(object sender, DietReportRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void DietReportRowChangeEventHandler(object sender, DietReportRowChangeEvent e);
+        public delegate void НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEventHandler(object sender, НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -2945,329 +2945,6 @@ namespace DSS_Diet {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable : global::System.Data.TypedTableBase<НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow> {
-            
-            private global::System.Data.DataColumn columnID_набора_параметров_пациента;
-            
-            private global::System.Data.DataColumn columnРост_пациента;
-            
-            private global::System.Data.DataColumn columnВес_пациента;
-            
-            private global::System.Data.DataColumn columnПол_пациента;
-            
-            private global::System.Data.DataColumn columnЗаболевание_пациента;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable() {
-                this.TableName = "НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ID_набора_параметров_пациентаColumn {
-                get {
-                    return this.columnID_набора_параметров_пациента;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Рост_пациентаColumn {
-                get {
-                    return this.columnРост_пациента;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Вес_пациентаColumn {
-                get {
-                    return this.columnВес_пациента;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Пол_пациентаColumn {
-                get {
-                    return this.columnПол_пациента;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Заболевание_пациентаColumn {
-                get {
-                    return this.columnЗаболевание_пациента;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow this[int index] {
-                get {
-                    return ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEventHandler НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEventHandler НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEventHandler НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEventHandler НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow(НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow AddНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow(int Рост_пациента, int Вес_пациента, string Пол_пациента, string Заболевание_пациента) {
-                НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow rowНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow = ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        null,
-                        Рост_пациента,
-                        Вес_пациента,
-                        Пол_пациента,
-                        Заболевание_пациента};
-                rowНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow);
-                return rowНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow FindByID_набора_параметров_пациента(int ID_набора_параметров_пациента) {
-                return ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(this.Rows.Find(new object[] {
-                            ID_набора_параметров_пациента})));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable cln = ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal void InitVars() {
-                this.columnID_набора_параметров_пациента = base.Columns["ID_набора_параметров_пациента"];
-                this.columnРост_пациента = base.Columns["Рост_пациента"];
-                this.columnВес_пациента = base.Columns["Вес_пациента"];
-                this.columnПол_пациента = base.Columns["Пол_пациента"];
-                this.columnЗаболевание_пациента = base.Columns["Заболевание_пациента"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            private void InitClass() {
-                this.columnID_набора_параметров_пациента = new global::System.Data.DataColumn("ID_набора_параметров_пациента", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID_набора_параметров_пациента);
-                this.columnРост_пациента = new global::System.Data.DataColumn("Рост_пациента", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnРост_пациента);
-                this.columnВес_пациента = new global::System.Data.DataColumn("Вес_пациента", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnВес_пациента);
-                this.columnПол_пациента = new global::System.Data.DataColumn("Пол_пациента", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnПол_пациента);
-                this.columnЗаболевание_пациента = new global::System.Data.DataColumn("Заболевание_пациента", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnЗаболевание_пациента);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnID_набора_параметров_пациента}, true));
-                this.columnID_набора_параметров_пациента.AutoIncrement = true;
-                this.columnID_набора_параметров_пациента.AutoIncrementSeed = -1;
-                this.columnID_набора_параметров_пациента.AutoIncrementStep = -1;
-                this.columnID_набора_параметров_пациента.AllowDBNull = false;
-                this.columnID_набора_параметров_пациента.ReadOnly = true;
-                this.columnID_набора_параметров_пациента.Unique = true;
-                this.columnРост_пациента.AllowDBNull = false;
-                this.columnВес_пациента.AllowDBNull = false;
-                this.columnПол_пациента.AllowDBNull = false;
-                this.columnПол_пациента.MaxLength = 10;
-                this.columnЗаболевание_пациента.MaxLength = 20;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow NewНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow() {
-                return ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChanged != null)) {
-                    this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChanged(this, new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent(((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChanging != null)) {
-                    this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChanging(this, new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent(((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowDeleted != null)) {
-                    this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowDeleted(this, new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent(((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowDeleting != null)) {
-                    this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowDeleting(this, new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent(((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow(НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DietDBDataSet ds = new DietDBDataSet();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class DietReportDataTable : global::System.Data.TypedTableBase<DietReportRow> {
             
             private global::System.Data.DataColumn columnProductName;
@@ -3595,6 +3272,329 @@ namespace DSS_Diet {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "DietReportDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable : global::System.Data.TypedTableBase<НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow> {
+            
+            private global::System.Data.DataColumn columnID_набора_параметров_пациента;
+            
+            private global::System.Data.DataColumn columnРост_пациента;
+            
+            private global::System.Data.DataColumn columnВес_пациента;
+            
+            private global::System.Data.DataColumn columnПол_пациента;
+            
+            private global::System.Data.DataColumn columnЗаболевание_пациента;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable() {
+                this.TableName = "НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn ID_набора_параметров_пациентаColumn {
+                get {
+                    return this.columnID_набора_параметров_пациента;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Рост_пациентаColumn {
+                get {
+                    return this.columnРост_пациента;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Вес_пациентаColumn {
+                get {
+                    return this.columnВес_пациента;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Пол_пациентаColumn {
+                get {
+                    return this.columnПол_пациента;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn Заболевание_пациентаColumn {
+                get {
+                    return this.columnЗаболевание_пациента;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow this[int index] {
+                get {
+                    return ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEventHandler НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEventHandler НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEventHandler НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEventHandler НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow(НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow AddНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow(int Рост_пациента, int Вес_пациента, string Пол_пациента, string Заболевание_пациента) {
+                НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow rowНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow = ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Рост_пациента,
+                        Вес_пациента,
+                        Пол_пациента,
+                        Заболевание_пациента};
+                rowНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow);
+                return rowНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow FindByID_набора_параметров_пациента(int ID_набора_параметров_пациента) {
+                return ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(this.Rows.Find(new object[] {
+                            ID_набора_параметров_пациента})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable cln = ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnID_набора_параметров_пациента = base.Columns["ID_набора_параметров_пациента"];
+                this.columnРост_пациента = base.Columns["Рост_пациента"];
+                this.columnВес_пациента = base.Columns["Вес_пациента"];
+                this.columnПол_пациента = base.Columns["Пол_пациента"];
+                this.columnЗаболевание_пациента = base.Columns["Заболевание_пациента"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnID_набора_параметров_пациента = new global::System.Data.DataColumn("ID_набора_параметров_пациента", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID_набора_параметров_пациента);
+                this.columnРост_пациента = new global::System.Data.DataColumn("Рост_пациента", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnРост_пациента);
+                this.columnВес_пациента = new global::System.Data.DataColumn("Вес_пациента", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnВес_пациента);
+                this.columnПол_пациента = new global::System.Data.DataColumn("Пол_пациента", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnПол_пациента);
+                this.columnЗаболевание_пациента = new global::System.Data.DataColumn("Заболевание_пациента", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnЗаболевание_пациента);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnID_набора_параметров_пациента}, true));
+                this.columnID_набора_параметров_пациента.AutoIncrement = true;
+                this.columnID_набора_параметров_пациента.AutoIncrementSeed = -1;
+                this.columnID_набора_параметров_пациента.AutoIncrementStep = -1;
+                this.columnID_набора_параметров_пациента.AllowDBNull = false;
+                this.columnID_набора_параметров_пациента.ReadOnly = true;
+                this.columnID_набора_параметров_пациента.Unique = true;
+                this.columnРост_пациента.AllowDBNull = false;
+                this.columnВес_пациента.AllowDBNull = false;
+                this.columnПол_пациента.AllowDBNull = false;
+                this.columnПол_пациента.MaxLength = 10;
+                this.columnЗаболевание_пациента.MaxLength = 20;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow NewНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow() {
+                return ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChanged != null)) {
+                    this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChanged(this, new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent(((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChanging != null)) {
+                    this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChanging(this, new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent(((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowDeleted != null)) {
+                    this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowDeleted(this, new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent(((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowDeleting != null)) {
+                    this.НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowDeleting(this, new НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent(((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow(НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DietDBDataSet ds = new DietDBDataSet();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -4170,23 +4170,23 @@ namespace DSS_Diet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow {
-                get {
-                    return ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(this.GetParentRow(this.Table.ParentRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public ПАЦИЕНТRow ПАЦИЕНТRow {
                 get {
                     return ((ПАЦИЕНТRow)(this.GetParentRow(this.Table.ParentRelations["ПАЦИЕНТ_Назначается_РАЦИОН"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["ПАЦИЕНТ_Назначается_РАЦИОН"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow {
+                get {
+                    return ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow)(this.GetParentRow(this.Table.ParentRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН"]);
                 }
             }
             
@@ -4505,127 +4505,6 @@ namespace DSS_Diet {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow : global::System.Data.DataRow {
-            
-            private НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА = ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int ID_набора_параметров_пациента {
-                get {
-                    return ((int)(this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.ID_набора_параметров_пациентаColumn]));
-                }
-                set {
-                    this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.ID_набора_параметров_пациентаColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Рост_пациента {
-                get {
-                    return ((int)(this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Рост_пациентаColumn]));
-                }
-                set {
-                    this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Рост_пациентаColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Вес_пациента {
-                get {
-                    return ((int)(this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Вес_пациентаColumn]));
-                }
-                set {
-                    this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Вес_пациентаColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Пол_пациента {
-                get {
-                    return ((string)(this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Пол_пациентаColumn]));
-                }
-                set {
-                    this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Пол_пациентаColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Заболевание_пациента {
-                get {
-                    try {
-                        return ((string)(this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Заболевание_пациентаColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Заболевание_пациента\' в таблице \'НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА\'" +
-                                " равно DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Заболевание_пациентаColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsЗаболевание_пациентаNull() {
-                return this.IsNull(this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Заболевание_пациентаColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetЗаболевание_пациентаNull() {
-                this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Заболевание_пациентаColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public СУТОЧНАЯ_НОРМА_ВЕЩЕСТВRow[] GetСУТОЧНАЯ_НОРМА_ВЕЩЕСТВRows() {
-                if ((this.Table.ChildRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА"] == null)) {
-                    return new СУТОЧНАЯ_НОРМА_ВЕЩЕСТВRow[0];
-                }
-                else {
-                    return ((СУТОЧНАЯ_НОРМА_ВЕЩЕСТВRow[])(base.GetChildRows(this.Table.ChildRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public РАЦИОНRow[] GetРАЦИОНRows() {
-                if ((this.Table.ChildRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН"] == null)) {
-                    return new РАЦИОНRow[0];
-                }
-                else {
-                    return ((РАЦИОНRow[])(base.GetChildRows(this.Table.ChildRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public ПАЦИЕНТRow[] GetПАЦИЕНТRows() {
-                if ((this.Table.ChildRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ"] == null)) {
-                    return new ПАЦИЕНТRow[0];
-                }
-                else {
-                    return ((ПАЦИЕНТRow[])(base.GetChildRows(this.Table.ChildRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ"])));
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
         public partial class DietReportRow : global::System.Data.DataRow {
             
             private DietReportDataTable tableDietReport;
@@ -4768,6 +4647,127 @@ namespace DSS_Diet {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetPatientIllnessNull() {
                 this[this.tableDietReport.PatientIllnessColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow : global::System.Data.DataRow {
+            
+            private НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА = ((НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ID_набора_параметров_пациента {
+                get {
+                    return ((int)(this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.ID_набора_параметров_пациентаColumn]));
+                }
+                set {
+                    this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.ID_набора_параметров_пациентаColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Рост_пациента {
+                get {
+                    return ((int)(this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Рост_пациентаColumn]));
+                }
+                set {
+                    this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Рост_пациентаColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int Вес_пациента {
+                get {
+                    return ((int)(this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Вес_пациентаColumn]));
+                }
+                set {
+                    this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Вес_пациентаColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Пол_пациента {
+                get {
+                    return ((string)(this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Пол_пациентаColumn]));
+                }
+                set {
+                    this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Пол_пациентаColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Заболевание_пациента {
+                get {
+                    try {
+                        return ((string)(this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Заболевание_пациентаColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Заболевание_пациента\' в таблице \'НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА\'" +
+                                " равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Заболевание_пациентаColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsЗаболевание_пациентаNull() {
+                return this.IsNull(this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Заболевание_пациентаColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetЗаболевание_пациентаNull() {
+                this[this.tableНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА.Заболевание_пациентаColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public СУТОЧНАЯ_НОРМА_ВЕЩЕСТВRow[] GetСУТОЧНАЯ_НОРМА_ВЕЩЕСТВRows() {
+                if ((this.Table.ChildRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА"] == null)) {
+                    return new СУТОЧНАЯ_НОРМА_ВЕЩЕСТВRow[0];
+                }
+                else {
+                    return ((СУТОЧНАЯ_НОРМА_ВЕЩЕСТВRow[])(base.GetChildRows(this.Table.ChildRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Связан_с_СУТОЧНАЯ_НОРМА_ВЕЩЕСТВА"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public РАЦИОНRow[] GetРАЦИОНRows() {
+                if ((this.Table.ChildRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН"] == null)) {
+                    return new РАЦИОНRow[0];
+                }
+                else {
+                    return ((РАЦИОНRow[])(base.GetChildRows(this.Table.ChildRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public ПАЦИЕНТRow[] GetПАЦИЕНТRows() {
+                if ((this.Table.ChildRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ"] == null)) {
+                    return new ПАЦИЕНТRow[0];
+                }
+                else {
+                    return ((ПАЦИЕНТRow[])(base.GetChildRows(this.Table.ChildRelations["НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ"])));
+                }
             }
         }
         
@@ -5013,22 +5013,22 @@ namespace DSS_Diet {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent : global::System.EventArgs {
+        public class DietReportRowChangeEvent : global::System.EventArgs {
             
-            private НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow eventRow;
+            private DietReportRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent(НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow row, global::System.Data.DataRowAction action) {
+            public DietReportRowChangeEvent(DietReportRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow Row {
+            public DietReportRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -5047,22 +5047,22 @@ namespace DSS_Diet {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class DietReportRowChangeEvent : global::System.EventArgs {
+        public class НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent : global::System.EventArgs {
             
-            private DietReportRow eventRow;
+            private НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DietReportRowChangeEvent(DietReportRow row, global::System.Data.DataRowAction action) {
+            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowChangeEvent(НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DietReportRow Row {
+            public НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -7840,6 +7840,187 @@ SELECT ID_набора_параметров_пациента, ID_пациент�
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class DietReportTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public DietReportTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "DietReport";
+            tableMapping.ColumnMappings.Add("ProductName", "ProductName");
+            tableMapping.ColumnMappings.Add("ProductCount", "ProductCount");
+            tableMapping.ColumnMappings.Add("PatientName", "PatientName");
+            tableMapping.ColumnMappings.Add("PatientSurname", "PatientSurname");
+            tableMapping.ColumnMappings.Add("PatientPatronym", "PatientPatronym");
+            tableMapping.ColumnMappings.Add("PatientGender", "PatientGender");
+            tableMapping.ColumnMappings.Add("PatientHeight", "PatientHeight");
+            tableMapping.ColumnMappings.Add("PatientWeight", "PatientWeight");
+            tableMapping.ColumnMappings.Add("PatientIllness", "PatientIllness");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = "Data Source=DESKTOP-0E3AC9U\\SQLEXPRESS;Initial Catalog=DietDB;Integrated Security" +
+                "=True";
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT ProductName, ProductCount, PatientName, PatientSurname, PatientPatronym, P" +
+                "atientGender, PatientHeight, PatientWeight, PatientIllness FROM dbo.DietReport(@" +
+                "param_id)";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@param_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DietDBDataSet.DietReportDataTable dataTable, int param_id) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(param_id));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DietDBDataSet.DietReportDataTable GetData(int param_id) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(param_id));
+            DietDBDataSet.DietReportDataTable dataTable = new DietDBDataSet.DietReportDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
     public partial class НАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
@@ -8199,187 +8380,6 @@ SELECT ID_набора_параметров_пациента, Рост_паци�
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(int Рост_пациента, int Вес_пациента, string Пол_пациента, string Заболевание_пациента, int Original_ID_набора_параметров_пациента, int Original_Рост_пациента, int Original_Вес_пациента, string Original_Пол_пациента, string Original_Заболевание_пациента) {
             return this.Update(Рост_пациента, Вес_пациента, Пол_пациента, Заболевание_пациента, Original_ID_набора_параметров_пациента, Original_Рост_пациента, Original_Вес_пациента, Original_Пол_пациента, Original_Заболевание_пациента, Original_ID_набора_параметров_пациента);
-        }
-    }
-    
-    /// <summary>
-    ///Represents the connection and commands used to retrieve and save data.
-    ///</summary>
-    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
-    [global::System.ComponentModel.ToolboxItem(true)]
-    [global::System.ComponentModel.DataObjectAttribute(true)]
-    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class DietReportTableAdapter : global::System.ComponentModel.Component {
-        
-        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
-        
-        private global::System.Data.SqlClient.SqlConnection _connection;
-        
-        private global::System.Data.SqlClient.SqlTransaction _transaction;
-        
-        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
-        
-        private bool _clearBeforeFill;
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public DietReportTableAdapter() {
-            this.ClearBeforeFill = true;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
-            get {
-                if ((this._adapter == null)) {
-                    this.InitAdapter();
-                }
-                return this._adapter;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        internal global::System.Data.SqlClient.SqlConnection Connection {
-            get {
-                if ((this._connection == null)) {
-                    this.InitConnection();
-                }
-                return this._connection;
-            }
-            set {
-                this._connection = value;
-                if ((this.Adapter.InsertCommand != null)) {
-                    this.Adapter.InsertCommand.Connection = value;
-                }
-                if ((this.Adapter.DeleteCommand != null)) {
-                    this.Adapter.DeleteCommand.Connection = value;
-                }
-                if ((this.Adapter.UpdateCommand != null)) {
-                    this.Adapter.UpdateCommand.Connection = value;
-                }
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    if ((this.CommandCollection[i] != null)) {
-                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
-                    }
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        internal global::System.Data.SqlClient.SqlTransaction Transaction {
-            get {
-                return this._transaction;
-            }
-            set {
-                this._transaction = value;
-                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
-                    this.CommandCollection[i].Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.DeleteCommand != null))) {
-                    this.Adapter.DeleteCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.InsertCommand != null))) {
-                    this.Adapter.InsertCommand.Transaction = this._transaction;
-                }
-                if (((this.Adapter != null) 
-                            && (this.Adapter.UpdateCommand != null))) {
-                    this.Adapter.UpdateCommand.Transaction = this._transaction;
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
-            get {
-                if ((this._commandCollection == null)) {
-                    this.InitCommandCollection();
-                }
-                return this._commandCollection;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public bool ClearBeforeFill {
-            get {
-                return this._clearBeforeFill;
-            }
-            set {
-                this._clearBeforeFill = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private void InitAdapter() {
-            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
-            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
-            tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "DietReport";
-            tableMapping.ColumnMappings.Add("ProductName", "ProductName");
-            tableMapping.ColumnMappings.Add("ProductCount", "ProductCount");
-            tableMapping.ColumnMappings.Add("PatientName", "PatientName");
-            tableMapping.ColumnMappings.Add("PatientSurname", "PatientSurname");
-            tableMapping.ColumnMappings.Add("PatientPatronym", "PatientPatronym");
-            tableMapping.ColumnMappings.Add("PatientGender", "PatientGender");
-            tableMapping.ColumnMappings.Add("PatientHeight", "PatientHeight");
-            tableMapping.ColumnMappings.Add("PatientWeight", "PatientWeight");
-            tableMapping.ColumnMappings.Add("PatientIllness", "PatientIllness");
-            this._adapter.TableMappings.Add(tableMapping);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private void InitConnection() {
-            this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = "Data Source=DESKTOP-0E3AC9U\\SQLEXPRESS;Initial Catalog=DietDB;Integrated Security" +
-                "=True";
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
-            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ProductName, ProductCount, PatientName, PatientSurname, PatientPatronym, P" +
-                "atientGender, PatientHeight, PatientWeight, PatientIllness FROM dbo.DietReport(@" +
-                "param_id)";
-            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@param_id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DietDBDataSet.DietReportDataTable dataTable, int param_id) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(param_id));
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DietDBDataSet.DietReportDataTable GetData(int param_id) {
-            this.Adapter.SelectCommand = this.CommandCollection[0];
-            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(param_id));
-            DietDBDataSet.DietReportDataTable dataTable = new DietDBDataSet.DietReportDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
         }
     }
     

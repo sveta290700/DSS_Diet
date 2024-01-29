@@ -22,6 +22,7 @@ namespace DietProject
             public string PatientGender { get; set; }
             public int PatientHeight { get; set; }
             public int PatientWeight { get; set; }
+            public string PatientIllness { get; set; }
         }
 
         public DietReportViewer(int DietID)
@@ -53,7 +54,8 @@ namespace DietProject
                     PatientPatronym = row["PatientPatronym"].ToString(),
                     PatientGender = row["PatientGender"].ToString(),
                     PatientHeight = Convert.ToInt32(row["PatientHeight"]),
-                    PatientWeight = Convert.ToInt32(row["PatientWeight"])
+                    PatientWeight = Convert.ToInt32(row["PatientWeight"]),
+                    PatientIllness = row["PatientIllness"].ToString()
                 };
                 deList.Add(de);
             }
