@@ -112,7 +112,7 @@
     <value>NoControl</value>
   </data>
   <data name="DSetChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>360, 18</value>
+    <value>363, 16</value>
   </data>
   <data name="DSetChoiceLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 21</value>
@@ -130,7 +130,7 @@
     <value>NoControl</value>
   </data>
   <data name="DSearchLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>13, 14</value>
   </data>
   <data name="DSearchLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 21</value>
@@ -147,6 +147,9 @@
   <data name="DNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 86</value>
+  </data>
   <data name="DNameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 21</value>
   </data>
@@ -155,6 +158,9 @@
   </data>
   <data name="DNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="DNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 81</value>
   </data>
   <data name="DNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 29</value>
@@ -168,6 +174,9 @@
   <data name="DPatronymLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DPatronymLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 119</value>
+  </data>
   <data name="DPatronymLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 21</value>
   </data>
@@ -176,6 +185,9 @@
   </data>
   <data name="DPatronymTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="DPatronymTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 117</value>
   </data>
   <data name="DPatronymTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 29</value>
@@ -189,6 +201,9 @@
   <data name="DSurnameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="DSurnameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 50</value>
+  </data>
   <data name="DSurnameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 21</value>
   </data>
@@ -198,11 +213,17 @@
   <data name="DSurnameTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
+  <data name="DSurnameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 46</value>
+  </data>
   <data name="DSurnameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 29</value>
   </data>
+  <data name="DPatientParametersSetComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 52</value>
+  </data>
   <data name="DPatientParametersSetComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>426, 23</value>
+    <value>419, 23</value>
   </data>
   <data name="DDietsDataGridView.Size" type="System.Drawing.Size, System.Drawing">
     <value>736, 209</value>
