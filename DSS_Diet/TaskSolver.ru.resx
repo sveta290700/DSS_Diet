@@ -151,7 +151,7 @@
     <value>361, 172</value>
   </data>
   <data name="TSMoneyNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>552, 103</value>
+    <value>541, 102</value>
   </data>
   <data name="TSMoneyNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 23</value>
@@ -166,7 +166,7 @@
     <value>NoControl</value>
   </data>
   <data name="TSMoneyLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 102</value>
+    <value>364, 100</value>
   </data>
   <data name="TSMoneyLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 21</value>
@@ -184,16 +184,19 @@
     <value>NoControl</value>
   </data>
   <data name="TSRubLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>637, 102</value>
+    <value>630, 100</value>
   </data>
   <data name="TSRubLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 21</value>
+    <value>39, 21</value>
   </data>
   <data name="TSRubLabel.Text" xml:space="preserve">
-    <value>руб</value>
+    <value>руб.</value>
   </data>
   <data name="TSSurnameTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="TSSurnameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 46</value>
   </data>
   <data name="TSSurnameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 29</value>
@@ -208,7 +211,7 @@
     <value>NoControl</value>
   </data>
   <data name="TSSurnameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 47</value>
+    <value>13, 50</value>
   </data>
   <data name="TSSurnameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 21</value>
@@ -226,7 +229,7 @@
     <value>NoControl</value>
   </data>
   <data name="TSPatientParametersSetLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>375, 13</value>
+    <value>363, 16</value>
   </data>
   <data name="TSPatientParametersSetLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 21</value>
@@ -234,8 +237,11 @@
   <data name="TSPatientParametersSetLabel.Text" xml:space="preserve">
     <value>Набор параметров пациента:</value>
   </data>
+  <data name="TSPatientParametersSetComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>367, 52</value>
+  </data>
   <data name="TSPatientParametersSetComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>351, 23</value>
+    <value>419, 23</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -247,7 +253,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 13</value>
+    <value>13, 14</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 21</value>
@@ -265,7 +271,7 @@
     <value>NoControl</value>
   </data>
   <data name="TSPatronymLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 116</value>
+    <value>13, 119</value>
   </data>
   <data name="TSPatronymLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 21</value>
@@ -275,6 +281,9 @@
   </data>
   <data name="TSPatronymTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="TSPatronymTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 117</value>
   </data>
   <data name="TSPatronymTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 29</value>
@@ -289,7 +298,7 @@
     <value>NoControl</value>
   </data>
   <data name="TSNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 83</value>
+    <value>13, 86</value>
   </data>
   <data name="TSNameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 21</value>
@@ -299,6 +308,9 @@
   </data>
   <data name="TSNameTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="TSNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 81</value>
   </data>
   <data name="TSNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 29</value>
@@ -313,7 +325,7 @@
     <value>NoControl</value>
   </data>
   <data name="TSPatronymLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 137</value>
+    <value>12, 140</value>
   </data>
   <data name="TSPatronymLabel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 15</value>
