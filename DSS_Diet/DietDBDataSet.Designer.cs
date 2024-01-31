@@ -1217,9 +1217,9 @@ namespace DSS_Diet {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class ПАЦИЕНТDataTable : global::System.Data.TypedTableBase<ПАЦИЕНТRow> {
             
-            private global::System.Data.DataColumn columnID_набора_параметров_пациента;
-            
             private global::System.Data.DataColumn columnID_пациента;
+            
+            private global::System.Data.DataColumn columnID_набора_параметров_пациента;
             
             private global::System.Data.DataColumn columnФамилия_пациента;
             
@@ -1262,17 +1262,17 @@ namespace DSS_Diet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ID_набора_параметров_пациентаColumn {
+            public global::System.Data.DataColumn ID_пациентаColumn {
                 get {
-                    return this.columnID_набора_параметров_пациента;
+                    return this.columnID_пациента;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ID_пациентаColumn {
+            public global::System.Data.DataColumn ID_набора_параметров_пациентаColumn {
                 get {
-                    return this.columnID_пациента;
+                    return this.columnID_набора_параметров_пациента;
                 }
             }
             
@@ -1346,7 +1346,7 @@ namespace DSS_Diet {
                         Имя_пациента,
                         Отчество_пациента};
                 if ((parentНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowByНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ != null)) {
-                    columnValuesArray[0] = parentНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowByНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ[0];
+                    columnValuesArray[1] = parentНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowByНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Описывает_ПАЦИЕНТ[0];
                 }
                 rowПАЦИЕНТRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowПАЦИЕНТRow);
@@ -1377,8 +1377,8 @@ namespace DSS_Diet {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnID_набора_параметров_пациента = base.Columns["ID_набора_параметров_пациента"];
                 this.columnID_пациента = base.Columns["ID_пациента"];
+                this.columnID_набора_параметров_пациента = base.Columns["ID_набора_параметров_пациента"];
                 this.columnФамилия_пациента = base.Columns["Фамилия_пациента"];
                 this.columnИмя_пациента = base.Columns["Имя_пациента"];
                 this.columnОтчество_пациента = base.Columns["Отчество_пациента"];
@@ -1387,10 +1387,10 @@ namespace DSS_Diet {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnID_набора_параметров_пациента = new global::System.Data.DataColumn("ID_набора_параметров_пациента", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID_набора_параметров_пациента);
                 this.columnID_пациента = new global::System.Data.DataColumn("ID_пациента", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID_пациента);
+                this.columnID_набора_параметров_пациента = new global::System.Data.DataColumn("ID_набора_параметров_пациента", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID_набора_параметров_пациента);
                 this.columnФамилия_пациента = new global::System.Data.DataColumn("Фамилия_пациента", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnФамилия_пациента);
                 this.columnИмя_пациента = new global::System.Data.DataColumn("Имя_пациента", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1399,13 +1399,13 @@ namespace DSS_Diet {
                 base.Columns.Add(this.columnОтчество_пациента);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID_пациента}, true));
-                this.columnID_набора_параметров_пациента.AllowDBNull = false;
                 this.columnID_пациента.AutoIncrement = true;
                 this.columnID_пациента.AutoIncrementSeed = -1;
                 this.columnID_пациента.AutoIncrementStep = -1;
                 this.columnID_пациента.AllowDBNull = false;
                 this.columnID_пациента.ReadOnly = true;
                 this.columnID_пациента.Unique = true;
+                this.columnID_набора_параметров_пациента.AllowDBNull = false;
                 this.columnФамилия_пациента.AllowDBNull = false;
                 this.columnФамилия_пациента.MaxLength = 20;
                 this.columnИмя_пациента.AllowDBNull = false;
@@ -2126,7 +2126,7 @@ namespace DSS_Diet {
                     columnValuesArray[1] = parentНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТАRowByНАБОР_ПАРАМЕТРОВ_ПАЦИЕНТА_Является_частью_РАЦИОН[0];
                 }
                 if ((parentПАЦИЕНТRowByПАЦИЕНТ_Назначается_РАЦИОН != null)) {
-                    columnValuesArray[3] = parentПАЦИЕНТRowByПАЦИЕНТ_Назначается_РАЦИОН[1];
+                    columnValuesArray[3] = parentПАЦИЕНТRowByПАЦИЕНТ_Назначается_РАЦИОН[0];
                 }
                 rowРАЦИОНRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowРАЦИОНRow);
@@ -3815,23 +3815,23 @@ namespace DSS_Diet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int ID_набора_параметров_пациента {
-                get {
-                    return ((int)(this[this.tableПАЦИЕНТ.ID_набора_параметров_пациентаColumn]));
-                }
-                set {
-                    this[this.tableПАЦИЕНТ.ID_набора_параметров_пациентаColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public int ID_пациента {
                 get {
                     return ((int)(this[this.tableПАЦИЕНТ.ID_пациентаColumn]));
                 }
                 set {
                     this[this.tableПАЦИЕНТ.ID_пациентаColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int ID_набора_параметров_пациента {
+                get {
+                    return ((int)(this[this.tableПАЦИЕНТ.ID_набора_параметров_пациентаColumn]));
+                }
+                set {
+                    this[this.tableПАЦИЕНТ.ID_набора_параметров_пациентаColumn] = value;
                 }
             }
             
@@ -5856,18 +5856,18 @@ SELECT ID_набора_параметров_пациента, Рост_паци�
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "ПАЦИЕНТ";
-            tableMapping.ColumnMappings.Add("ID_набора_параметров_пациента", "ID_набора_параметров_пациента");
             tableMapping.ColumnMappings.Add("ID_пациента", "ID_пациента");
+            tableMapping.ColumnMappings.Add("ID_набора_параметров_пациента", "ID_набора_параметров_пациента");
             tableMapping.ColumnMappings.Add("Фамилия_пациента", "Фамилия_пациента");
             tableMapping.ColumnMappings.Add("Имя_пациента", "Имя_пациента");
             tableMapping.ColumnMappings.Add("Отчество_пациента", "Отчество_пациента");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[ПАЦИЕНТ] WHERE (([ID_набора_параметров_пациента] = @Original_ID_набора_параметров_пациента) AND ([ID_пациента] = @Original_ID_пациента) AND ([Фамилия_пациента] = @Original_Фамилия_пациента) AND ([Имя_пациента] = @Original_Имя_пациента) AND ((@IsNull_Отчество_пациента = 1 AND [Отчество_пациента] IS NULL) OR ([Отчество_пациента] = @Original_Отчество_пациента)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[ПАЦИЕНТ] WHERE (([ID_пациента] = @Original_ID_пациента) AND ([ID_набора_параметров_пациента] = @Original_ID_набора_параметров_пациента) AND ([Фамилия_пациента] = @Original_Фамилия_пациента) AND ([Имя_пациента] = @Original_Имя_пациента) AND ((@IsNull_Отчество_пациента = 1 AND [Отчество_пациента] IS NULL) OR ([Отчество_пациента] = @Original_Отчество_пациента)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_набора_параметров_пациента", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_набора_параметров_пациента", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_пациента", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_пациента", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_набора_параметров_пациента", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_набора_параметров_пациента", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Фамилия_пациента", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Фамилия_пациента", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Имя_пациента", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Имя_пациента", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Отчество_пациента", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Отчество_пациента", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -5875,7 +5875,7 @@ SELECT ID_набора_параметров_пациента, Рост_паци�
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[ПАЦИЕНТ] ([ID_набора_параметров_пациента], [Фамилия_пациента], [Имя_пациента], [Отчество_пациента]) VALUES (@ID_набора_параметров_пациента, @Фамилия_пациента, @Имя_пациента, @Отчество_пациента);
-SELECT ID_набора_параметров_пациента, ID_пациента, Фамилия_пациента, Имя_пациента, Отчество_пациента FROM ПАЦИЕНТ WHERE (ID_пациента = SCOPE_IDENTITY())";
+SELECT ID_пациента, ID_набора_параметров_пациента, Фамилия_пациента, Имя_пациента, Отчество_пациента FROM ПАЦИЕНТ WHERE (ID_пациента = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID_набора_параметров_пациента", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_набора_параметров_пациента", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Фамилия_пациента", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Фамилия_пациента", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -5883,15 +5883,15 @@ SELECT ID_набора_параметров_пациента, ID_пациент�
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Отчество_пациента", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Отчество_пациента", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[ПАЦИЕНТ] SET [ID_набора_параметров_пациента] = @ID_набора_параметров_пациента, [Фамилия_пациента] = @Фамилия_пациента, [Имя_пациента] = @Имя_пациента, [Отчество_пациента] = @Отчество_пациента WHERE (([ID_набора_параметров_пациента] = @Original_ID_набора_параметров_пациента) AND ([ID_пациента] = @Original_ID_пациента) AND ([Фамилия_пациента] = @Original_Фамилия_пациента) AND ([Имя_пациента] = @Original_Имя_пациента) AND ((@IsNull_Отчество_пациента = 1 AND [Отчество_пациента] IS NULL) OR ([Отчество_пациента] = @Original_Отчество_пациента)));
-SELECT ID_набора_параметров_пациента, ID_пациента, Фамилия_пациента, Имя_пациента, Отчество_пациента FROM ПАЦИЕНТ WHERE (ID_пациента = @ID_пациента)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[ПАЦИЕНТ] SET [ID_набора_параметров_пациента] = @ID_набора_параметров_пациента, [Фамилия_пациента] = @Фамилия_пациента, [Имя_пациента] = @Имя_пациента, [Отчество_пациента] = @Отчество_пациента WHERE (([ID_пациента] = @Original_ID_пациента) AND ([ID_набора_параметров_пациента] = @Original_ID_набора_параметров_пациента) AND ([Фамилия_пациента] = @Original_Фамилия_пациента) AND ([Имя_пациента] = @Original_Имя_пациента) AND ((@IsNull_Отчество_пациента = 1 AND [Отчество_пациента] IS NULL) OR ([Отчество_пациента] = @Original_Отчество_пациента)));
+SELECT ID_пациента, ID_набора_параметров_пациента, Фамилия_пациента, Имя_пациента, Отчество_пациента FROM ПАЦИЕНТ WHERE (ID_пациента = @ID_пациента)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID_набора_параметров_пациента", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_набора_параметров_пациента", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Фамилия_пациента", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Фамилия_пациента", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Имя_пациента", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Имя_пациента", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Отчество_пациента", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Отчество_пациента", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_набора_параметров_пациента", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_набора_параметров_пациента", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_пациента", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_пациента", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID_набора_параметров_пациента", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID_набора_параметров_пациента", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Фамилия_пациента", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Фамилия_пациента", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Имя_пациента", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Имя_пациента", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Отчество_пациента", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Отчество_пациента", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -5913,7 +5913,7 @@ SELECT ID_набора_параметров_пациента, ID_пациент�
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID_набора_параметров_пациента, ID_пациента, Фамилия_пациента, Имя_пациента" +
+            this._commandCollection[0].CommandText = "SELECT ID_пациента, ID_набора_параметров_пациента, Фамилия_пациента, Имя_пациента" +
                 ", Отчество_пациента FROM dbo.ПАЦИЕНТ";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
@@ -5975,9 +5975,9 @@ SELECT ID_набора_параметров_пациента, ID_пациент�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID_набора_параметров_пациента, int Original_ID_пациента, string Original_Фамилия_пациента, string Original_Имя_пациента, string Original_Отчество_пациента) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID_набора_параметров_пациента));
-            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_ID_пациента));
+        public virtual int Delete(int Original_ID_пациента, int Original_ID_набора_параметров_пациента, string Original_Фамилия_пациента, string Original_Имя_пациента, string Original_Отчество_пациента) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID_пациента));
+            this.Adapter.DeleteCommand.Parameters[1].Value = ((int)(Original_ID_набора_параметров_пациента));
             if ((Original_Фамилия_пациента == null)) {
                 throw new global::System.ArgumentNullException("Original_Фамилия_пациента");
             }
@@ -6058,7 +6058,7 @@ SELECT ID_набора_параметров_пациента, ID_пациент�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int ID_набора_параметров_пациента, string Фамилия_пациента, string Имя_пациента, string Отчество_пациента, int Original_ID_набора_параметров_пациента, int Original_ID_пациента, string Original_Фамилия_пациента, string Original_Имя_пациента, string Original_Отчество_пациента, int ID_пациента) {
+        public virtual int Update(int ID_набора_параметров_пациента, string Фамилия_пациента, string Имя_пациента, string Отчество_пациента, int Original_ID_пациента, int Original_ID_набора_параметров_пациента, string Original_Фамилия_пациента, string Original_Имя_пациента, string Original_Отчество_пациента, int ID_пациента) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(ID_набора_параметров_пациента));
             if ((Фамилия_пациента == null)) {
                 throw new global::System.ArgumentNullException("Фамилия_пациента");
@@ -6078,8 +6078,8 @@ SELECT ID_набора_параметров_пациента, ID_пациент�
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Отчество_пациента));
             }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_ID_набора_параметров_пациента));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_ID_пациента));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_ID_пациента));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_ID_набора_параметров_пациента));
             if ((Original_Фамилия_пациента == null)) {
                 throw new global::System.ArgumentNullException("Original_Фамилия_пациента");
             }
@@ -6121,8 +6121,8 @@ SELECT ID_набора_параметров_пациента, ID_пациент�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int ID_набора_параметров_пациента, string Фамилия_пациента, string Имя_пациента, string Отчество_пациента, int Original_ID_набора_параметров_пациента, int Original_ID_пациента, string Original_Фамилия_пациента, string Original_Имя_пациента, string Original_Отчество_пациента) {
-            return this.Update(ID_набора_параметров_пациента, Фамилия_пациента, Имя_пациента, Отчество_пациента, Original_ID_набора_параметров_пациента, Original_ID_пациента, Original_Фамилия_пациента, Original_Имя_пациента, Original_Отчество_пациента, Original_ID_пациента);
+        public virtual int Update(int ID_набора_параметров_пациента, string Фамилия_пациента, string Имя_пациента, string Отчество_пациента, int Original_ID_пациента, int Original_ID_набора_параметров_пациента, string Original_Фамилия_пациента, string Original_Имя_пациента, string Original_Отчество_пациента) {
+            return this.Update(ID_набора_параметров_пациента, Фамилия_пациента, Имя_пациента, Отчество_пациента, Original_ID_пациента, Original_ID_набора_параметров_пациента, Original_Фамилия_пациента, Original_Имя_пациента, Original_Отчество_пациента, Original_ID_пациента);
         }
     }
     
