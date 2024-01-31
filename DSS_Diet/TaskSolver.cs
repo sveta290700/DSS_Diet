@@ -240,7 +240,6 @@ namespace DietProject
                             {
                                 string varName = "x" + i;
                                 foods.Add(solver.MakeNumVar(GetPseudoDoubleWithinRange(50.0, 100.0), GetPseudoDoubleWithinRange(800.0, 1000.0), varName));
-                                //foods.Add(solver.MakeNumVar(50.0, 1000.0, varName));
                             }
                             List<Google.OrTools.LinearSolver.Constraint> constraints = new List<Google.OrTools.LinearSolver.Constraint>();
                             Objective objective = solver.Objective();
@@ -286,7 +285,7 @@ namespace DietProject
                                 int patientID = (int)getPatientID.ExecuteScalar();
                                 SqlCommand addDiet = new SqlCommand("INSERT INTO [РАЦИОН] ([ID_набора_параметров_пациента], [Доступный_бюджет], [ID_пациента]) VALUES (" + selectedSetId + ", CONVERT(DECIMAL(6, 2), " + TSMoneyNumericUpDown.Value + "), " + patientID + ");", Program.sqlConnection);
                                 addDiet.ExecuteNonQuery();
-                                SqlCommand getDietID = new SqlCommand("SELECT [ID_рациона] FROM [РАЦИОН] WHERE [ID_набора_параметров_пациента] = " + selectedSetId + " AND [Доступный_бюджет] = CONVERT(DECIMAL(6, 2), " + TSMoneyNumericUpDown.Value + ") AND [ID_пациента] = " + patientID + ";", Program.sqlConnection);
+                                SqlCommand getDietID = new SqlCommand("SELECT TOP 1 [ID_рациона] FROM [РАЦИОН] WHERE [ID_набора_параметров_пациента] = " + selectedSetId + " AND [Доступный_бюджет] = CONVERT(DECIMAL(6, 2), " + TSMoneyNumericUpDown.Value + ") AND [ID_пациента] = " + patientID + " ORDER BY [ID_рациона] DESC;", Program.sqlConnection);
                                 int dietID = (int)getDietID.ExecuteScalar();
                                 for (int i = 0; i < foods.Count; ++i)
                                 {
