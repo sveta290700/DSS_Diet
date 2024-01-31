@@ -94,68 +94,58 @@ namespace DietProject
             }
             else
             {
-                if (ProductTextBox.Text == "")
+                if (Program.sqlConnection.State == ConnectionState.Open)
+                    Program.sqlConnection.Close();
+                Program.sqlConnection.Open();
+                SqlCommand checkIsUnique = new SqlCommand("SELECT COUNT(*) FROM [ПРОДУКТ] WHERE [Название_продукта] = N'" + ProductTextBox.Text.ToString() + "';", Program.sqlConnection);
+                int res = (int)checkIsUnique.ExecuteScalar();
+                if (res == 0)
                 {
-                    MessageFormSmall ErrorForm = new MessageFormSmall();
-                    ErrorForm.LabelText.Text = "Название продукта не может быть пустым.";
-                    ErrorForm.Text = "Ошибка";
-                    ErrorForm.ShowDialog();
+                    DataRowView itemProd = (DataRowView)PProductsListBox.SelectedItem;
+                    string nameToEdit = itemProd.Row[1].ToString();
+                    string newProductName = nameToEdit;
+                    if (ProductTextBox.Text.ToString() != "")
+                        newProductName = ProductTextBox.Text.ToString();
+                    string proteins = PProteinsNumericUpDown.Value.ToString();
+                    proteins = proteins.Replace(',', '.');
+                    string fats = PFatsNumericUpDown.Value.ToString();
+                    fats = fats.Replace(',', '.');
+                    string carhyd = PCarhydNumericUpDown.Value.ToString();
+                    carhyd = carhyd.Replace(',', '.');
+                    string vitA = PVitANumericUpDown.Value.ToString();
+                    vitA = vitA.Replace(',', '.');
+                    string vitB1 = PVitB1NumericUpDown.Value.ToString();
+                    vitB1 = vitB1.Replace(',', '.');
+                    string vitC = PVitCNumericUpDown.Value.ToString();
+                    vitC = vitC.Replace(',', '.');
+                    string cellss = PCellNumericUpDown.Value.ToString();
+                    cellss = cellss.Replace(',', '.');
+                    string energy = PEnergyNumericUpDown.Value.ToString();
+                    string idCat = PCategoriesComboBox.SelectedValue.ToString();
+                    string price = PPriceNumericUpDown.Value.ToString();
+                    price = price.Replace(',', '.');
+                    byte gastritis = Convert.ToByte(PPGastritisCheckbox.Checked);
+                    byte diabetes = Convert.ToByte(PPDiabetesCheckbox.Checked);
+                    SqlCommand editProduct = new SqlCommand("UPDATE [ПРОДУКТ] SET [Название_продукта] = N'" + newProductName + "', [Содержание_белков_на_100_г_продукта] = CONVERT(DECIMAL(6, 3), " + proteins + "), [Содержание_жиров_на_100_г_продукта] = CONVERT(DECIMAL(6, 3), " + fats + "), [Содержание_углеводов_на_100_г_продукта] = CONVERT(DECIMAL(6, 3), " + carhyd + "), [Содержание_витамина_A_на_100_г_продукта] = CONVERT(DECIMAL(7, 3), " + vitA + "), [Содержание_витамина_B1_на_100_г_продукта] = CONVERT(DECIMAL(6, 3), " + vitB1 + "), [Содержание_витамина_C_на_100_г_продукта] = CONVERT(DECIMAL(6, 3), " + vitC + "), [Содержание_клетчатки_на_100_г_продукта] = CONVERT(DECIMAL(6, 3), " + cellss + "), [Калорийность_на_100_г_продукта] = " + energy + ", [ID_категории_продуктов] = " + idCat + ", [Стоимость_100_г_продукта] =  CONVERT(DECIMAL(6, 2), " + price + "), [Запрет_при_гастрите] = " + gastritis + ", [Запрет_при_диабете] = " + diabetes + " WHERE [Название_продукта] = N'" + nameToEdit + "'; ", Program.sqlConnection);
+                    editProduct.ExecuteNonQuery();
+                    ProductTextBox.Clear();
+                    ProductsTable = new DataTable();
+                    PProductsListBox.DataSource = ProductsTable;
+                    adapter = new SqlDataAdapter("SELECT * FROM [ПРОДУКТ]", Program.sqlConnection);
+                    adapter.Fill(ProductsTable);
+                    PProductsListBox.DataSource = ProductsTable;
+                    PProductsListBox.DisplayMember = "Название_продукта";
+                    PProductsListBox.ValueMember = "ID_продукта";
+                    PProductsListBox.SelectedIndex = choice;
                 }
                 else
                 {
-                    if (Program.sqlConnection.State == ConnectionState.Open)
-                        Program.sqlConnection.Close();
-                    Program.sqlConnection.Open();
-                    SqlCommand checkIsUnique = new SqlCommand("SELECT COUNT(*) FROM [ПРОДУКТ] WHERE [Название_продукта] = N'" + ProductTextBox.Text.ToString() + "';", Program.sqlConnection);
-                    int res = (int)checkIsUnique.ExecuteScalar();
-                    if (res == 0)
-                    {
-                        DataRowView itemProd = (DataRowView)PProductsListBox.SelectedItem;
-                        string nameToEdit = itemProd.Row[1].ToString();
-                        string newProductName = nameToEdit;
-                        if (ProductTextBox.Text.ToString() != "")
-                            newProductName = ProductTextBox.Text.ToString();
-                        string proteins = PProteinsNumericUpDown.Value.ToString();
-                        proteins = proteins.Replace(',', '.');
-                        string fats = PFatsNumericUpDown.Value.ToString();
-                        fats = fats.Replace(',', '.');
-                        string carhyd = PCarhydNumericUpDown.Value.ToString();
-                        carhyd = carhyd.Replace(',', '.');
-                        string vitA = PVitANumericUpDown.Value.ToString();
-                        vitA = vitA.Replace(',', '.');
-                        string vitB1 = PVitB1NumericUpDown.Value.ToString();
-                        vitB1 = vitB1.Replace(',', '.');
-                        string vitC = PVitCNumericUpDown.Value.ToString();
-                        vitC = vitC.Replace(',', '.');
-                        string cellss = PCellNumericUpDown.Value.ToString();
-                        cellss = cellss.Replace(',', '.');
-                        string energy = PEnergyNumericUpDown.Value.ToString();
-                        string idCat = PCategoriesComboBox.SelectedValue.ToString();
-                        string price = PPriceNumericUpDown.Value.ToString();
-                        price = price.Replace(',', '.');
-                        byte gastritis = Convert.ToByte(PPGastritisCheckbox.Checked);
-                        byte diabetes = Convert.ToByte(PPDiabetesCheckbox.Checked);
-                        SqlCommand editProduct = new SqlCommand("UPDATE [ПРОДУКТ] SET [Название_продукта] = N'" + newProductName + "', [Содержание_белков_на_100_г_продукта] = CONVERT(DECIMAL(6, 3), " + proteins + "), [Содержание_жиров_на_100_г_продукта] = CONVERT(DECIMAL(6, 3), " + fats + "), [Содержание_углеводов_на_100_г_продукта] = CONVERT(DECIMAL(6, 3), " + carhyd + "), [Содержание_витамина_A_на_100_г_продукта] = CONVERT(DECIMAL(7, 3), " + vitA + "), [Содержание_витамина_B1_на_100_г_продукта] = CONVERT(DECIMAL(6, 3), " + vitB1 + "), [Содержание_витамина_C_на_100_г_продукта] = CONVERT(DECIMAL(6, 3), " + vitC + "), [Содержание_клетчатки_на_100_г_продукта] = CONVERT(DECIMAL(6, 3), " + cellss + "), [Калорийность_на_100_г_продукта] = " + energy + ", [ID_категории_продуктов] = " + idCat + ", [Стоимость_100_г_продукта] =  CONVERT(DECIMAL(6, 2), " + price + "), [Запрет_при_гастрите] = " + gastritis + ", [Запрет_при_диабете] = " + diabetes + " WHERE [Название_продукта] = N'" + nameToEdit + "'; ", Program.sqlConnection);
-                        editProduct.ExecuteNonQuery();
-                        ProductTextBox.Clear();
-                        ProductsTable = new DataTable();
-                        PProductsListBox.DataSource = ProductsTable;
-                        adapter = new SqlDataAdapter("SELECT * FROM [ПРОДУКТ]", Program.sqlConnection);
-                        adapter.Fill(ProductsTable);
-                        PProductsListBox.DataSource = ProductsTable;
-                        PProductsListBox.DisplayMember = "Название_продукта";
-                        PProductsListBox.ValueMember = "ID_продукта";
-                        PProductsListBox.SelectedIndex = choice;
-                    }
-                    else
-                    {
-                        MessageFormSmall ErrorForm = new MessageFormSmall();
-                        ErrorForm.LabelText.Text = "Продукт с таким названием уже существует.";
-                        ErrorForm.Text = "Ошибка";
-                        ErrorForm.ShowDialog();
-                    }
-                    Program.sqlConnection.Close();
+                    MessageFormSmall ErrorForm = new MessageFormSmall();
+                    ErrorForm.LabelText.Text = "Продукт с таким названием уже существует.";
+                    ErrorForm.Text = "Ошибка";
+                    ErrorForm.ShowDialog();
                 }
+                Program.sqlConnection.Close();
             }
         }
 
@@ -174,7 +164,7 @@ namespace DietProject
                 if (Program.sqlConnection.State == ConnectionState.Open)
                     Program.sqlConnection.Close();
                 Program.sqlConnection.Open();
-                DataRowView item = (DataRowView) PProductsListBox.SelectedItem;
+                DataRowView item = (DataRowView)PProductsListBox.SelectedItem;
                 int idToDelete = (int)item.Row[0];
                 string nameToDelete = item.Row[1].ToString();
                 SqlCommand checkIsOkToDelete = new SqlCommand("SELECT COUNT(*) FROM [ЭЛЕМЕНТ_РАЦИОНА] WHERE [ID_продукта] = " + idToDelete + ";", Program.sqlConnection);
