@@ -107,7 +107,7 @@ namespace DietProject
                                 byte gastritisInfo = (byte)getGastritisInfo.ExecuteScalar();
                                 if (Convert.ToBoolean(gastritisInfo))
                                 {
-                                    string stringResult = "Продукт " + dietProductName + " не разрешен к употреблению при заболевании " + illnesInfo + "!\n\n";
+                                    string stringResult = "Продукт " + dietProductName + " не разрешен к употреблению при заболевании " + illnesInfo + "!\n";
                                     notAcceptedMessagesString += stringResult;
                                 }
                             }
@@ -120,7 +120,7 @@ namespace DietProject
                                 byte diabetesInfo = (byte)getDiabetesInfo.ExecuteScalar();
                                 if (Convert.ToBoolean(diabetesInfo))
                                 {
-                                    string stringResult = "Продукт " + dietProductName + "не разрешен к употреблению при заболевании " + illnesInfo + "!\n\n";
+                                    string stringResult = "Продукт " + dietProductName + " не разрешен к употреблению при заболевании " + illnesInfo + "!\n";
                                     notAcceptedMessagesString += stringResult;
                                 }
                             }
@@ -152,8 +152,8 @@ namespace DietProject
                                 int checkIfCompatibleRes = (int)checkIfCompatible.ExecuteScalar();
                                 if (checkIfCompatibleRes == 0)
                                 {
-                                    string stringResult1 = "Продукты " + dietProductName1 + " (категория: " + dietProductCategoryName1 + ") и " + dietProductName2 + " (категория: " + dietProductCategoryName2 + ") несовместимы!\n\n";
-                                    string stringResult2 = "Продукты " + dietProductName2 + " (категория: " + dietProductCategoryName2 + ") и " + dietProductName1 + " (категория: " + dietProductCategoryName1 + ") несовместимы!\n\n";
+                                    string stringResult1 = "Продукты " + dietProductName1 + " (категория: " + dietProductCategoryName1 + ") и " + dietProductName2 + " (категория: " + dietProductCategoryName2 + ") несовместимы!\n";
+                                    string stringResult2 = "Продукты " + dietProductName2 + " (категория: " + dietProductCategoryName2 + ") и " + dietProductName1 + " (категория: " + dietProductCategoryName1 + ") несовместимы!\n";
                                     if (!notCompatibleMessagesList.Contains(stringResult2))
                                     {
                                         notCompatibleMessagesList.Add(stringResult1);
@@ -239,7 +239,8 @@ namespace DietProject
                             for (int i = 0; i < TSDietProductsListBox.Items.Cast<string>().ToList().Count; ++i)
                             {
                                 string varName = "x" + i;
-                                foods.Add(solver.MakeNumVar(GetPseudoDoubleWithinRange(50.0, 100.0), GetPseudoDoubleWithinRange(800.0, 1000.0), varName));
+                                //foods.Add(solver.MakeNumVar(GetPseudoDoubleWithinRange(50.0, 100.0), GetPseudoDoubleWithinRange(450.0, 500.0), varName));
+                                foods.Add(solver.MakeNumVar(50.0, 400.0, varName));
                             }
                             List<Google.OrTools.LinearSolver.Constraint> constraints = new List<Google.OrTools.LinearSolver.Constraint>();
                             Objective objective = solver.Objective();
@@ -252,7 +253,8 @@ namespace DietProject
                                 }
                                 else
                                 {
-                                    constraint.SetBounds(systemRight[i], double.PositiveInfinity);
+                                    //constraint.SetBounds(systemRight[i], double.PositiveInfinity);
+                                    constraint.SetBounds(systemRight[i], systemRight[i] + 500.0);
                                 }
                                 for (int j = 0; j < TSDietProductsListBox.Items.Count; j++)
                                 {
@@ -291,7 +293,7 @@ namespace DietProject
                                 {
                                     SqlCommand getProductID = new SqlCommand("SELECT [ID_продукта] FROM [Продукт] WHERE [Название_продукта] = N'" + TSDietProductsListBox.Items[i] + "';", Program.sqlConnection);
                                     int productID = (int)getProductID.ExecuteScalar();
-                                    dietReady += $"{TSDietProductsListBox.Items[i]} - {foods[i].SolutionValue():N0} г\n\n";
+                                    dietReady += $"{TSDietProductsListBox.Items[i]} - {foods[i].SolutionValue():N0} г\n";
                                     SqlCommand addDietElement = new SqlCommand("INSERT INTO [ЭЛЕМЕНТ_РАЦИОНА] ([ID_продукта], [Количество_продукта], [ID_рациона]) VALUES (" + productID + ", CONVERT(INTEGER, " + foods[i].SolutionValue().ToString("N0") + "), " + dietID + ");", Program.sqlConnection);
                                     addDietElement.ExecuteNonQuery();
                                 }
