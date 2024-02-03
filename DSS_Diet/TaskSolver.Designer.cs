@@ -117,19 +117,19 @@ namespace DietProject
             // 
             resources.ApplyResources(this.TSMoneyNumericUpDown, "TSMoneyNumericUpDown");
             this.TSMoneyNumericUpDown.Maximum = new decimal(new int[] {
-            2000,
+            1500,
             0,
             0,
             0});
             this.TSMoneyNumericUpDown.Minimum = new decimal(new int[] {
-            500,
+            300,
             0,
             0,
             0});
             this.TSMoneyNumericUpDown.Name = "TSMoneyNumericUpDown";
             this.TSMoneyNumericUpDown.TabStop = false;
             this.TSMoneyNumericUpDown.Value = new decimal(new int[] {
-            1000,
+            500,
             0,
             0,
             0});
