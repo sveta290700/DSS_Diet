@@ -405,7 +405,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Время:</Value>
+                  <Value>Дата печати:</Value>
                   <Style>
                     <FontWeight>Bold</FontWeight>
                   </Style>
@@ -420,7 +420,7 @@
           <Top>1.31974cm</Top>
           <Left>0.42016cm</Left>
           <Height>0.6cm</Height>
-          <Width>1.99729cm</Width>
+          <Width>2.53118cm</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -450,10 +450,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>2.45745cm</Top>
+          <Top>2.37215cm</Top>
           <Left>0.42016cm</Left>
           <Height>0.57354cm</Height>
-          <Width>1.99729cm</Width>
+          <Width>2.53118cm</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -585,9 +585,9 @@
           </Paragraphs>
           <rd:DefaultName>ExecutionTime</rd:DefaultName>
           <Top>1.31974cm</Top>
-          <Left>2.41745cm</Left>
+          <Left>2.95134cm</Left>
           <Height>0.6cm</Height>
-          <Width>3.34667cm</Width>
+          <Width>5.87375cm</Width>
           <ZIndex>5</ZIndex>
           <Style>
             <Border>
@@ -616,8 +616,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>2.45745cm</Top>
-          <Left>2.41745cm</Left>
+          <Top>2.37215cm</Top>
+          <Left>2.95134cm</Left>
           <Height>0.57354cm</Height>
           <Width>5.87375cm</Width>
           <ZIndex>6</ZIndex>
