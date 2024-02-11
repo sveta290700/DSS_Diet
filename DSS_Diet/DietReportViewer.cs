@@ -31,7 +31,7 @@ namespace DietProject
             this.DietID = DietID;
             DRVreportViewer = new ReportViewer();
             DRVreportViewer.Dock = DockStyle.Fill;
-            DRVreportViewer.ZoomMode = ZoomMode.PageWidth;
+            DRVreportViewer.ZoomMode = ZoomMode.Percent;
             Controls.Add(DRVreportViewer);
         }
 
