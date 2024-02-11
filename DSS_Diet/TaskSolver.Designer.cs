@@ -231,6 +231,7 @@ namespace DietProject
             this.Controls.Add(this.TSDietProductsListBox);
             this.Controls.Add(this.TSProductsNamesLabel);
             this.Controls.Add(this.TSProductsNamesListBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TaskSolver";
