@@ -57,242 +57,536 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;DTProductsNamesLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;TSPatronymLabel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TDLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PVFromNumericUpDown.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;TSSurnameTextBox.Type" xml:space="preserve">
-    <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="waterMarkTextBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 87</value>
-  </data>
-  <data name="&gt;&gt;DietProductsLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DietProductsListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DNPatientParametersSetComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 52</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;DTSelectButton.Name" xml:space="preserve">
-    <value>DTSelectButton</value>
-  </data>
-  <data name="&gt;&gt;TSNameTextBox.Type" xml:space="preserve">
-    <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TSPatientParametersSetLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DTProductsNamesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;DTProductsNamesLabel.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TSDietProductsListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;TSSurnameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;PVFromNumericUpDown.Name" xml:space="preserve">
-    <value>PVFromNumericUpDown</value>
+  <data name="TSUnselectButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;DTProductsNamesLabel.Name" xml:space="preserve">
-    <value>DTProductsNamesLabel</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TSUnselectButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 288</value>
   </data>
-  <data name="&gt;&gt;TSPatronymLabel2.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;TSProductsNamesLabel.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
-  <data name="waterMarkTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 122</value>
+  <data name="TSPatientParametersSetLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TSUnselectButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="TSProductsNamesLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 173</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>TaskSolver</value>
+  <data name="&gt;&gt;DTUnselectButton.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
-  <data name="TSPatronymLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 124</value>
+  <data name="TSPatronymLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
-  <data name="TSMoneyLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;waterMarkTextBox2.Name" xml:space="preserve">
+    <value>waterMarkTextBox2</value>
   </data>
-  <data name="&gt;&gt;TSProductsNamesListBox.Name" xml:space="preserve">
-    <value>TSProductsNamesListBox</value>
+  <data name="&gt;&gt;PVFromNumericUpDown.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="TSMoneyLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 102</value>
+  <data name="TSSurnameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="&gt;&gt;TSProductsNamesLabel.Name" xml:space="preserve">
-    <value>TSProductsNamesLabel</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
-  <data name="&gt;&gt;DTProductsNamesListBox.Name" xml:space="preserve">
-    <value>DTProductsNamesListBox</value>
+  <data name="&gt;&gt;PVFromNumericUpDown.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="DTProductsNamesListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;SurnameTextBox.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;TSUnselectButton.Name" xml:space="preserve">
+    <value>TSUnselectButton</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="TSNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="TSPatientParametersSetComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 45</value>
   </data>
   <data name="&gt;&gt;TSSurnameLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;TSPatientParametersSetComboBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DietProductsListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSPatronymLabel1.Name" xml:space="preserve">
+    <value>TSPatronymLabel1</value>
+  </data>
+  <data name="TSRubLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;TSDietProductsListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;DNPatientParametersSetComboBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="TSMoneyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 102</value>
+  </data>
+  <data name="waterMarkTextBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;TSSurnameTextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;TSPatientParametersSetComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSSelectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TDLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;TSSurnameLabel.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="DietProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 121</value>
+  </data>
+  <data name="&gt;&gt;PVFromNumericUpDown.Name" xml:space="preserve">
+    <value>PVFromNumericUpDown</value>
+  </data>
+  <data name="DTProductsNamesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TSProductsNamesLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TSPatronymLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 124</value>
+  </data>
+  <data name="&gt;&gt;TSMoneyLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="waterMarkTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 87</value>
+  </data>
+  <data name="&gt;&gt;TSRubLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TSMoneyNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DNPatientParametersSetComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSProductsNamesListBox.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;TDSolveButton.Name" xml:space="preserve">
+    <value>TDSolveButton</value>
+  </data>
+  <data name="&gt;&gt;TSProductsNamesListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PVFromNumericUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DietProductsListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TSPatronymLabel2.Name" xml:space="preserve">
+    <value>TSPatronymLabel2</value>
+  </data>
+  <data name="DTProductsNamesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 148</value>
   </data>
   <data name="&gt;&gt;TDMoneyLabel.Name" xml:space="preserve">
     <value>TDMoneyLabel</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>708, 102</value>
+  <data name="&gt;&gt;TSMoneyNumericUpDown.Name" xml:space="preserve">
+    <value>TSMoneyNumericUpDown</value>
   </data>
-  <data name="TSSurnameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 55</value>
+  <data name="TSProductsNamesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 173</value>
   </data>
-  <data name="&gt;&gt;DTUnselectButton.Parent" xml:space="preserve">
+  <data name="TSMoneyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TSNameLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Ввод исходных данных задачи</value>
+  </data>
+  <data name="&gt;&gt;TSSurnameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TSSelectButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TDLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;DTUnselectButton.Name" xml:space="preserve">
+    <value>DTUnselectButton</value>
+  </data>
+  <data name="&gt;&gt;TSNameLabel.Name" xml:space="preserve">
+    <value>TSNameLabel</value>
+  </data>
+  <data name="TDLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TSDietProductsLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="&gt;&gt;TSPatientParametersSetLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TSSurnameTextBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TSMoneyNumericUpDown.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TSMoneyNumericUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSDietProductsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;waterMarkTextBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TSPatientParametersSetLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TDMoneyLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TSProductsNamesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 200</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="DTSelectButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 188</value>
+  </data>
+  <data name="&gt;&gt;DietProductsListBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;TSUnselectButton.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;TSProductsNamesLabel.Name" xml:space="preserve">
+    <value>TSProductsNamesLabel</value>
+  </data>
+  <data name="DTSelectButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TSMoneyLabel.Name" xml:space="preserve">
+    <value>TSMoneyLabel</value>
+  </data>
+  <data name="TSRubLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>641, 108</value>
+  </data>
+  <data name="&gt;&gt;SurnameTextBox.Type" xml:space="preserve">
+    <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DietProductsLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TSNameLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="TSNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 78</value>
+  <data name="&gt;&gt;TSNameTextBox.Type" xml:space="preserve">
+    <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="DNPatientParametersSetComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;TSRubLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;waterMarkTextBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;TSMoneyNumericUpDown.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="TSPatronymLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 145</value>
   </data>
-  <data name="&gt;&gt;TSNameLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;TSRubLabel.Name" xml:space="preserve">
-    <value>TSRubLabel</value>
-  </data>
-  <data name="TDLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;DTSelectButton.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;TSSelectButton.Name" xml:space="preserve">
-    <value>TSSelectButton</value>
-  </data>
-  <data name="&gt;&gt;TDSolveButton.Name" xml:space="preserve">
-    <value>TDSolveButton</value>
-  </data>
-  <data name="&gt;&gt;DTUnselectButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="waterMarkTextBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="DTProductsNamesLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 121</value>
-  </data>
-  <data name="&gt;&gt;waterMarkTextBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;TDMoneyLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;DietProductsListBox.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;TSPatronymLabel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;TDMoneyLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;waterMarkTextBox2.Name" xml:space="preserve">
-    <value>waterMarkTextBox2</value>
-  </data>
-  <data name="&gt;&gt;TSMoneyLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DTProductsNamesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 148</value>
-  </data>
-  <data name="&gt;&gt;TSRubLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="TSNameTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="TDSolveButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 377</value>
-  </data>
-  <data name="&gt;&gt;waterMarkTextBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="TDMoneyLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 108</value>
-  </data>
-  <data name="&gt;&gt;TSMoneyNumericUpDown.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;TSNameLabel.Name" xml:space="preserve">
-    <value>TSNameLabel</value>
-  </data>
-  <data name="TSUnselectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 288</value>
-  </data>
-  <data name="&gt;&gt;TDLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DTProductsNamesListBox.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;DTProductsNamesLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;TSPatronymLabel1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;DNPatientParametersSetComboBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;DTUnselectButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DTSelectButton.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="DTUnselectButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 236</value>
+  </data>
+  <data name="DietProductsListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 148</value>
+  </data>
+  <data name="&gt;&gt;DietProductsLabel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;TSNameTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TSDietProductsListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="TSDietProductsListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 200</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TaskSolver</value>
+  </data>
+  <data name="DTUnselectButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DTProductsNamesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 121</value>
+  </data>
+  <data name="&gt;&gt;DTProductsNamesListBox.Name" xml:space="preserve">
+    <value>DTProductsNamesListBox</value>
+  </data>
+  <data name="DietProductsListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="TSMoneyNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>552, 108</value>
+  </data>
+  <data name="&gt;&gt;TSSelectButton.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="TSNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;TDLabel.Name" xml:space="preserve">
+    <value>TDLabel</value>
+  </data>
+  <data name="DNPatientParametersSetComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 52</value>
+  </data>
+  <data name="SurnameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;TSNameTextBox.Name" xml:space="preserve">
+    <value>TSNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;TSPatronymTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TSProductsNamesListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSMoneyNumericUpDown.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="TSDietProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>425, 173</value>
+  </data>
+  <data name="&gt;&gt;TSProductsNamesListBox.Name" xml:space="preserve">
+    <value>TSProductsNamesListBox</value>
+  </data>
+  <data name="&gt;&gt;TSPatronymLabel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TSRubLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="TSSelectButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 240</value>
+  </data>
   <data name="&gt;&gt;SurnameTextBox.Name" xml:space="preserve">
     <value>SurnameTextBox</value>
   </data>
-  <data name="&gt;&gt;DietProductsListBox.Name" xml:space="preserve">
-    <value>DietProductsListBox</value>
+  <data name="&gt;&gt;DTUnselectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TSPatientParametersSetLabel.Name" xml:space="preserve">
-    <value>TSPatientParametersSetLabel</value>
+  <data name="&gt;&gt;TSSurnameTextBox.Type" xml:space="preserve">
+    <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="TSPatronymTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 113</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;TSSelectButton.Name" xml:space="preserve">
+    <value>TSSelectButton</value>
+  </data>
+  <data name="&gt;&gt;DTProductsNamesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="waterMarkTextBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 122</value>
+  </data>
+  <data name="TSSurnameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 55</value>
+  </data>
+  <data name="&gt;&gt;TSSurnameLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;TSMoneyLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;TSDietProductsListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TDSolveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>328, 377</value>
+  </data>
+  <data name="&gt;&gt;TSSurnameLabel.Name" xml:space="preserve">
+    <value>TSSurnameLabel</value>
   </data>
   <data name="&gt;&gt;waterMarkTextBox1.Name" xml:space="preserve">
     <value>waterMarkTextBox1</value>
   </data>
-  <data name="&gt;&gt;TSSelectButton.Parent" xml:space="preserve">
+  <data name="TSPatronymTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;DTProductsNamesLabel.Name" xml:space="preserve">
+    <value>DTProductsNamesLabel</value>
+  </data>
+  <data name="&gt;&gt;TSPatronymTextBox.Type" xml:space="preserve">
+    <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;SurnameTextBox.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="TSNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 78</value>
+  </data>
+  <data name="&gt;&gt;TDSolveButton.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;TSPatronymTextBox.Name" xml:space="preserve">
+    <value>TSPatronymTextBox</value>
+  </data>
+  <data name="TDMoneyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 108</value>
+  </data>
+  <data name="&gt;&gt;DietProductsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;waterMarkTextBox1.Type" xml:space="preserve">
+    <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="TSProductsNamesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="TDMoneyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TSPatientParametersSetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>381, 9</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;TSMoneyLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DietProductsLabel.Name" xml:space="preserve">
+    <value>DietProductsLabel</value>
+  </data>
+  <data name="&gt;&gt;TSDietProductsListBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 18</value>
+  </data>
+  <data name="&gt;&gt;TSPatientParametersSetComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TSPatronymTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TSPatientParametersSetComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;DTSelectButton.Name" xml:space="preserve">
+    <value>DTSelectButton</value>
+  </data>
+  <data name="waterMarkTextBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;TSPatronymLabel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TSDietProductsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="TSSurnameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 43</value>
+  </data>
+  <data name="&gt;&gt;TSPatientParametersSetComboBox.Name" xml:space="preserve">
+    <value>TSPatientParametersSetComboBox</value>
+  </data>
+  <data name="&gt;&gt;TSUnselectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSDietProductsLabel.Name" xml:space="preserve">
+    <value>TSDietProductsLabel</value>
+  </data>
+  <data name="&gt;&gt;PVFromNumericUpDown.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSPatronymLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;waterMarkTextBox1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TSPatientParametersSetLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="TSNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 92</value>
+  </data>
+  <data name="TDLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 56</value>
+  </data>
+  <data name="TSProductsNamesListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;DietProductsListBox.Name" xml:space="preserve">
+    <value>DietProductsListBox</value>
+  </data>
+  <data name="&gt;&gt;TSPatientParametersSetComboBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="DietProductsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TSPatronymLabel2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;TSProductsNamesLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -300,397 +594,103 @@
   <data name="&gt;&gt;DTProductsNamesListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TSProductsNamesListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TSNameTextBox.Name" xml:space="preserve">
-    <value>TSNameTextBox</value>
-  </data>
-  <data name="&gt;&gt;TSDietProductsListBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TSNameTextBox.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TSSurnameTextBox.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;TSPatronymLabel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="TDSolveButton.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="TSPatronymLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 145</value>
-  </data>
-  <data name="&gt;&gt;TSUnselectButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DNPatientParametersSetComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DNPatientParametersSetComboBox.Name" xml:space="preserve">
-    <value>DNPatientParametersSetComboBox</value>
-  </data>
-  <data name="&gt;&gt;TSPatronymTextBox.Name" xml:space="preserve">
-    <value>TSPatronymTextBox</value>
-  </data>
-  <data name="&gt;&gt;SurnameTextBox.Type" xml:space="preserve">
-    <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TSMoneyNumericUpDown.Name" xml:space="preserve">
-    <value>TSMoneyNumericUpDown</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TSPatronymLabel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DietProductsListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TDMoneyLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="TSNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 92</value>
-  </data>
-  <data name="TSMoneyNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>552, 108</value>
-  </data>
-  <data name="&gt;&gt;TSUnselectButton.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="DietProductsListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;TDMoneyLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="TSMoneyNumericUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;DTProductsNamesListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;waterMarkTextBox1.Type" xml:space="preserve">
-    <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TDSolveButton.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;DTUnselectButton.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;TSUnselectButton.Name" xml:space="preserve">
-    <value>TSUnselectButton</value>
-  </data>
-  <data name="&gt;&gt;TSUnselectButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="TDLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>239, 56</value>
-  </data>
-  <data name="&gt;&gt;TSDietProductsLabel.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;TDLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;DietProductsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TSPatientParametersSetComboBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;TSSurnameTextBox.Name" xml:space="preserve">
-    <value>TSSurnameTextBox</value>
-  </data>
-  <data name="TSRubLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>641, 108</value>
-  </data>
-  <data name="&gt;&gt;TDSolveButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DNPatientParametersSetComboBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="DTUnselectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 236</value>
-  </data>
-  <data name="&gt;&gt;SurnameTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="TSProductsNamesListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="DTSelectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 188</value>
-  </data>
-  <data name="SurnameTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="TSSurnameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 43</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;DTSelectButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="TSSelectButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
-  </data>
-  <data name="&gt;&gt;TSPatronymTextBox.Type" xml:space="preserve">
-    <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TSProductsNamesListBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="waterMarkTextBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="TSNameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;TSMoneyLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TSDietProductsLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TSNameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TSPatronymLabel2.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="TSPatientParametersSetLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;TSSurnameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TSDietProductsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="TSProductsNamesListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 200</value>
-  </data>
-  <data name="&gt;&gt;TDSolveButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TSPatientParametersSetComboBox.Name" xml:space="preserve">
-    <value>TSPatientParametersSetComboBox</value>
-  </data>
-  <data name="&gt;&gt;TSPatientParametersSetComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TSSurnameLabel.Name" xml:space="preserve">
-    <value>TSSurnameLabel</value>
-  </data>
-  <data name="DietProductsListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 148</value>
-  </data>
-  <data name="PVFromNumericUpDown.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="TSDietProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 173</value>
-  </data>
-  <data name="TSSurnameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;TSPatronymTextBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DTUnselectButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;TSRubLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TSPatronymLabel1.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;TSPatronymTextBox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;TSPatientParametersSetLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TSDietProductsListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DTUnselectButton.Name" xml:space="preserve">
-    <value>DTUnselectButton</value>
-  </data>
-  <data name="TSRubLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;TSDietProductsListBox.Name" xml:space="preserve">
-    <value>TSDietProductsListBox</value>
-  </data>
-  <data name="&gt;&gt;TSRubLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;waterMarkTextBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;TSPatronymLabel1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;TSDietProductsListBox.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="TSPatientParametersSetComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;DTSelectButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TSSelectButton.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;TDLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TDLabel.Name" xml:space="preserve">
-    <value>TDLabel</value>
-  </data>
-  <data name="&gt;&gt;TSMoneyLabel.Name" xml:space="preserve">
-    <value>TSMoneyLabel</value>
-  </data>
-  <data name="&gt;&gt;TSSelectButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DietProductsLabel.Name" xml:space="preserve">
-    <value>DietProductsLabel</value>
-  </data>
-  <data name="&gt;&gt;DietProductsLabel.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;TSProductsNamesLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="TSPatientParametersSetComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 45</value>
-  </data>
-  <data name="TSPatronymTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="TSUnselectButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="DTProductsNamesLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;TSNameTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;TSMoneyLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;TSPatronymLabel2.Name" xml:space="preserve">
-    <value>TSPatronymLabel2</value>
-  </data>
-  <data name="TSPatientParametersSetLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 9</value>
-  </data>
-  <data name="DTSelectButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;TDMoneyLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TSDietProductsListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 200</value>
-  </data>
-  <data name="TSSelectButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 240</value>
-  </data>
-  <data name="&gt;&gt;TSPatronymLabel1.Name" xml:space="preserve">
-    <value>TSPatronymLabel1</value>
-  </data>
-  <data name="&gt;&gt;PVFromNumericUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PVFromNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 55</value>
-  </data>
-  <data name="&gt;&gt;PVFromNumericUpDown.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TSDietProductsLabel.Name" xml:space="preserve">
-    <value>TSDietProductsLabel</value>
-  </data>
-  <data name="&gt;&gt;TSProductsNamesListBox.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 18</value>
-  </data>
-  <data name="&gt;&gt;TSPatronymLabel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TSPatientParametersSetLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="SurnameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 52</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Ввод исходных данных задачи</value>
-  </data>
-  <data name="TSProductsNamesLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;TSDietProductsLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;waterMarkTextBox2.Type" xml:space="preserve">
-    <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="DietProductsLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;TSProductsNamesLabel.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;TSMoneyNumericUpDown.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DietProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>425, 121</value>
-  </data>
-  <data name="TSSurnameTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;TSNameTextBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TSDietProductsLabel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="PVFromNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 55</value>
+  </data>
+  <data name="TSSurnameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;TSPatientParametersSetLabel.Name" xml:space="preserve">
+    <value>TSPatientParametersSetLabel</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="TSPatronymTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 113</value>
+  </data>
+  <data name="&gt;&gt;TSDietProductsListBox.Name" xml:space="preserve">
+    <value>TSDietProductsListBox</value>
+  </data>
+  <data name="SurnameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 52</value>
+  </data>
+  <data name="&gt;&gt;DTProductsNamesLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TDSolveButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TSSelectButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TDMoneyLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="TSPatronymLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;TDSolveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSRubLabel.Name" xml:space="preserve">
+    <value>TSRubLabel</value>
+  </data>
+  <data name="&gt;&gt;TSNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DNPatientParametersSetComboBox.Name" xml:space="preserve">
+    <value>DNPatientParametersSetComboBox</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>708, 102</value>
+  </data>
+  <data name="DNPatientParametersSetComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;waterMarkTextBox2.Type" xml:space="preserve">
+    <value>DietProject.WaterMarkTextBox, DSS_Diet, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;waterMarkTextBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;DTSelectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;DTProductsNamesListBox.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;SurnameTextBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TSSurnameTextBox.Name" xml:space="preserve">
+    <value>TSSurnameTextBox</value>
+  </data>
+  <data name="TDSolveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;DTSelectButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DTProductsNamesListBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
