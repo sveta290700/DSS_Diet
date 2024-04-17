@@ -6,7 +6,7 @@ namespace DietProject
 {
     static class Program
     {
-        public static SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-0E3AC9U\SQLEXPRESS;Initial Catalog=DietDB;Integrated Security=True");
+        public static SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-QMRO9TO\SQLEXPRESS;Initial Catalog=DietDB;Integrated Security=True");
 
         /// <summary>
         ///  The main entry point for the application.

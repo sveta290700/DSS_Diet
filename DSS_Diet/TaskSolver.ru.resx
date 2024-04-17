@@ -68,8 +68,14 @@
   <data name="TSUnselectButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="TSUnselectButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>544, 480</value>
+  </data>
+  <data name="TSUnselectButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
   <data name="TSUnselectButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 30</value>
+    <value>56, 50</value>
   </data>
   <data name="TSUnselectButton.Text" xml:space="preserve">
     <value>&lt;&lt;</value>
@@ -83,8 +89,14 @@
   <data name="TSSelectButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="TSSelectButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>544, 400</value>
+  </data>
+  <data name="TSSelectButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
   <data name="TSSelectButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 30</value>
+    <value>57, 50</value>
   </data>
   <data name="TSSelectButton.Text" xml:space="preserve">
     <value>&gt;&gt;</value>
@@ -99,10 +111,13 @@
     <value>NoControl</value>
   </data>
   <data name="TDSolveButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 391</value>
+    <value>466, 652</value>
+  </data>
+  <data name="TDSolveButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="TDSolveButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 38</value>
+    <value>204, 63</value>
   </data>
   <data name="TDSolveButton.Text" xml:space="preserve">
     <value>Решить задачу</value>
@@ -113,8 +128,14 @@
   <data name="TSDietProductsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="TSDietProductsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 288</value>
+  </data>
+  <data name="TSDietProductsLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="TSDietProductsLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 24</value>
+    <value>515, 39</value>
   </data>
   <data name="TSDietProductsLabel.Text" xml:space="preserve">
     <value>Продукты рациона</value>
@@ -124,10 +145,16 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TSDietProductsListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>21</value>
+    <value>32</value>
+  </data>
+  <data name="TSDietProductsListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>607, 333</value>
+  </data>
+  <data name="TSDietProductsListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="TSDietProductsListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 172</value>
+    <value>514, 260</value>
   </data>
   <data name="TSProductsNamesLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
@@ -135,8 +162,14 @@
   <data name="TSProductsNamesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="TSProductsNamesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 288</value>
+  </data>
+  <data name="TSProductsNamesLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="TSProductsNamesLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 24</value>
+    <value>515, 39</value>
   </data>
   <data name="TSProductsNamesLabel.Text" xml:space="preserve">
     <value>Названия продуктов</value>
@@ -145,16 +178,25 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="TSProductsNamesListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>21</value>
+    <value>32</value>
+  </data>
+  <data name="TSProductsNamesListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 333</value>
+  </data>
+  <data name="TSProductsNamesListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="TSProductsNamesListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>361, 172</value>
+    <value>514, 260</value>
   </data>
   <data name="TSMoneyNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>541, 102</value>
+    <value>773, 170</value>
+  </data>
+  <data name="TSMoneyNumericUpDown.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="TSMoneyNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 23</value>
+    <value>100, 31</value>
   </data>
   <data name="TSMoneyLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -166,10 +208,13 @@
     <value>NoControl</value>
   </data>
   <data name="TSMoneyLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 100</value>
+    <value>520, 167</value>
+  </data>
+  <data name="TSMoneyLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="TSMoneyLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 21</value>
+    <value>237, 32</value>
   </data>
   <data name="TSMoneyLabel.Text" xml:space="preserve">
     <value>Доступный бюджет:</value>
@@ -184,10 +229,13 @@
     <value>NoControl</value>
   </data>
   <data name="TSRubLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>630, 100</value>
+    <value>900, 167</value>
+  </data>
+  <data name="TSRubLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="TSRubLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 21</value>
+    <value>59, 32</value>
   </data>
   <data name="TSRubLabel.Text" xml:space="preserve">
     <value>руб.</value>
@@ -196,10 +244,13 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="TSSurnameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 46</value>
+    <value>147, 77</value>
+  </data>
+  <data name="TSSurnameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="TSSurnameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 29</value>
+    <value>311, 39</value>
   </data>
   <data name="TSSurnameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -211,10 +262,13 @@
     <value>NoControl</value>
   </data>
   <data name="TSSurnameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 50</value>
+    <value>19, 83</value>
+  </data>
+  <data name="TSSurnameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="TSSurnameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 21</value>
+    <value>118, 32</value>
   </data>
   <data name="TSSurnameLabel.Text" xml:space="preserve">
     <value>Фамилия:</value>
@@ -229,19 +283,25 @@
     <value>NoControl</value>
   </data>
   <data name="TSPatientParametersSetLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>363, 16</value>
+    <value>519, 27</value>
+  </data>
+  <data name="TSPatientParametersSetLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="TSPatientParametersSetLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 21</value>
+    <value>340, 32</value>
   </data>
   <data name="TSPatientParametersSetLabel.Text" xml:space="preserve">
     <value>Набор параметров пациента:</value>
   </data>
   <data name="TSPatientParametersSetComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 52</value>
+    <value>524, 87</value>
+  </data>
+  <data name="TSPatientParametersSetComboBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="TSPatientParametersSetComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>419, 23</value>
+    <value>597, 33</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -253,10 +313,13 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 14</value>
+    <value>19, 23</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 21</value>
+    <value>238, 32</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Данные о пациенте:</value>
@@ -271,10 +334,13 @@
     <value>NoControl</value>
   </data>
   <data name="TSPatronymLabel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 119</value>
+    <value>19, 198</value>
+  </data>
+  <data name="TSPatronymLabel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="TSPatronymLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 21</value>
+    <value>122, 32</value>
   </data>
   <data name="TSPatronymLabel1.Text" xml:space="preserve">
     <value>Отчество:</value>
@@ -283,10 +349,13 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="TSPatronymTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 117</value>
+    <value>147, 195</value>
+  </data>
+  <data name="TSPatronymTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="TSPatronymTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 29</value>
+    <value>311, 39</value>
   </data>
   <data name="TSNameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -298,10 +367,13 @@
     <value>NoControl</value>
   </data>
   <data name="TSNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 86</value>
+    <value>19, 143</value>
+  </data>
+  <data name="TSNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="TSNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 21</value>
+    <value>66, 32</value>
   </data>
   <data name="TSNameLabel.Text" xml:space="preserve">
     <value>Имя:</value>
@@ -310,10 +382,13 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="TSNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 81</value>
+    <value>147, 135</value>
+  </data>
+  <data name="TSNameTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="TSNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 29</value>
+    <value>311, 39</value>
   </data>
   <data name="TSPatronymLabel2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -325,13 +400,22 @@
     <value>NoControl</value>
   </data>
   <data name="TSPatronymLabel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 140</value>
+    <value>17, 233</value>
+  </data>
+  <data name="TSPatronymLabel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="TSPatronymLabel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 15</value>
+    <value>126, 25</value>
   </data>
   <data name="TSPatronymLabel2.Text" xml:space="preserve">
     <value>(при наличии)</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>10, 25</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1143, 750</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3095,7 +3179,10 @@
         8I8AAPCHAADgJwAA5jcAAOA3AADgJwAA4CcAAOAHAADgDwAA
 </value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 8, 6, 8</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Решение задачи составления оптимального рациона питания пациента</value>
+    <value>Принятие решения: составление оптимального рациона питания пациента</value>
   </data>
 </root>

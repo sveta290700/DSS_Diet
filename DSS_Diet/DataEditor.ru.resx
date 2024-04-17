@@ -66,10 +66,14 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="KEChoiceLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>333, 74</value>
+    <value>476, 123</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="KEChoiceLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="KEChoiceLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 21</value>
+    <value>211, 32</value>
   </data>
   <data name="KEChoiceLabel.Text" xml:space="preserve">
     <value>Выберите раздел:</value>
@@ -78,7 +82,7 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="KLSectionsListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>21</value>
+    <value>32</value>
   </data>
   <data name="KLSectionsListBox.Items" xml:space="preserve">
     <value>Данные о категориях продуктов</value>
@@ -93,10 +97,13 @@
     <value>Данные о суточных нормах</value>
   </data>
   <data name="KLSectionsListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 137</value>
+    <value>290, 228</value>
+  </data>
+  <data name="KLSectionsListBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="KLSectionsListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>405, 214</value>
+    <value>577, 324</value>
   </data>
   <data name="KLSectionsListBox.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -105,15 +112,17 @@
     <value>Segoe UI, 12pt</value>
   </data>
   <data name="SectionLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 112</value>
+    <value>290, 187</value>
+  </data>
+  <data name="SectionLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="SectionLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>405, 24</value>
+    <value>578, 39</value>
   </data>
   <data name="SectionLabel.Text" xml:space="preserve">
     <value>Разделы</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="DEChoiceButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
@@ -124,13 +133,22 @@
     <value>NoControl</value>
   </data>
   <data name="DEChoiceButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 376</value>
+    <value>511, 627</value>
+  </data>
+  <data name="DEChoiceButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
   </data>
   <data name="DEChoiceButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 38</value>
+    <value>139, 63</value>
   </data>
   <data name="DEChoiceButton.Text" xml:space="preserve">
     <value>Выбрать</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>10, 25</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1143, 750</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2894,10 +2912,13 @@
         8I8AAPCHAADgJwAA5jcAAOA3AADgJwAA4CcAAOAHAADgDwAA
 </value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Редактор базы данных</value>
+    <value>Справочные данные</value>
   </data>
 </root>
