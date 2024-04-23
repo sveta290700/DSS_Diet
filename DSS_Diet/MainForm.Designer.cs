@@ -70,7 +70,7 @@ namespace DietProject
             // DietImagePictureBox
             // 
             resources.ApplyResources(this.DietImagePictureBox, "DietImagePictureBox");
-            this.DietImagePictureBox.Image = global::DSS_Diet.Properties.Resources.StartImage;
+            this.DietImagePictureBox.Image = global::DSS_Diet.Properties.Resources.MainFormImage;
             this.DietImagePictureBox.Name = "DietImagePictureBox";
             this.DietImagePictureBox.TabStop = false;
             // 
