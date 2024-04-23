@@ -63,9 +63,9 @@ namespace DSS_Diet.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap StartImage {
+        internal static System.Drawing.Bitmap MainFormImage {
             get {
-                object obj = ResourceManager.GetObject("StartImage", resourceCulture);
+                object obj = ResourceManager.GetObject("MainFormImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
