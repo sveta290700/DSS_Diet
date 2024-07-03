@@ -8300,7 +8300,7 @@ SELECT ID_элемента_рациона, ID_рациона, ID_продукт�
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = "Data Source=DESKTOP-0E3AC9U\\SQLEXPRESS;Initial Catalog=DietDB;Integrated Security" +
+            this._connection.ConnectionString = "Data Source=DESKTOP-QMRO9TO\\SQLEXPRESS;Initial Catalog=DietDB;Integrated Security" +
                 "=True";
         }
         
