@@ -10,6 +10,6 @@
 9. Установить .NET Core 3.1 SDK.
 10. Открыть исходный код программы (решение) в среде разработки Visual Studio.
 11. В файле Program.cs в 9 строке заменить параметр DataSource на скопированное в п.4 имя сервера. Строка будет выглядеть следующим образом: *public static SqlConnection sqlConnection = new SqlConnection(@"Data Source=ИМЯ_СЕРВЕРА;Initial Catalog=DietDB;Integrated Security=True");*
-12. В файле DietDBDataSet.Designer.cs в 8303 строке заменить параметр DataSource на скопированное в п.4 имя сервера, используя двойной слеш перед SQLEXPRESS. Строка будет выглядеть следующим образом: *this._connection.ConnectionString = "Data Source=ИМЯ_СЕРВЕРА_ДО_SQLEXPRESS\\SQLEXPRESS;Initial Catalog=DietDB;Integrated Security" +*
+12. В файле DietDBDataSet.Designer.cs в 8303 строке заменить параметр DataSource на скопированное в п.4 имя сервера, используя двойной слеш перед SQLEXPRESS. Строка будет выглядеть следующим образом: *this._connection.ConnectionString = "Data Source=ИМЯ_СЕРВЕРА_ДО_SQLEXPRESS\\\SQLEXPRESS;Initial Catalog=DietDB;Integrated Security" \+*
 13. Собрать решение (Сборка -> Собрать решение).
 14. Далее запустить программу можно из среды Visual Stidio через режим запуска отладки (Отладка -> Начать отладку; альтернатива – клавиша F5) или через открытие exe-файла с программой из папки с решением (DSS_Diet\DSS_Diet\bin\Debug\netcoreapp3.1\DSS_Diet.exe).
