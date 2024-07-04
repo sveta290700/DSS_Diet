@@ -1,5 +1,5 @@
 Для первого запуска программы необходимо выполнить следующие шаги:
-1. Установить СУБД MS SQL Server 2008 R2.
+1. Установить СУБД MS SQL Server 2008 R2 и среду Microsoft SQL Server Management Studio.
 2. Скопировать файлы БД ([DietDB.mdf](https://drive.google.com/file/d/1oi5ikQ1GN5Kdby4nf6xkROe-ZfSMHS-x/view?usp=sharing) и [DietDB_log.ldf](https://drive.google.com/file/d/1vLkPS0U4FKXQizCRa7ztqlzsJYD5sOTB/view?usp=sharing)) в папку Data (по умолчанию путь: C:\Program Files\Microsoft SQL Server\MSSQL10_50.MSSQLSERVER\MSSQL\DATA).
 3. Открыть «Среда Microsoft SQL Server Management Studio» (Пуск -> Microsoft SQL Server 2008 R2).
 4. Скопировать из открывшегося окна имя сервера.
